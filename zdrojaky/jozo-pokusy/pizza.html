@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+    <head>        
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="pizza.css" />
+        <title> Pizzéria </title>
+    </head>
+    <body>
+        <script type="text/javascript" >
+        function vypln_adresu() {
+            document.getElementById('meno').value = "Jožko Mrkvička";
+            document.getElementById('ulica').value = "Pod viaduktom 4";
+            document.getElementById('mesto').value = "Horná Dolná";
+        }
+        </script>
+
+        <div class="div_body">
+            <div class="okrajove_divy" id="top_div">
+                <h1>Vitajte</h1>
+            </div>
+            <div class="hlavne_divy" id="left_div">
+                <form action="javascript:vypln_adresu();">
+                    <div class="div_subblok">
+                        <div class="div_input">
+                            <label for="login">Login:</label>
+                            <input type="text" name="login" id="login" value="logyn" />
+                        </div>
+                        <div class="div_input">
+                            <label for="password">Heslo:</label>
+                            <input type="password" name="password" id="password" value="pass" />
+                        </div>
+                        <div class="div_button">
+                            <input type="submit" value="Prihlásiť" >
+                        </div>
+                    </div>
+
+                    <div class="div_subblok">
+                        <div class="div_input">
+                            <label for="meno">Meno:</label>
+                            <input type="text" name="meno" id="meno" />
+                        </div>
+                        <div class="div_input">
+                            <label for="ulica">Ulica:</label>
+                            <input type="text" name="ulica" id="ulica" />
+                        </div>
+                        <div class="div_input">
+                            <label for="mesto">Mesto:</label>
+                            <input type="text" name="mesto" id="mesto" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="hlavne_divy" id="middle_div">
+                <ul id="zoznam_pizz">
+                    <li>Hawai</li>
+                    <li>Salámová</li>
+                    <li>Šunková</li>
+                    <li>Klobásová</li>
+                    <li>Cesnaková</li>
+                    <li>Cibuľová</li>
+                </ul>
+            </div>
+            <div class="hlavne_divy" id="right_div">
+                <h4>Košík</h4>
+            </div>
+            <div class="okrajove_divy" id="bottom_div">
+                <h2>Dobrú chuť!</h2>
+            </div>
+        </div>
+    </body>
+</html>
