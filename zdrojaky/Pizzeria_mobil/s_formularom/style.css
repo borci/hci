@@ -40,24 +40,22 @@ p {
 /*--------------------------------------------*/
 
 a.active.trigger {
-    background:#222222 url(images/minus.png) 85% 55% no-repeat;
+    background-image: url(images/minus.png);
+    background-color: #222222;
 }
 
 a.trigger{
     /*    position: absolute;*/
     position: relative;
     width: 50px;
-
     text-decoration: none;
     top: 5px;
     font-size: 14px;
     letter-spacing:-1px;
     font-family: verdana, helvetica, arial, sans-serif;
     color:#fff;
-    /*    padding: 20px 40px 20px 15px;*/
-    padding: 5px 40px 5px 5px;
     font-weight: 700;
-    background:#333333 url(images/plus.png) 85% 55% no-repeat;
+    background:#333333 url(images/plus.png) no-repeat;
     border:1px solid #444444;
     display: block;
 }
@@ -111,6 +109,8 @@ a.trigger:hover{
 a.left_trigger{
     left: 0;
     float: left;
+    padding: 5px 30px 5px 5px;
+    background-position: 85% 55%;
     -moz-border-radius-topright: 20px;
     -webkit-border-top-right-radius: 20px;
     -moz-border-radius-bottomright: 20px;
@@ -147,6 +147,9 @@ ul li{
 a.right_trigger{
     right: 0;
     float: right;
+    padding: 5px 5px 5px 30px;
+    background-position: 15% 55%;
+    
     text-align: right;
     -moz-border-radius-topleft: 20px;
     -webkit-border-top-left-radius: 20px;
@@ -157,7 +160,7 @@ a.right_trigger{
 }
 
 a.right_trigger:hover {
-    padding-right: 45px;
+    padding-right: 20px;
 }
 
 /***************** Login form *********************/
