@@ -1,0 +1,85 @@
+root { 
+    display: block;
+}
+
+body {
+    /* background-image:url('background.jpg'); */
+    /* text-align: center; */
+    background-color: seashell;
+}
+
+div {
+   /* float:left; */
+    line-height:1.5;
+    width:300px;
+}
+
+ul {
+    line-height:3.0;
+}
+
+label {
+    line-height:1.5;
+    margin-top:40px;
+    margin-bottom:30px;
+    padding-top:30px;
+    padding-bottom:30px;
+
+}
+
+.div_body {
+    width: 900px;
+    text-align: center;
+    margin: 0 auto; 
+    /* clear: left; */
+}
+
+.hlavne_divy {
+    height: 350px;
+    float: left;
+}
+.okrajove_divy {
+    width: 900px;
+    height: 70px;
+    background-color: green;
+}
+
+#top_div {
+    clear: left;
+}
+
+#left_div {
+    clear: left;
+    background-image:url('background.jpg');
+    width: 300px;
+}
+
+#middle_div {
+    background-color: yellow;
+    width: 400px;
+    text-align: left;
+}
+
+#right_div {
+    background-image: url('background.jpg');
+    width: 200px;   
+
+}
+
+#bottom_div {
+    clear: left;
+}
+
+.div_input {
+    margin-top:3px;
+    margin-bottom:10px;
+}
+
+.div_subblok {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+input {
+    margin-top:5px;
+}
