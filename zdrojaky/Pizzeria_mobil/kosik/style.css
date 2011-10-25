@@ -130,8 +130,8 @@ ul li{
 /***************************************************************************************/
 
 .right_panel {
-    padding: 5px 5px 0px 10px;
-    width: 205px;
+    padding: 5px 5px 0px 0px;
+    width: 215px;
     /*    height: auto;*/
     height: 345px;
     right: 0;
@@ -213,7 +213,8 @@ ul {list-style-type: none}
 img {padding-right: 20px; float:left}
 
 #infolist {
-    width:210px;
+/*    todo*/
+    width:220px;
 }
 
 #infolist h3 {
@@ -230,7 +231,7 @@ img {padding-right: 20px; float:left}
     font-weight: normal;
     color: #909c89;
     width: 140px;
-    padding: 8px;
+    padding: 4px;
     padding-left: 17px;
     text-decoration: none;
     display: block;
@@ -318,4 +319,10 @@ img {padding-right: 20px; float:left}
 
 #infolist .kosik_pizza_suroviny li {
 /*    list*/
+}
+
+#infolist .kosik_item_cena {
+    font-size: 12px;
+    padding: 0 0 0 0;
+    margin: 0;
 }
