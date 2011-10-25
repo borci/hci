@@ -189,7 +189,10 @@ label {
 }
 input {
     margin-top:2px;
-    width: 160px;
+    width: 170px;
+}
+input.button {
+    width: 85px;
 }
 
 .form_button {

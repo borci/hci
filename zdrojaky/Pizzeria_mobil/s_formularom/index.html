@@ -22,24 +22,25 @@
             });
         </script>
         <script type="text/javascript" >
-        function vypln_adresu() {
-            document.getElementById('meno').value = "Jožko Mrkvička";
-            document.getElementById('ulica').value = "Pod viaduktom 4";
-            document.getElementById('mesto').value = "Horná Dolná";
-        }
+            function vypln_adresu() {
+                document.getElementById('meno').value = "Jožko Mrkvička";
+                document.getElementById('ulica').value = "Pod viaduktom 4";
+                document.getElementById('mesto').value = "Horná Dolná";
+            }
         </script>
     </head>
     <body>
         <div class="body_div">
-<!--            <div id="container">
-                Tuna bude zoznam pizz
-            </div>-->
+            <!--            <div id="container">
+                            Tuna bude zoznam pizz
+                        </div>-->
 
             <!--   *****************      Lavy vysuvaci panel **********************-->
             <div class="left_panel panel">
-<!--                <p>Tu bude login form</p>-->
+                <!--                <p>Tu bude login form</p>-->
                 <div class="login_form">
-                    <form action="javascript:vypln_adresu();">
+                    <!--                    <form action="javascript:vypln_adresu();">-->
+                    <form action="javascript:">
                         <div class="form_subblock">
                             <div class="form_element">
                                 <label for="login">Login:</label>
@@ -50,7 +51,8 @@
                                 <input type="password" name="password" id="password" value="pass" />
                             </div>
                             <div class="form_button">
-                                <input type="submit" value="Prihlásiť" >
+                                <input class="button" type="submit" value="Prihlásiť" onclick="javascript:vypln_adresu();" />
+                                <input class="button" type="submit" value="Registrovať" />                                    
                             </div>
                         </div>
 
@@ -83,8 +85,8 @@
 
             </div>
             <a class="right_trigger trigger" href="#">kosik</a>
-            
-            
+
+
             <div style="clear:both;"></div>
 
         </div>
