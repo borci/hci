@@ -1,0 +1,75 @@
+<!--DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"-->
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <title>Vertical Sliding Info Panel With jQuery</title>
+	    <link rel="stylesheet" href="Style.css" type="text/css" media="screen" />
+	    <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.js"></script>
+            <script type="text/javascript" src="js/jquery.ui.core.js"></script>
+            <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+            <script type="text/javascript" src="js/jquery.ui.accordion.js"></script>
+            <script type="text/javascript" src="js/transify.js"></script>
+
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $(".trigger").click(function(){
+                        $(".panel").toggle("fast");
+                        $(this).toggleClass("active");
+                        return false;
+                    });
+
+                    $(".trigger_2").click(function(){
+                        $(".kosik").toggle("fast");
+                        $(this).toggleClass("active");
+                        return false;
+                    });
+                });
+            </script>
+	</head>
+
+        <body>
+            <div id="mobil">
+                
+                    <center><h2><b>Pizzeria</b></h2></center>
+                    <div id="menu">
+
+                    </div>
+
+                    <script type="text/javascript">
+                        $('#menu').transify({opacityOrig:.5,opacityNew:.9,fadeSpeed:200});
+                    </script>
+
+                <div class="panel">
+                   
+                <form action="">
+                    <label for="login" style=" color: white; position:relative;left: -110px ;top: 20px" > Login: </label>
+                    <input type="text" class="input" name="login"/>
+                    <label for="heslo" style=" color: white; position:relative;left: -110px ;top: 20px"> Heslo: </label>
+                    <input type="password" class="input" name="heslo"/>
+                    <button class="reg"> Prihlas </button>
+                </form>
+
+                <form action="">
+                    <label for="meno" style=" color: white; position:relative;left: -110px ;top: 20px"> Meno: </label>
+                    <input type="text" class="input" name="meno"/>
+                    <label for="ulica" style="color: white; position:relative;left: -110px ;top: 20px"> Ulica: </label>
+                    <input type="text" class="input" name="ulica"/>
+                    <label for="mesto" style="color: white; position:relative;left: -110px ;top: 20px"> Mesto: </label>
+                    <input type="text" class="input" name="mesto"/>
+                    <button class="reg"> Registruj </button>
+                </form>
+
+                    <div style="clear:both;"></div>
+                </div>
+
+
+
+                <div class="kosik">
+                    <h4>kosik</h4>
+                    <div style="clear:both;"></div>
+                </div>
+                <a class="trigger" href="#">Prihlásiť</a>
+                <a class="trigger_2" href="#">Košík</a>
+            </div>
+        </body>
+    </html>
