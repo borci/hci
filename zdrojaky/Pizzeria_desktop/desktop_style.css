@@ -3,6 +3,7 @@ root {
 }
 body {
     background-color: #1a1a1a;
+
 }
 .body_div {
     position: relative;
@@ -10,7 +11,10 @@ body {
     height: 600px;
     background-color: gray;
     border: 3px solid red;
-    margin: 0 auto; 
+    margin: 0 auto;
+/*    cursor: url(images/kurzor1.gif);*/
+
+/*    cursor:wait;*/
 }
 a:focus {
     outline: none;
