@@ -62,8 +62,8 @@ a.trigger:hover{
     display: none;
     background: #000000;
     border:1px solid #111111;
-    /*filter: alpha(opacity=85);*/
-    opacity: .85;
+    filter: alpha(opacity=85);
+/*    opacity: .85;*/
     margin: 0 auto;
 }
 .panel p{
@@ -212,8 +212,15 @@ input[type=submit] {
 ul {list-style-type: none}
 img {padding-right: 20px; float:left}
 
+.right_panel .kosik_nadpis {
+    /*    padding: 1px 0 1px 30px;*/
+    margin: 5px 0px 5px 20px;
+    font-size: 13px;
+    color: seashell;
+}
+
 #infolist {
-/*    todo*/
+    /*    todo*/
     width:220px;
 }
 
@@ -222,16 +229,14 @@ img {padding-right: 20px; float:left}
     text-decoration: none;
 }
 
-#pokus1, #pokus2 {
-    text-decoration: none;
-}
-
 #infolist h3 .kosik_item_header {
+    position: relative;
+    left: -5px;
     font-size: 14px;
     font-weight: normal;
-    color: #909c89;
+/*    color: #909c89;*/
     width: 140px;
-    padding: 4px;
+    padding: 8px;
     padding-left: 17px;
     text-decoration: none;
     display: block;
@@ -242,45 +247,46 @@ img {padding-right: 20px; float:left}
 /*#infolist h3*/
 #infolist h3 .kosik_delitem {
     position: absolute;
-    right: 3px;
+    right: 0;
     top: 5px;
     z-index: 100;
     background: url(images/kosik_delete24.png) center center no-repeat;
     width: 24px;
     height: 24px;
-    /*    height: 20px;*/
     display: block;
-    /*    float: right;*/
 }
 #infolist h3 .kosik_plus {
     position: absolute;
-    right: 56px;
+    right: 45px;
     top: 7px;
     z-index: 100;
     background-image: url(images/kosik_plus20.png);
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
-    /*    height: 20px;*/
     display: block;
 }
 #infolist h3 .kosik_minus {
     position: absolute;
-    right: 35px;
+    right: 25px;
     top: 7px;
     z-index: 100;
     background-image: url(images/kosik_minus20.png);
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
-    /*    height: 20px;*/
     display: block;
-
+}
+#infolist h3 .kosik_pizza_cena {
+    position: absolute;
+    right: 15px;
+    z-index: 100;
+    /*    display: block;*/
 }
 
 #infolist.ui-accordion .ui-accordion-header .ui-icon {
     /*    umiestnenie rozklikavacieho trojuholnika*/
-    left: 0;
+    left: -5px;
 }
 
 #infolist.ui-accordion .ui-accordion-content {
@@ -289,23 +295,19 @@ img {padding-right: 20px; float:left}
     padding-left: 20px;
 }
 
-#sumar h4 {
-    color: seashell;
-}
-
 #infolist .kosik_add_suroviny {
     position: relative;
     left: 0px;
     padding: 0 0 15px 25px;
-/*    margin-bottom: 20px;*/
-/*    padding-left: 25px;*/
+    /*    margin-bottom: 20px;*/
+    /*    padding-left: 25px;*/
     top: 7px;
-/*    z-index: 100;*/
+    /*    z-index: 100;*/
     background-image: url(images/kosik_pizza_add_suroviny20.png);
     background-repeat: no-repeat;
     font-size: 13px;
-/*    width: 20px;*/
-/*    height: 20px;*/
+    /*    width: 20px;*/
+    /*    height: 20px;*/
     /*    height: 20px;*/
     display: block;    
 }
@@ -314,11 +316,11 @@ img {padding-right: 20px; float:left}
     position: relative;
     list-style-image: url(images/kosik_pizza_del_suroviny16.png);
     padding-left: 25px;
-    
+
 }
 
 #infolist .kosik_pizza_suroviny li {
-/*    list*/
+    /*    list*/
 }
 
 #infolist .kosik_item_cena {
@@ -326,6 +328,38 @@ img {padding-right: 20px; float:left}
     padding: 0 0 0 0;
     margin: 0;
 }
+
+#kosik_sumar {
+    color: seashell;
+    margin: 5px 0px 5px 10px;
+/*    padding-top: 30px;*/
+}
+
+#kosik_sumar .kosik_suma {
+    position: relative;
+    float: left;
+    left: 5px;
+    top: 4px;
+/*    padding: 25px 30px 0 0;*/
+/*    margin-top: 20px;*/
+    display: block;
+/*    margin: 0px 40px auto;*/
+}
+
+#kosik_sumar .kosik_button_objednat button {
+/*    position: absolute;*/
+    position: relative;
+    float: right;
+    right: 5px;
+    top: 2px;
+    border: 1px solid gray;
+    -moz-border-radius: 10px;
+    /*    margin-top: 2px;*/
+    padding: 3px 8px;
+    cursor: pointer;
+
+}
+
 
 /**************************************************/
 /*******************ponuka pizz********************/
@@ -401,7 +435,6 @@ img {padding-right: 20px; float:left}
 
 }
 
-
 .Pridat {
     position: absolute;
     left: 115px;
@@ -444,7 +477,6 @@ img {padding-right: 20px; float:left}
     -webkit-border-bottom-left-radius: 10px;
 
 }
-
 
 .kinetic-moving-up {
     border-top-color: green !important;
