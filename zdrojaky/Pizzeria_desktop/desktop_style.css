@@ -6,7 +6,7 @@ body {
 }
 .body_div {
     position: relative;
-    width: 800px;
+    width: 850px;
     height: 600px;
     background-color: gray;
     border: 3px solid red;
@@ -134,10 +134,11 @@ ul li{
 /***************************************************************************************/
 
 .right_panel {
+    color: seashell;
     padding: 5px 5px 0px 0px;
     width: 215px;
-    /*    height: auto;*/
-    height: 345px;
+/*        height: auto;*/
+    height: 500px;
     right: 0;
     -moz-border-radius-topleft: 20px;
     -webkit-border-top-left-radius: 20px;
@@ -199,7 +200,7 @@ input {
     width: 170px;
     -moz-border-radius: 10px;
     border: 1px solid gray;
-    padding: 3px 8px;
+    padding: 5px 8px;
 /*    display: block;*/
 }
 input[type=submit] {
@@ -375,11 +376,11 @@ img {padding-right: 20px; float:left}
 /**************************************************/
 
 #menu {
-    width: 216px;
-    height: 278px;
+    width: 400px;
+    height: 400px;
     position: absolute;
-    top: 45px;
-    left: 2px;
+    top: 80px;
+    left: 225px;
     overflow:  hidden;
     list-style: none;
     background-repeat:  repeat;
