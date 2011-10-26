@@ -37,23 +37,23 @@ $(document).ready(function(){
     });
     
 //    ************ zoznam pizz ********************
-    $('#menu').kinetic();
-    $('#left').click(function(){
-        $('#menu').kinetic('start', {
-            velocity: 0
-        });
-    });
-    $('#right').click(function(){
-        $('#menu').kinetic('start', {
-            velocity: 0
-        });
-    });
-    $('#end').click(function(){
-        $('#menu').kinetic('end');
-    });
-    $('#stop').click(function(){
-        $('#menu').kinetic('stop');
-    });
+//    $('#menu').kinetic();
+//    $('#left').click(function(){
+//        $('#menu').kinetic('start', {
+//            velocity: 0
+//        });
+//    });
+//    $('#right').click(function(){
+//        $('#menu').kinetic('start', {
+//            velocity: 0
+//        });
+//    });
+//    $('#end').click(function(){
+//        $('#menu').kinetic('end');
+//    });
+//    $('#stop').click(function(){
+//        $('#menu').kinetic('stop');
+//    });
 });
 
 function vypln_adresu() {
