@@ -213,7 +213,7 @@ ul {list-style-type: none}
 img {padding-right: 20px; float:left}
 
 .right_panel .kosik_nadpis {
-/*    padding: 1px 0 1px 30px;*/
+    /*    padding: 1px 0 1px 30px;*/
     margin: 5px 0px 5px 20px;
     font-size: 13px;
     color: seashell;
@@ -234,7 +234,7 @@ img {padding-right: 20px; float:left}
     left: -5px;
     font-size: 14px;
     font-weight: normal;
-    color: #909c89;
+/*    color: #909c89;*/
     width: 140px;
     padding: 8px;
     padding-left: 17px;
@@ -329,9 +329,34 @@ img {padding-right: 20px; float:left}
     margin: 0;
 }
 
-
-
 #kosik_sumar {
     color: seashell;
     margin: 5px 0px 5px 10px;
+/*    padding-top: 30px;*/
 }
+
+#kosik_sumar .kosik_suma {
+    position: relative;
+    float: left;
+    left: 5px;
+    top: 4px;
+/*    padding: 25px 30px 0 0;*/
+/*    margin-top: 20px;*/
+    display: block;
+/*    margin: 0px 40px auto;*/
+}
+
+#kosik_sumar .kosik_button_objednat button {
+/*    position: absolute;*/
+    position: relative;
+    float: right;
+    right: 5px;
+    top: 2px;
+    border: 1px solid gray;
+    -moz-border-radius: 10px;
+    /*    margin-top: 2px;*/
+    padding: 3px 8px;
+    cursor: pointer;
+
+}
+
