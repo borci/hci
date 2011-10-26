@@ -1,0 +1,471 @@
+root { 
+    display: block;
+}
+body {
+    background-color: #1a1a1a;
+}
+.body_div {
+    position: relative;
+    width: 220px;
+    height: 350px;
+    background-color: gray;
+    border: 3px solid red;
+    margin: 0 auto; 
+}
+a:focus {
+    outline: none;
+}
+img{
+    float: right;
+    margin: 3px 3px 6px 8px;
+    padding: 5px;
+    background: #222222;
+    border: 1px solid #333333;
+}
+p {
+    color:#cccccc;
+    line-height:22px;
+    padding: 0 0 10px;
+    margin: 20px 0 20px 0;
+}
+
+/*--------------------------------------------*/
+
+a.active.trigger {
+    /*    background-image: url(images/minus.png);*/
+    background-image: url(images/panel_close20.png);
+    background-color: #222222;
+}
+
+a.trigger{
+    /*    position: absolute;*/
+    position: relative;
+    width: 50px;
+    text-decoration: none;
+    top: 5px;
+    font-size: 14px;
+    letter-spacing:-1px;
+    font-family: verdana, helvetica, arial, sans-serif;
+    color:#fff;
+    font-weight: 700;
+    /*    background:#333333 url(images/plus.png) no-repeat;*/
+    border:1px solid #444444;
+    display: block;
+}
+a.trigger:hover{
+    background-color: #222222;
+}
+
+.panel {
+    position: absolute;
+    top: 0px;
+    display: none;
+    background: #000000;
+    border:1px solid #111111;
+    filter: alpha(opacity=85);
+    opacity: .85;
+    margin: 0 auto;
+}
+.panel p{
+    margin: 0 0 15px 0;
+    padding: 0;
+    color: #cccccc;
+}
+.panel a, .panel a:visited{
+    margin: 0;
+    padding: 0;
+    color: #9FC54E;
+    text-decoration: none;
+    border-bottom: 1px solid #9FC54E;
+}
+.panel a:hover, .panel a:visited:hover{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+}
+/*---------------------------------------------------*/
+
+.left_panel {
+    padding: 5px 5px 0px 15px;
+    width: 200px;
+    height: auto;
+    left: 0;    
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-bottomright: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+}
+
+a.left_trigger{
+    left: 0;
+    float: left;
+    padding: 5px 30px 5px 5px;
+    background:#333333 url(images/adresa20.png) no-repeat;    
+    background-position: 85% 55%;    
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-bottomright: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;    
+}
+a.left_trigger:hover {
+    padding-left: 15px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul li{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/***************************************************************************************/
+
+.right_panel {
+    padding: 5px 5px 0px 0px;
+    width: 215px;
+    /*    height: auto;*/
+    height: 345px;
+    right: 0;
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+}
+
+a.right_trigger{
+    right: 0;
+    float: right;
+    padding: 5px 5px 5px 30px;
+    background:#333333 url(images/kosik20.png) no-repeat;
+    background-position: 15% 55%;
+
+
+    text-align: right;
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-left-radius: 0px;   
+}
+
+a.right_trigger:hover {
+    padding-right: 15px;
+}
+
+/***************** Login form *********************/
+
+.login_form {
+    position: relative;
+    left: 0;
+    clear: left;
+    width: 200px;
+    color: #cccccc;
+    padding-top: 30px;
+}
+
+.form_element {
+    margin-top:3px;
+    margin-bottom:10px;
+    width: 80px;
+}
+
+.form_subblock {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+label {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    font-size: 12px;
+}
+input {
+    margin-top:2px;
+    width: 170px;
+    -moz-border-radius: 10px;
+    border: 1px solid gray;
+    padding: 3px 8px;
+}
+input[type=submit] {
+    width: 90px;
+    cursor: pointer;
+}
+
+.form_button {
+    margin-bottom: 15px;    
+}
+
+/****************************************************************/
+/*************** K O S I K *************************/
+/*****************************************************************/
+
+ul {list-style-type: none}
+img {padding-right: 20px; float:left}
+
+#infolist {
+/*    todo*/
+    width:220px;
+}
+
+#infolist h3 {
+    position: relative;
+    text-decoration: none;
+}
+
+#pokus1, #pokus2 {
+    text-decoration: none;
+}
+
+#infolist h3 .kosik_item_header {
+    font-size: 14px;
+    font-weight: normal;
+    color: #909c89;
+    width: 140px;
+    padding: 4px;
+    padding-left: 17px;
+    text-decoration: none;
+    display: block;
+    /*    clear: both;*/
+    /*    float: left;*/
+}
+
+/*#infolist h3*/
+#infolist h3 .kosik_delitem {
+    position: absolute;
+    right: 3px;
+    top: 5px;
+    z-index: 100;
+    background: url(images/kosik_delete24.png) center center no-repeat;
+    width: 24px;
+    height: 24px;
+    /*    height: 20px;*/
+    display: block;
+    /*    float: right;*/
+}
+#infolist h3 .kosik_plus {
+    position: absolute;
+    right: 56px;
+    top: 7px;
+    z-index: 100;
+    background-image: url(images/kosik_plus20.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    /*    height: 20px;*/
+    display: block;
+}
+#infolist h3 .kosik_minus {
+    position: absolute;
+    right: 35px;
+    top: 7px;
+    z-index: 100;
+    background-image: url(images/kosik_minus20.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    /*    height: 20px;*/
+    display: block;
+
+}
+
+#infolist.ui-accordion .ui-accordion-header .ui-icon {
+    /*    umiestnenie rozklikavacieho trojuholnika*/
+    left: 0;
+}
+
+#infolist.ui-accordion .ui-accordion-content {
+    /*    element vo vnutri harmonikovej polozky*/
+    padding: 5px;
+    padding-left: 20px;
+}
+
+#sumar h4 {
+    color: seashell;
+}
+
+#infolist .kosik_add_suroviny {
+    position: relative;
+    left: 0px;
+    padding: 0 0 15px 25px;
+/*    margin-bottom: 20px;*/
+/*    padding-left: 25px;*/
+    top: 7px;
+/*    z-index: 100;*/
+    background-image: url(images/kosik_pizza_add_suroviny20.png);
+    background-repeat: no-repeat;
+    font-size: 13px;
+/*    width: 20px;*/
+/*    height: 20px;*/
+    /*    height: 20px;*/
+    display: block;    
+}
+
+#infolist .kosik_pizza_suroviny {
+    position: relative;
+    list-style-image: url(images/kosik_pizza_del_suroviny16.png);
+    padding-left: 25px;
+    
+}
+
+#infolist .kosik_pizza_suroviny li {
+/*    list*/
+}
+
+#infolist .kosik_item_cena {
+    font-size: 12px;
+    padding: 0 0 0 0;
+    margin: 0;
+}
+/**************************************************/
+/*******************ponuka pizz********************/
+/**************************************************/
+
+#menu {
+    width: 216px;
+    height: 278px;
+    position: absolute;
+    top: 45px;
+    left: 2px;
+    overflow:  hidden;
+    list-style: none;
+    background-repeat:  repeat;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+}
+
+#menu li {
+    width:213px;
+    height: 80px;
+    background-color: whitesmoke;
+    position: relative;
+    top: 2px;
+    left: 1px;
+    margin-bottom: 0px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+}
+
+#menu li h3 {
+
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Palatino Linotype'    ;
+    color: red;
+}
+
+#menu li h5 {
+    color:black;
+    position: absolute;
+    top: 17px;
+    left: 5px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font: normal;
+    font-size: 9px;
+
+}
+
+
+.Pridat {
+    position: absolute;
+    left: 115px;
+    bottom: 5px;
+    color: white;
+    background-color: black;
+    border: 0px;
+    font: bold;
+    width: 95px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+}
+
+.Pridat_m {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    color: white;
+    background-color: black;
+    border: 0px;
+    font: bold;
+    width: 95px;
+
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+}
+
+
+.kinetic-moving-up {
+    border-top-color: green !important;
+}
+.kinetic-moving-down {
+    border-bottom-color: green !important;
+}
+.kinetic-moving-left {
+    border-left-color: green !important;
+}
+.kinetic-moving-right {
+    border-right-color: green !important;
+}
+.kinetic-decelerating-up {
+    border-top-color: red !important;
+}
+.kinetic-decelerating-down {
+    border-bottom-color: red !important;
+}
+.kinetic-decelerating-left {
+    border-left-color: red !important;
+}
+.kinetic-decelerating-right {
+    border-right-color: red !important;
+}
