@@ -62,6 +62,6 @@ $(document).ready(function(){
 
 function vypln_adresu() {
     document.getElementById('meno').value = "Ján Novotný";
-    document.getElementById('ulica').value = "Agátová 12";
-    document.getElementById('mesto').value = "Bratislava";
+    document.getElementById('ulica').value = "0949123456";
+    document.getElementById('mesto').value = "Agátová 12, Bratislava";
 }
