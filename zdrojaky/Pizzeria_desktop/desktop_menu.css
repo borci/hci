@@ -1,0 +1,143 @@
+
+/**************************************************/
+/*******************ponuka pizz********************/
+/**************************************************/
+
+#menu {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 80px;
+    left: 225px;
+    overflow:  hidden;
+    list-style: none;
+    background-repeat:  repeat;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+}
+
+#menu li {
+    width:213px;
+    height: 80px;
+    background-color: whitesmoke;
+    position: relative;
+    top: 2px;
+    left: 1px;
+    margin-bottom: 0px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+}
+
+#menu li h3 {
+
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Palatino Linotype'    ;
+    color: red;
+}
+
+#menu li h5 {
+    color:black;
+    position: absolute;
+    top: 17px;
+    left: 5px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font: normal;
+    font-size: 9px;
+
+}
+
+.Pridat {
+    position: absolute;
+    left: 115px;
+    bottom: 5px;
+    color: white;
+    background-color: black;
+    border: 0px;
+    font: bold;
+    width: 95px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+}
+
+.Pridat_m {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    color: white;
+    background-color: black;
+    border: 0px;
+    font: bold;
+    width: 95px;
+
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+}
+
+.kinetic-moving-up {
+    border-top-color: green !important;
+}
+.kinetic-moving-down {
+    border-bottom-color: green !important;
+}
+.kinetic-moving-left {
+    border-left-color: green !important;
+}
+.kinetic-moving-right {
+    border-right-color: green !important;
+}
+.kinetic-decelerating-up {
+    border-top-color: red !important;
+}
+.kinetic-decelerating-down {
+    border-bottom-color: red !important;
+}
+.kinetic-decelerating-left {
+    border-left-color: red !important;
+}
+.kinetic-decelerating-right {
+    border-right-color: red !important;
+}
+
