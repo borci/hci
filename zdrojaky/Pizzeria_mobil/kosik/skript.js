@@ -1,11 +1,13 @@
 $(document).ready(function(){
     $(".left_trigger").click(function(){
+        $(".right_trigger").toggle();
         $(".left_panel").toggle("fast");
         $(this).toggleClass("active");
         return false;
     });
                 
     $(".right_trigger").click(function(){
+        $(".left_trigger").toggle();
         $(".right_panel").toggle("fast");
         $(this).toggleClass("active");
         return false;
@@ -30,7 +32,7 @@ $(document).ready(function(){
 });
 
 function vypln_adresu() {
-    document.getElementById('meno').value = "Jožko Mrkvička";
-    document.getElementById('ulica').value = "Pod viaduktom 4";
-    document.getElementById('mesto').value = "Horná Dolná";
+    document.getElementById('meno').value = "Ján Novotný";
+    document.getElementById('ulica').value = "Agátová 12";
+    document.getElementById('mesto').value = "Bratislava";
 }
