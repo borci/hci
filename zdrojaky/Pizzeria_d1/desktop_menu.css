@@ -1,0 +1,154 @@
+#menu {
+    width: 630px;
+    height: 412px;
+    position: absolute;
+    top: 85px;
+    left: 260px;
+    overflow:  auto;
+    list-style: none;
+    background-repeat:  repeat;
+
+
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+    
+
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+}
+
+#menu li {
+    width:600px;
+    height: 100px;
+    background-color: #D7ECE8;
+    position: relative;
+    top: 0px;
+    left: 1px;
+    margin-bottom: 0px;
+    border: 2px;
+    border-bottom: 1px;
+    border-color: black;
+    border-style: solid;
+
+    -moz-border-radius-topleft: 50px;
+    -webkit-border-top-left-radius: 50px;
+    -moz-border-radius-bottomleft: 50px;
+    -webkit-border-bottom-left-radius: 50px;
+
+    -moz-border-radius-topright: 50px;
+    -webkit-border-top-right-radius: 50px;
+    -moz-border-radius-bottomright: 50px;
+    -webkit-border-bottom-right-radius: 50px;
+
+}
+
+#menu li h3 {
+    top: 0px;
+    padding: 0px;
+    margin: auto;
+    padding-bottom: 2px;
+    border: 0px;
+    font-family: 'Palatino Linotype'    ;
+    font-size: 18px;
+    color: green;
+    font: bolder;
+}
+
+#menu li h5 {
+    color:black;
+    position: absolute;
+    top: 24px;
+    left: 5px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font: normal;
+  
+    font-size: 12px;
+}
+
+.Pridat {
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+    color: black;
+    background-color: #49BC22;
+    border: 0px;
+    font: bold;
+    width: 100px;
+    height: 47px;
+    
+     font-size: 17px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-radius-bottomright: 45px;
+    -webkit-border-bottom-right-radius: 45px;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+}
+
+.Pridat_m {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    color: black;
+    background-color: #49BC22;
+    border: 0px;
+    font: bold;
+    width: 100px;
+    height: 47px;
+    font-size: 17px;
+
+    -moz-border-radius-topright: 45px;
+    -webkit-border-top-right-radius: 45px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+}
+.pizza {
+    width: 380px;
+    height: 98px;
+    position: absolute;
+    left: 110px;
+    top: 1px;
+}
+
+#menu li p {
+    color:black;
+    position: absolute;
+    top: 24px;
+    left: 5px;
+    padding: 0px;
+    margin: auto;
+    line-height: 14px;
+    font-size: 12px;
+    font-style: normal;
+
+
+}
+#menu li .obr_pizze {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 94px;
+    height: 94px;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 45px;
+}
