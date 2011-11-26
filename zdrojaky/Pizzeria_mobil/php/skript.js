@@ -32,7 +32,35 @@ $(document).ready(function(){
         });
         $(nadpis).fadeOut("medium", function(){
             $(nadpis).remove();
+            update_platit_spolu();
         });
+        
+        return false;
+    });
+
+    $('#infolist h3 .kosik_plus').click(function(){
+         var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
+         var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
+         suma /= pocet;        
+         pocet = Number(pocet) + 1;        
+         suma *= pocet;        
+         $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
+         $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
+         update_platit_spolu();
+         return false;
+    });
+
+    $('#infolist h3 .kosik_minus').click(function(){
+         var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
+         var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
+         suma /= pocet;
+         pocet = Number(pocet) - 1;
+         if (pocet < 1)
+            return false;
+         suma *= pocet;
+         $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
+         $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
+        update_platit_spolu();
         return false;
     });
     
@@ -58,7 +86,14 @@ $(document).ready(function(){
     });
 });
 
-
+function update_platit_spolu() {
+    $('#kosik_sumar .kosik_suma .suma').text(0);
+    $('#infolist h3').each(function() {
+        var cena_pizze = $(this).children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
+        var suma = Number($('#kosik_sumar .kosik_suma .suma').text()) + Number(cena_pizze);
+        $('#kosik_sumar .kosik_suma .suma').text(suma);
+    });
+}
 
 function vypln_adresu() {
     document.getElementById('meno').value = "Ján Novotný";
