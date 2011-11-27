@@ -76,6 +76,7 @@ function update_platit_spolu() {
 function on_clicked_pridat_suroviny() {
     var zoznam = $(this).next();
     pridat_suroviny(zoznam);
+    pridat_suroviny_test(zoznam);
 }
 
 function vloz_surovinu(zoznam, surovina, cena) { // zavolaj tuto funkciu, ked chces, aby sa pridala do nejakeho zoznamu nova surovina
@@ -91,9 +92,9 @@ function vloz_surovinu(zoznam, surovina, cena) { // zavolaj tuto funkciu, ked ch
     
 }
 
-//function pridat_suroviny(zoznam) { // TOTO je iba testovacie demo, realna funkcia je inde
-//    vloz_surovinu(zoznam, "surka", 2);
-//}
+function pridat_suroviny_test(zoznam) { // TOTO je iba testovacie demo, realna funkcia je inde
+    vloz_surovinu(zoznam, "surka", 2);
+}
 
 function on_kosik_objednaj() {
     alert('Objednavka odoslana');
