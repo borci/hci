@@ -1,0 +1,207 @@
+/**************************************************/
+/*******************ponuka pizz********************/
+/**************************************************/
+
+#sipka_h {
+    width: 25px;
+    height: 20px;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 170px;
+    top: 35px;
+}
+
+#sipka_d {
+    width: 25px;
+    height: 20px;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 170px;
+    top: 307px;
+}
+
+#sipka_h2 {
+    width: 25px;
+    height: 20px;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 10px;
+    top: 35px;
+    z-index: 2;
+}
+
+#sipka_d2 {
+    width: 25px;
+    height: 20px;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 10px;
+    top: 307px;
+    z-index: 2;
+}
+
+
+.menu {
+    width: 216px;
+    height: 252px;
+    position: absolute;
+    top: 55px;
+    left: 2px;
+    overflow:  hidden;
+    list-style: none;
+    background-repeat:  repeat;
+
+    -moz-user-select: none;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+}
+
+.menu li {
+    width:211px;
+    height: 81px;
+    background-color: #D7ECE8;
+    position: relative;
+    top: 0px;
+    left: 1px;
+    margin-bottom: 0px;
+    border: 2px;
+    border-bottom: 1px;
+    border-color: black;
+    border-style: solid;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+}
+
+.menu li h3 {
+
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 2px;
+    border: 0px;
+    font-family: 'Palatino Linotype';
+    font-size: 14px;
+    color: green;
+}
+
+.menu li h5 {
+    color:black;
+    position: absolute;
+    top: 19px;
+    left: 5px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font: normal;
+    font-size: 9px;
+
+}
+
+.menu li p {
+    color:black;
+    position: absolute;
+    top: 17px;
+    left: 5px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font: normal;
+    font-size: 10px;
+    line-height: 11px;
+
+}
+
+.Pridat {
+    position: absolute;
+    left: 112px;
+    bottom: 5px;
+    color: black;
+    background-color: #49BC22;
+    border: 0px;
+    font: bold;
+    width: 95px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+}
+
+.Pridat_m {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    color: black;
+    background-color: #49BC22;
+    border: 0px;
+    font: bold;
+    width: 95px;
+
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+}
+
+
+.kinetic-moving-up {
+    border-top-color: green !important;
+}
+.kinetic-moving-down {
+    border-bottom-color: green !important;
+}
+.kinetic-moving-left {
+    border-left-color: green !important;
+}
+.kinetic-moving-right {
+    border-right-color: green !important;
+}
+.kinetic-decelerating-up {
+    border-top-color: red !important;
+}
+.kinetic-decelerating-down {
+    border-bottom-color: red !important;
+}
+.kinetic-decelerating-left {
+    border-left-color: red !important;
+}
+.kinetic-decelerating-right {
+    border-right-color: red !important;
+}
