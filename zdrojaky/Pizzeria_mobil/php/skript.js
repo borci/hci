@@ -62,6 +62,8 @@ $(document).ready(function(){
         update_platit_spolu();        
         return false;
     });
+    
+    $('.kosik_add_suroviny').click(on_clicked_pridat_suroviny);
 
     // inicializacia centralnej casti (menu pizze)    
     init_menu_pizze();

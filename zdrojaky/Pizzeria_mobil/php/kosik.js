@@ -69,3 +69,9 @@ function update_platit_spolu() {
         $('#kosik_sumar .kosik_suma .suma').text(suma);
     });
 }
+
+function on_clicked_pridat_suroviny() {
+    var zoznam = $(this).next();
+    pridat_suroviny(zoznam);
+//    zoznam.append('<li>skuska</li>');
+}
