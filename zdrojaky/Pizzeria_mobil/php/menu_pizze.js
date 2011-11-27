@@ -23,6 +23,27 @@ function init_menu_pizze() {
     });
     
     // **************************************************************************
+    // ************************ pridavanie scrollovanie *************************
+    // **************************************************************************
+    $('.pridavanie').kinetic();
+    $('#left').click(function(){
+        $('.pridavanie').kinetic('start', {
+            velocity: 0
+        });
+    });
+    $('#right').click(function(){
+        $('.pridavanie').kinetic('start', {
+            velocity: 0
+        });
+    });
+    $('#end').click(function(){
+        $('.pridavanie').kinetic('end');
+    });
+    $('#stop').click(function(){
+        $('.pridavanie').kinetic('stop');
+    });
+    
+    // **************************************************************************
     // **************************** filter scrollovanie *************************
     // **************************************************************************
     
@@ -49,8 +70,8 @@ function init_menu_pizze() {
     // **************************************************************************
     
     $('.pridavanie input').each( function () {
-                        $(this).removeAttr('checked');
-                    });
+        $(this).removeAttr('checked');
+    });
     
     
          
@@ -257,7 +278,10 @@ function init_menu_pizze() {
 		var surovina = surovina_cena_pole[0];
 		var cena = surovina_cena_pole[1];
 		$('#button_t').text(surovina);
-		vloz_surovinu(obj_pizza, surovina, cena);
+		
+		if ($(this).is(':checked')) {  vloz_surovinu(obj_pizza, surovina, cena);  }
+		else 
+		odstran_surovinu(obj_pizza, surovina);
 		});	 
 }
 
@@ -266,6 +290,11 @@ function init_menu_pizze() {
 function pridat_suroviny(zoznam) {
 	$('.pridavanie').show();
 	obj_pizza = zoznam;
+	var pole = new Array();
+	pole = get_suroviny(zoznam);
+	
+	for(var j=0;j<pole.length;j++) { checkni(pole[j]); }
+	
 	}
 // **************************************************************************
 // *********************** funkcie k filtrovaniu ****************************
@@ -307,6 +336,14 @@ function obsahuje(a, e) {
 function obsahuje2(a, e) {
  	for(var j=0;j<a.length;j++)    if(a[j]==e) {return true;}
         return false;
+}
+
+function checkni(a) {
+	$('.pridavanie input').each(function() {
+		var v = $(this).val();
+		var p = v.split('@');
+		if (p[0] == a) {$(this).attr('checked','checked');}
+	});
 }
 
 // *****************************************************************************
