@@ -81,22 +81,45 @@ function on_clicked_pridat_suroviny() {
 
 function vloz_surovinu(zoznam, surovina, cena) { // zavolaj tuto funkciu, ked chces, aby sa pridala do nejakeho zoznamu nova surovina
     zoznam.append('<li><span class="surovina_delete"></span><span class="surovina_nazov">' + surovina + '</span> <span class="surovina_cena">' + cena + '</span><span>€</span>' + '</li>');
-    zoznam.children().last().children('.surovina_delete').click(function() {
+    
+    // prepocitavanie ceny
+    var pridana_surovina = zoznam.children().last();
+    var kosik_item_header = pridana_surovina.parent().parent().prev().children(".kosik_item_header");
+    var celkova_suma = Number(kosik_item_header.children(".kosik_pizza_cena").children(".suma").text());
+    var pocet_pizz = Number(kosik_item_header.children(".kosik_pocet").text());
+    var nova_celkova_suma = celkova_suma + pocet_pizz * Number(cena);
+    kosik_item_header.children(".kosik_pizza_cena").children(".suma").text(nova_celkova_suma);
+    update_platit_spolu();
+    
+    // zaregistrovanie handleru na odstranenie
+    pridana_surovina.children('.surovina_delete').click(function() {
         odstran_surovinu(zoznam, surovina);
-//         $(this).parent().fadeOut("medium", function(){
-//            $(this).remove();
-//            update_platit_spolu();
-//        });
+    //         $(this).parent().fadeOut("medium", function(){
+    //            $(this).remove();
+    //            update_platit_spolu();
+    //        });
     });
 }
 
 function odstran_surovinu(zoznam, surovina) { // zavolaj tuto funkciu, ked chces odstranit nejaku surovinu zo zoznamu pridavnych surovin
     zoznam.children().each(function() { // zavola sa na kazdy <li>
         if ($(this).children('.surovina_nazov').text() == surovina) {
-                $(this).fadeOut("mediu", function() {
-                    $(this).remove();
-                });
-            }
+            // najdena surovina na zmazanie
+                
+            // prepocitanie ceny
+            var cena_suroviny = Number($(this).children('.surovina_cena').text());
+            var kosik_item_header = $(this).parent().parent().prev().children(".kosik_item_header");
+            var celkova_suma = Number(kosik_item_header.children(".kosik_pizza_cena").children(".suma").text());
+            var pocet_pizz = Number(kosik_item_header.children(".kosik_pocet").text());
+            var nova_celkova_suma = celkova_suma - pocet_pizz * cena_suroviny;
+            kosik_item_header.children(".kosik_pizza_cena").children(".suma").text(nova_celkova_suma);
+            update_platit_spolu();
+                
+            // odstranenie z efektom
+            $(this).fadeOut("mediu", function() {
+                $(this).remove();
+            });
+        }
     });
 }
 
@@ -108,10 +131,10 @@ function get_suroviny(zoznam) {
     })
     return nazvy;
 }
-//
-//function pridat_suroviny_test(zoznam) { // TOTO je iba testovacie demo, realna funkcia je inde
-//    vloz_surovinu(zoznam, "surka", 2);
-//}
+
+function pridat_suroviny_test(zoznam) { // TOTO je iba testovacie demo, realna funkcia je inde
+    vloz_surovinu(zoznam, "surka", 2);
+}
 
 function on_kosik_objednaj() {
     alert('Objednavka odoslana');
