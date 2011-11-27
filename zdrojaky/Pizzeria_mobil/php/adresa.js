@@ -35,8 +35,11 @@ function loginUser()
                 $('#adresa_kontakt').attr("value", response["kontakt"]);
                 $('#adresa_adresa').attr("value", response["adresa"]);
                 
-                $(obsah).fadeOut("medium", function(){
-                    $(obsah).remove();
+                $("#adresa_prihlasit").fadeOut("medium", function(){
+                    $("#adresa_prihlasit").remove();
+                });
+                $("#adresa_registrovat").fadeOut("medium", function(){
+                    $("#adresa_prihlasit").remove();
                 });
                 
                 var nadpis = $(this).parent();
