@@ -1,4 +1,5 @@
 <div class="pizze_menu"> 
+	<button id="button_t"> test </button>
 	<button id="button_f"> filtruj </button>
 	
 	<img id="sipka_h" src="images/sh.jpeg" alt="sipka_hore" > </img>
@@ -11,39 +12,39 @@
 					 <li class="Paradajkový základ,mozzarella,niva,parmezán,balkánsky syr">
                     <center><h3 class="meno_pizze"><b> Quatro </b></h3></center>
                     <p class="tags">Paradajkový základ, mozzarella, niva, parmezán, balkánsky syr</p>
-                    <button class="Pridat" TITLE="Pridat do kosika velku pizzu"> 450g   4,5€ </button>
-                    <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu"> 380g   4,2€ </button>
+                    <button class="Pridat" TITLE="Pridat do kosika velku pizzu" value="Quatro velká @ 4.5"> 450g   4,5€ </button>
+                    <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu" value="Quatro malá @ 4.2"> 380g   4,2€ </button>
                 </li>
                 <li class="Paradajkový základ,mozzarella,niva,parmezán,balkánsky syr,paradajky">
                     <center><h3 class="meno_pizze"> Quatro formaggi </h3></center>
                     <p class="tags">Paradajkový základ, mozzarella, niva, parmezán, balkánsky syr, paradajky</p>
-                    <button class="Pridat" TITLE="Pridat do kosika velku pizzu"> 450g 4,5€ </button>
-                    <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu"> 380g 4,2€ </button>
+                    <button class="Pridat" TITLE="Pridat do kosika velku pizzu" value="Quatro formaggi velká @ 4.5"> 450g 4,5€ </button>
+                    <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu" value="Quatro formaggi velká @ 4.5"> 380g 4,2€ </button>
                 </li>
                 <li class="Paradajkový základ,mozzarella,šunka,klobása">
                     <center><h3 class="meno_pizze"> Klobásová </h3></center>
                     <p class="tags">Paradajkový základ, mozzarella, šunka, klobása </p>
-                    <button class="Pridat" TITLE="Pridat do kosika velku pizzu"> 450g 4,5€ </button>
-                    <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu"> 380g 4,2€ </button>
+                    <button class="Pridat" TITLE="Pridat do kosika velku pizzu" value="Klobásová velká @ 4.5"> 450g 4,5€ </button>
+                    <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu" value="Klobásová malá @ 4.5"> 380g 4,2€ </button>
                 </li>
                 <li class="Paradajkový základ,mozzarella,šunka,ananás">
                     <div class="pizza">
                     <center><h3 class="meno_pizze"> Hawai </h3></center>
                     <p class="tags">Paradajkový základ, mozzarella, šunka, ananás</p></div>
-                    <button class="Pridat" TITLE="Pridat do kosika velku pizzu"> 450g 4,5€ </button>
-                    <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu"> 380g 4,2€ </button>
+                    <button class="Pridat" TITLE="Pridat do kosika velku pizzu" value="Hawai velká @ 4.5"> 450g 4,5€ </button>
+                    <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu" value="Hawai malá @ 4.5"> 380g 4,2€ </button>
                 </li>
                 <li class="Paradajkový základ,mozzarella,šunka">
                     <center><h3 class="meno_pizze"> Proscuitto </h3></center>
                     <p class="tags">Paradajkový základ, mozzarella, šunka </p>
-                    <button class="Pridat" TITLE="Pridat do kosika velku pizzu"> 450g 4,5€ </button>
-                    <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu"> 380g 4,2€ </button>
+                    <button class="Pridat" TITLE="Pridat do kosika velku pizzu" value="Proscuitto velká @ 4.5"> 450g 4,5€ </button>
+                    <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu" value="Proscuitto malá @ 4.5"> 380g 4,2€ </button>
                 </li>
                 <li class="Paradajkový základ,mozzarella,salama,šunka">
                     <center><h3 class="meno_pizze"> Salamova </h3></center>
                     <p class="tags">Paradajkovy zaklad, mozzarella, salama, šunka</p>
-                    <button class="Pridat" TITLE="Pridat do kosika velku pizzu"> 450g 4,5€ </button>
-                    <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu"> 380g 4,2€ </button>
+                    <button class="Pridat" TITLE="Pridat do kosika velku pizzu" value="Salamova velká @ 4.5"> 450g 4,5€ </button>
+                    <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu" value="Salamova malá @ 4.5"> 380g 4,2€ </button>
                 </li>
       </ul>
 
@@ -70,4 +71,28 @@
 			<p> Iné </p>
 			<li><input type="checkbox" value="smotana" id="filterIDall" ></input><label for="filterIDall">smotana</label></li>
 </ul>
+
+<ul class="pridavanie"> 
+			<p> Mäso </p>
+			<li><input type="checkbox" value="kuracie mäso@0.3" id="filterIDall" ></input><label for="filterIDall">kuracie mäso 0.3 €</label></li>
+			<li><input type="checkbox" value="šunka@0.3" id="filterIDall" ></input><label for="filterIDall">šunka 0.3 €</label></li>
+			<li><input type="checkbox" value="salama@0.3" id="filterIDall" ></input><label for="filterIDall">salama 0.3 €</label></li>
+			<li><input type="checkbox" value="slanina@0.3" id="filterIDall" ></input><label for="filterIDall">slanina 0.3 €</label></li>
+			<p> Syry </p>
+			<li><input type="checkbox" value="balkánsky syr@0.3" id="filterIDall" ></input><label for="filterIDall">balkánsky syr 0.3 €</label></li>
+			<li><input type="checkbox" value="mozzarella@0.3" id="filterIDall" ></input><label for="filterIDall">mozzarella 0.3 €</label></li>
+			<li><input type="checkbox" value="niva@0.3" id="filterIDall" ></input><label for="filterIDall">niva 0.3 €</label></li>
+			<li><input type="checkbox" value="parmezán@0.3" id="filterIDall" ></input><label for="filterIDall">parmezán 0.3 €</label></li>
+			<p> Zelenina </p>
+			<li><input type="checkbox" value="ananás@0.3" id="filterIDall" ></input><label for="filterIDall">ananás 0.3 €</label></li>
+			<li><input type="checkbox" value="cibuľa@0.3" id="filterIDall" ></input><label for="filterIDall">cibuľa 0.3 €</label></li>
+			<li><input type="checkbox" value="čily papričky@0.3" id="filterIDall" ></input><label for="filterIDall">čily papričky 0.3 €</label></li>
+			<li><input type="checkbox" value="feferóny@0.3" id="filterIDall" ></input><label for="filterIDall">feferóny 0.3 €</label></li>
+			<li><input type="checkbox" value="hrášok@0.3" id="filterIDall" ></input><label for="filterIDall">hrášok 0.3 €</label></li>
+			<li><input type="checkbox" value="kukurica@0.3" id="filterIDall" ></input><label for="filterIDall">kukurica 0.3 €</label></li>
+			<li><input type="checkbox" value="paradajky@0.3" id="filterIDall" ></input><label for="filterIDall">paradajky 0.3 €</label></li>
+			<p> Iné </p>
+			<li><input type="checkbox" value="smotana@0.3" id="filterIDall" ></input><label for="filterIDall">smotana 0.3 €</label></li>
+</ul>
+
 </div>
