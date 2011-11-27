@@ -73,5 +73,13 @@ function update_platit_spolu() {
 function on_clicked_pridat_suroviny() {
     var zoznam = $(this).next();
     pridat_suroviny(zoznam);
-//    zoznam.append('<li>skuska</li>');
 }
+
+function vloz_surovinu(zoznam, surovina) { // zavolaj tuto funkciu, ked chces, aby sa pridala do nejakeho zoznamu nova surovina
+    zoznam.append('<li>' + surovina + '</li>');
+}
+
+//function pridat_suroviny(zoznam) {
+//    zoznam.append('<li>skuska</li>');
+//}
+
