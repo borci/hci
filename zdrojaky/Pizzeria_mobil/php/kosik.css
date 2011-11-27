@@ -92,7 +92,7 @@ img {padding-right: 20px; float:left}
 
 #infolist .kosik_add_suroviny {
     position: relative;
-    left: 0px;
+    left: -5px;
     padding: 0 0 15px 25px;
     /*    margin-bottom: 20px;*/
     /*    padding-left: 25px;*/
@@ -104,13 +104,14 @@ img {padding-right: 20px; float:left}
     /*    width: 20px;*/
     /*    height: 20px;*/
     /*    height: 20px;*/
-    display: block;    
+    display: block;
+    cursor: pointer;
 }
 
 #infolist .kosik_pizza_suroviny {
     position: relative;
-/*    list-style-image: url(images/kosik_pizza_del_suroviny16.png);*/
-    padding-left: 20px;
+    /*    list-style-image: url(images/kosik_pizza_del_suroviny16.png);*/
+    padding-left: 10px;
 
 }
 
@@ -118,12 +119,8 @@ img {padding-right: 20px; float:left}
     background-image: url(images/kosik_pizza_del_suroviny16.png);
     background-repeat: no-repeat;
     padding: 0 20px 0 0;
-/*    padding-right: 20px;*/
+    /*    padding-right: 20px;*/
     left: 0px;
-    cursor: pointer;
-}
-
-#infolist .kosik_add_suroviny {
     cursor: pointer;
 }
 

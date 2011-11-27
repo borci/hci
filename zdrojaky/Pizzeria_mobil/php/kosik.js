@@ -5,7 +5,7 @@ function pridat_do_kosika(nazov_pizze, jednotkova_cena) {
     '</span> <span class="kosik_pizza_cena"><span class="suma">' +
     jednotkova_cena +
     '</span><span>€</span></span></span> <span class="kosik_plus"></span> <span class="kosik_minus"></span> <span class="kosik_delitem"></span> </h3>' +
-    '<div><span class="kosik_add_suroviny">Pridať suroviny</span> <ul class="kosik_pizza_suroviny"> <li>olivy</li> <li>šunka</li> </ul></div>';
+    '<div><span class="kosik_add_suroviny">Pridať suroviny</span> <ul class="kosik_pizza_suroviny"> </ul></div>';
     $('#infolist').append(newstr);
 
     // handler pre tlacidlo odstranit z kosika
