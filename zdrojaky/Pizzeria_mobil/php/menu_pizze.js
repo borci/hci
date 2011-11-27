@@ -1,5 +1,9 @@
+var obj_pizza;
+
 function init_menu_pizze() {
-//    ************ zoznam pizz ********************
+	// **************************************************************************
+	// *************************** zoznam pizz **********************************
+	// **************************************************************************
     $('.menu').kinetic();
     $('#left').click(function(){
         $('.menu').kinetic('start', {
@@ -16,11 +20,11 @@ function init_menu_pizze() {
     });
     $('#stop').click(function(){
         $('.menu').kinetic('stop');
-
-
     });
     
+    // **************************************************************************
     // **************************** filter scrollovanie *************************
+    // **************************************************************************
     
     $('.filter').kinetic();
     $('#left').click(function(){
@@ -40,10 +44,18 @@ function init_menu_pizze() {
         $('.filter').kinetic('stop');
     });
 
+	 // **************************************************************************
     // *********************************** filter *******************************
+    // **************************************************************************
     
-          
+    $('.pridavanie input').each( function () {
+                        $(this).removeAttr('checked');
+                    });
+    
+    
+         
     $('.filter').hide();
+    $('.pridavanie').hide();
    
 	 $('.menu').css('z-index','-1');
     $('.menu').animate({scrollTop: '10000px'},0);
@@ -169,13 +181,6 @@ function init_menu_pizze() {
 	arrayUniqueClasses = (unique(arrayClasses));            // ako v shelly :-)
 	
 	if (arrayUniqueClasses.length > 1) {
-		//$('<ul class="filter"><\/ul>').insertBefore('.menu');
-		//$('.body_div').append('<ul class="filter"></ul>');
-		
-			//$.each(arrayUniqueClasses, function() {
-			//if(this.length > 1) $('<li><input class="dynamicFilterInput" type="checkbox" id="'+this+'" value="'+this+'" id="filterID'+this+'" /><label for="filterID'+this+'">'+this+'<\/label><\/li>').appendTo('ul.filter');
-		//});
-
 		          $('.filter input').each( function () {
                         $(this).removeAttr('checked');
                     });
@@ -230,12 +235,41 @@ function init_menu_pizze() {
                }
         });
     }
-    //**************** filter koniec **********************
+    
+    // **************************************************************************
+    //************************ pridavanie do kosika *****************************
+    // **************************************************************************
+    $('.menu button').click( function() { 
+		 var meno_cena = $(this).val();
+		 var meno_cena_pole = meno_cena.split('@');
+		 var meno = meno_cena_pole[0];
+		 var cena = meno_cena_pole[1];
+		 pridat_do_kosika(meno,cena);
+		 });
+		
+	// **************************************************************************	 
+	// ************************** pridavanie surovin ****************************
+	// **************************************************************************
+	
+	$('.pridavanie input').click( function() {
+		var surovina_cena = $(this).val();
+		var surovina_cena_pole = surovina_cena.split('@');
+		var surovina = surovina_cena_pole[0];
+		var cena = surovina_cena_pole[1];
+		$('#button_t').text(surovina);
+		vloz_surovinu(obj_pizza, surovina, cena);
+		});	 
 }
 
+//***************** Pridavanie surovin ************************
 
-
-//***************** funkcie k filtrovaniu *********************
+function pridat_suroviny(zoznam) {
+	$('.pridavanie').show();
+	obj_pizza = zoznam;
+	}
+// **************************************************************************
+// *********************** funkcie k filtrovaniu ****************************
+// **************************************************************************
 
 function unique(a) {
 	tmp = new Array(0);
@@ -275,5 +309,6 @@ function obsahuje2(a, e) {
         return false;
 }
 
+// *****************************************************************************
 // *****************************************************************************
 
