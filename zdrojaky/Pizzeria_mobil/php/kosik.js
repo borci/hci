@@ -76,23 +76,44 @@ function update_platit_spolu() {
 function on_clicked_pridat_suroviny() {
     var zoznam = $(this).next();
     pridat_suroviny(zoznam);
-//    pridat_suroviny_test(zoznam);
+    pridat_suroviny_test(zoznam);
 }
 
 function vloz_surovinu(zoznam, surovina, cena) { // zavolaj tuto funkciu, ked chces, aby sa pridala do nejakeho zoznamu nova surovina
     zoznam.append('<li><span class="surovina_delete"></span><span class="surovina_nazov">' + surovina + '</span> <span class="surovina_cena">' + cena + '</span><span>€</span>' + '</li>');
     zoznam.children().last().children('.surovina_delete').click(function() {
-         $(this).parent().fadeOut("medium", function(){
-            $(this).remove();
-            update_platit_spolu();
-        });
+        odstran_surovinu(zoznam, surovina);
+//         $(this).parent().fadeOut("medium", function(){
+//            $(this).remove();
+//            update_platit_spolu();
+//        });
     });
 }
 
-function pridat_suroviny_test(zoznam) { // TOTO je iba testovacie demo, realna funkcia je inde
-    vloz_surovinu(zoznam, "surka", 2);
+function odstran_surovinu(zoznam, surovina) { // zavolaj tuto funkciu, ked chces odstranit nejaku surovinu zo zoznamu pridavnych surovin
+    zoznam.children().each(function() { // zavola sa na kazdy <li>
+        if ($(this).children('.surovina_nazov').text() == surovina) {
+                $(this).fadeOut("mediu", function() {
+                    $(this).remove();
+                });
+            }
+    });
 }
+
+function get_suroviny(zoznam) {
+    var nazvy = new Array();
+    zoznam.children().each(function() {
+        nazov = $(this).children('.surovina_nazov').text();
+        nazvy.push(nazov);
+    })
+    return nazvy;
+}
+//
+//function pridat_suroviny_test(zoznam) { // TOTO je iba testovacie demo, realna funkcia je inde
+//    vloz_surovinu(zoznam, "surka", 2);
+//}
 
 function on_kosik_objednaj() {
     alert('Objednavka odoslana');
+    
 }
