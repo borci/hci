@@ -75,11 +75,11 @@ function on_clicked_pridat_suroviny() {
     pridat_suroviny(zoznam);
 }
 
-function vloz_surovinu(zoznam, surovina) { // zavolaj tuto funkciu, ked chces, aby sa pridala do nejakeho zoznamu nova surovina
-    zoznam.append('<li>' + surovina + '</li>');
+function vloz_surovinu(zoznam, surovina, cena) { // zavolaj tuto funkciu, ked chces, aby sa pridala do nejakeho zoznamu nova surovina
+    zoznam.append('<li>' + surovina + ' ' + cena + '€' + '</li>');
 }
 
-//function pridat_suroviny(zoznam) {
-//    zoznam.append('<li>skuska</li>');
+//function pridat_suroviny(zoznam) { // TOTO je iba testovacie demo, realna funkcia je inde
+//    vloz_surovinu(zoznam, "surka", 2);
 //}
 
