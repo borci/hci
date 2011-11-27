@@ -64,6 +64,10 @@ $(document).ready(function(){
     });
     
     $('.kosik_add_suroviny').click(on_clicked_pridat_suroviny);
+    $('.kosik_button_objednat').click(function() {
+        on_kosik_objednaj();
+    });
+   
 
     // inicializacia centralnej casti (menu pizze)    
     init_menu_pizze();

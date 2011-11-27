@@ -79,10 +79,22 @@ function on_clicked_pridat_suroviny() {
 }
 
 function vloz_surovinu(zoznam, surovina, cena) { // zavolaj tuto funkciu, ked chces, aby sa pridala do nejakeho zoznamu nova surovina
-    zoznam.append('<li>' + surovina + ' ' + cena + '€' + '</li>');
+    zoznam.append('<li><span class="surovina_nazov">' + surovina + '</span> <span class="surovina_cena">' + cena + '</span><span>€</span>' + '</li>');
+    zoznam.children().last().click(function() {
+//        alert('a');
+        $(this).remove();
+//         $(nadpis).fadeOut("medium", function(){
+//            $(nadpis).remove();
+//            update_platit_spolu();
+//        });
+    });
+    
 }
 
 //function pridat_suroviny(zoznam) { // TOTO je iba testovacie demo, realna funkcia je inde
 //    vloz_surovinu(zoznam, "surka", 2);
 //}
 
+function on_kosik_objednaj() {
+    alert('Objednavka odoslana');
+}
