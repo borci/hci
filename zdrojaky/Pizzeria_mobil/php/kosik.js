@@ -76,7 +76,7 @@ function update_platit_spolu() {
 function on_clicked_pridat_suroviny() {
     var zoznam = $(this).next();
     pridat_suroviny(zoznam);
-    pridat_suroviny_test(zoznam);
+//    pridat_suroviny_test(zoznam);
 }
 
 function vloz_surovinu(zoznam, surovina, cena) { // zavolaj tuto funkciu, ked chces, aby sa pridala do nejakeho zoznamu nova surovina
