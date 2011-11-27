@@ -57,7 +57,8 @@ function pridat_do_kosika(nazov_pizze, jednotkova_cena) {
         active: false,
         header: 'h3'
     });
-
+    
+    update_platit_spolu();
 }
 
 function update_platit_spolu() {
