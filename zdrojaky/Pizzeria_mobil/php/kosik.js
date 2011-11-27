@@ -49,6 +49,9 @@ function pridat_do_kosika(nazov_pizze, jednotkova_cena) {
         update_platit_spolu();
         return false;
     });
+    
+    // handler pre tlacidlo pridat suroviny
+    $('#infolist div:last .kosik_add_suroviny').click(on_clicked_pridat_suroviny);
 
     // opatovne vytvorenie accordionu
     $('#infolist').accordion({
@@ -79,7 +82,7 @@ function vloz_surovinu(zoznam, surovina, cena) { // zavolaj tuto funkciu, ked ch
     zoznam.append('<li>' + surovina + ' ' + cena + '€' + '</li>');
 }
 
-//function pridat_suroviny(zoznam) { // TOTO je iba testovacie demo, realna funkcia je inde
-//    vloz_surovinu(zoznam, "surka", 2);
-//}
+function pridat_suroviny(zoznam) { // TOTO je iba testovacie demo, realna funkcia je inde
+    vloz_surovinu(zoznam, "surka", 2);
+}
 
