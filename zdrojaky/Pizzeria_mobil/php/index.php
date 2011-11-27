@@ -15,8 +15,9 @@
         <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 
         <script type="text/javascript" src="skript.js"></script>
-	<script type="text/javascript" src="adresa.js"></script>
-	<script type="text/javascript" src="menu_pizze.js"></script>
+        <script type="text/javascript" src="adresa.js"></script>
+        <script type="text/javascript" src="kosik.js"></script>
+        <script type="text/javascript" src="menu_pizze.js"></script>
 
     </head>
     <body>

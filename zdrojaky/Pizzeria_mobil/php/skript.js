@@ -1,5 +1,5 @@
 $(document).ready(function(){
-//    ******************** triggery pre vysuvanie panelov *****************
+    //    ******************** triggery pre vysuvanie panelov *****************
     $(".left_trigger").click(function(){
         $(".right_trigger").toggle();
         $(".left_panel").toggle("fast");
@@ -14,7 +14,7 @@ $(document).ready(function(){
         return false;
     });
             
-//    ******************* kosik ****************************
+    //    ******************* kosik ****************************
     $("#infolist").accordion({
         autoHeight: false,
         collapsible: true,
@@ -38,113 +38,31 @@ $(document).ready(function(){
     });
 
     $('#infolist h3 .kosik_plus').click(function(){ // TODO: delete this function
-         var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
-         var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
-         suma /= pocet;        
-         pocet = Number(pocet) + 1;        
-         suma *= pocet;        
-         $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
-         $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
-         update_platit_spolu();
-         return false;
-    });
-
-    $('#infolist h3 .kosik_minus').click(function(){ // TODO: delete this function
-         var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
-         var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
-         suma /= pocet;
-         pocet = Number(pocet) - 1;
-         if (pocet < 1)
-            return false;
-         suma *= pocet;
-         $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
-         $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
-        update_platit_spolu();        
-        return false;
-    });
-
-// inicializacia centralnej casti (menu pizze)    
-	init_menu_pizze();
-    
-    
-    
-    
-});
-
-function pridat_do_kosika(nazov_pizze, jednotkova_cena) {
-    $('#infolist').accordion("destroy"); // docasne zrusenie accordionu, aby sa mohla pridat nova polozka
-   var newstr = '<h3> <span class="kosik_item_header"> <span class="kosik_pocet">1</span> <span>x</span> <span>' +
-                nazov_pizze +
-                '</span> <span class="kosik_pizza_cena"><span class="suma">' +
-                jednotkova_cena +
-                '</span><span>€</span></span></span> <span class="kosik_plus"></span> <span class="kosik_minus"></span> <span class="kosik_delitem"></span> </h3>' +
-                '<div><span class="kosik_add_suroviny">Pridať suroviny</span> <ul class="kosik_pizza_suroviny"> <li>olivy</li> <li>šunka</li> </ul></div>';
-    $('#infolist').append(newstr);
-
-    // handler pre tlacidlo odstranit z kosika
-    $('#infolist h3:last .kosik_delitem').click(function(){
-        var nadpis = $(this).parent();
-        var obsah = $(nadpis).next();
-        $(obsah).fadeOut("medium", function(){
-            $(obsah).remove();
-        });
-        $(nadpis).fadeOut("medium", function(){
-            $(nadpis).remove();
-            update_platit_spolu();
-        });
-        return false;
-    });
-
-    // handler pre tlacidlo plus
-    $('#infolist h3:last .kosik_plus').click(function(){
-         var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
-         var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
-         suma /= pocet;
-         pocet = Number(pocet) + 1;
-         suma *= pocet;
-         $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
-         $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
-         update_platit_spolu();
-         return false;
-    });
-
-    // handler pre tlacidlo minus
-    $('#infolist h3:last .kosik_minus').click(function(){
-         var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
-         var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
-         suma /= pocet;
-         pocet = Number(pocet) - 1;
-         if (pocet < 1)
-            return false;
-         suma *= pocet;
-         $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
-         $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
+        var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
+        var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
+        suma /= pocet;        
+        pocet = Number(pocet) + 1;        
+        suma *= pocet;        
+        $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
+        $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
         update_platit_spolu();
         return false;
     });
 
-    // opatovne vytvorenie accordionu
-    $('#infolist').accordion({
-        autoHeight: false,
-        collapsible: true,
-        active: false,
-        header: 'h3'
+    $('#infolist h3 .kosik_minus').click(function(){ // TODO: delete this function
+        var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
+        var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
+        suma /= pocet;
+        pocet = Number(pocet) - 1;
+        if (pocet < 1)
+            return false;
+        suma *= pocet;
+        $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
+        $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
+        update_platit_spolu();        
+        return false;
     });
 
-}
-
-function update_platit_spolu() {
-    $('#kosik_sumar .kosik_suma .suma').text(0);
-    $('#infolist h3').each(function() {
-        var cena_pizze = $(this).children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
-        var suma = Number($('#kosik_sumar .kosik_suma .suma').text()) + Number(cena_pizze);
-        $('#kosik_sumar .kosik_suma .suma').text(suma);
-    });
-}
-
-function vypln_adresu() {
-    document.getElementById('meno').value = "Ján Novotný";
-    document.getElementById('ulica').value = "0949123456";
-    document.getElementById('mesto').value = "Agátová 12, Bratislava";
-}
-
+    // inicializacia centralnej casti (menu pizze)    
+    init_menu_pizze();
+});
