@@ -42,9 +42,9 @@ p {
     z-index:2;
     border: 2px;
     border-style: solid;
-      
+
     -moz-user-select: none;
-    
+
     -moz-border-radius-topright: 10px;
     -webkit-border-top-right-radius: 10px;
     -moz-border-radius-bottomright: 10px;
@@ -57,7 +57,7 @@ p {
 }
 
 .filter {
-	 width: 214px;
+    width: 214px;
     height: 248px;
     position: absolute;
     background-color: #D7ECE8;
@@ -66,12 +66,12 @@ p {
     font-size: 15px; 
     z-index:2;
     border: 0px;
-    
+
     overflow: hidden;
-    
-      
+
+
     -moz-user-select: none;
-    
+
     -moz-border-radius-topright: 10px;
     -webkit-border-top-right-radius: 10px;
     -moz-border-radius-bottomright: 10px;
@@ -81,53 +81,53 @@ p {
     -webkit-border-top-left-radius: 10px;
     -moz-border-radius-bottomleft: 10px;
     -webkit-border-bottom-left-radius: 10px;
-    
+
 
 }
 
 .filter p {
-	line-height: 20px; 
-	font-size: 14px;
-	padding: 0px;
-	margin: 0px;
-	margin-top: 3px;
-	margin-left: 40px;
-	color: green;
-	font-weight: bold;
+    line-height: 20px; 
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 3px;
+    margin-left: 40px;
+    color: green;
+    font-weight: bold;
 }
 
 .filter li {
-	position: relative;
-	top: 1px;
-	left: 1px;
-	width: 190px;
-	height: 15px;
-	border: 0px;
-	border-style: solid;
+    position: relative;
+    top: 1px;
+    left: 1px;
+    width: 190px;
+    height: 15px;
+    border: 0px;
+    border-style: solid;
 }
 
 .filter li input {
-	position: absolute;
-	top: 0px;
-	left: 5px;
-   width: 15px;
-   height: 15px;
-   float: left;
-   cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    float: left;
+    cursor: pointer;
 }
 
 .filter li label {
-	 height: 14px;
-	 width: 160px;
-	 position: absolute;
-	 top: -3px;
-	 left: 30px; 
+    height: 14px;
+    width: 160px;
+    position: absolute;
+    top: -3px;
+    left: 30px; 
     line-height: 15px;
     font-size: 13px;
 }
 
 #button_f {
-	 position: absolute;
+    position: absolute;
     left: 75px;
     top: 36px;
     color: black;
@@ -138,14 +138,13 @@ p {
     border-style: solid;
     -moz-border-radius-topright: 10px;
     -webkit-border-top-right-radius: 10px;
-    
+
 
     -moz-border-radius-topleft: 10px;
     -webkit-border-top-left-radius: 10px;
-   
+
 }
 /************** filtre ****************/
-
 
 /*--------------------------------------------*/
 
@@ -169,6 +168,7 @@ a.trigger{
     /*    background:#333333 url(images/plus.png) no-repeat;*/
     border:1px solid #444444;
     display: block;
+    z-index: 95;
 }
 a.trigger:hover{
     background-color: #222222;
@@ -181,8 +181,10 @@ a.trigger:hover{
     background: #000000;
     border:1px solid #111111;
     filter: alpha(opacity=85);
-/*    opacity: .85;*/
+    /*    opacity: .85;*/
     margin: 0 auto;
+    z-index: 90;
+
 }
 .panel p{
     margin: 0 0 15px 0;
@@ -265,7 +267,6 @@ a.right_trigger{
     padding: 5px 5px 5px 30px;
     background:#333333 url(images/kosik20.png) no-repeat;
     background-position: 15% 55%;
-
 
     text-align: right;
     -moz-border-radius-topleft: 20px;
@@ -353,7 +354,7 @@ img {padding-right: 20px; float:left}
     left: -5px;
     font-size: 14px;
     font-weight: normal;
-/*    color: #909c89;*/
+    /*    color: #909c89;*/
     width: 140px;
     padding: 8px;
     padding-left: 17px;
@@ -451,7 +452,7 @@ img {padding-right: 20px; float:left}
 #kosik_sumar {
     color: seashell;
     margin: 5px 0px 5px 10px;
-/*    padding-top: 30px;*/
+    /*    padding-top: 30px;*/
 }
 
 #kosik_sumar .kosik_suma {
@@ -459,14 +460,14 @@ img {padding-right: 20px; float:left}
     float: left;
     left: 1px;
     top: 4px;
-/*    padding: 25px 30px 0 0;*/
-/*    margin-top: 20px;*/
+    /*    padding: 25px 30px 0 0;*/
+    /*    margin-top: 20px;*/
     display: block;
-/*    margin: 0px 40px auto;*/
+    /*    margin: 0px 40px auto;*/
 }
 
 #kosik_sumar .kosik_button_objednat button {
-/*    position: absolute;*/
+    /*    position: absolute;*/
     position: relative;
     float: right;
     right: 1px;
@@ -485,9 +486,9 @@ img {padding-right: 20px; float:left}
 /**************************************************/
 
 #sipka_h {
-	width: 25px;
-	height: 20px;
-	 background: none;
+    width: 25px;
+    height: 20px;
+    background: none;
     padding: 0px;
     margin: 0px;
     position: absolute;
@@ -496,9 +497,9 @@ img {padding-right: 20px; float:left}
 }
 
 #sipka_d {
-	width: 25px;
-	height: 20px;
-	 background: none;
+    width: 25px;
+    height: 20px;
+    background: none;
     padding: 0px;
     margin: 0px;
     position: absolute;
@@ -507,27 +508,27 @@ img {padding-right: 20px; float:left}
 }
 
 #sipka_h2 {
-	width: 25px;
-	height: 20px;
-	background: none;
-   padding: 0px;
-   margin: 0px;
-   position: absolute;
-   left: 10px;
-   top: 35px;
-   z-index: 2;
+    width: 25px;
+    height: 20px;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 10px;
+    top: 35px;
+    z-index: 2;
 }
 
 #sipka_d2 {
-	width: 25px;
-	height: 20px;
-	background: none;
-   padding: 0px;
-   margin: 0px;
-   position: absolute;
-   left: 10px;
-   top: 307px;
-   z-index: 2;
+    width: 25px;
+    height: 20px;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 10px;
+    top: 307px;
+    z-index: 2;
 }
 
 
@@ -540,7 +541,7 @@ img {padding-right: 20px; float:left}
     overflow:  hidden;
     list-style: none;
     background-repeat:  repeat;
-    
+
     -moz-user-select: none;
 
     -moz-border-radius-topleft: 10px;
@@ -588,7 +589,7 @@ img {padding-right: 20px; float:left}
     margin: 0px;
     padding-bottom: 2px;
     border: 0px;
-    font-family: 'Palatino Linotype'    ;
+    font-family: 'Palatino Linotype';
     font-size: 14px;
     color: green;
 }
@@ -620,7 +621,6 @@ img {padding-right: 20px; float:left}
 
 }
 
-
 .Pridat {
     position: absolute;
     left: 112px;
@@ -639,7 +639,6 @@ img {padding-right: 20px; float:left}
     -webkit-border-top-left-radius: 10px;
     -moz-border-radius-bottomleft: 10px;
     -webkit-border-bottom-left-radius: 10px;
-
 }
 
 .Pridat_m {
