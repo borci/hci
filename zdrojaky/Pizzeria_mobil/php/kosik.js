@@ -49,6 +49,9 @@ function pridat_do_kosika(nazov_pizze, jednotkova_cena) {
         update_platit_spolu();
         return false;
     });
+    
+    // handler pre tlacidlo pridat suroviny
+    $('#infolist div:last .kosik_add_suroviny').click(on_clicked_pridat_suroviny);
 
     // opatovne vytvorenie accordionu
     $('#infolist').accordion({
