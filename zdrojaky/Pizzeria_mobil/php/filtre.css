@@ -66,6 +66,7 @@
     left: 30px; 
     line-height: 15px;
     font-size: 13px;
+    cursor: pointer;
 }
 
 #button_f {
@@ -78,6 +79,8 @@
     width: 60px;
     border: 1px;
     border-style: solid;
+    cursor: pointer;
+    
     -moz-border-radius-topright: 10px;
     -webkit-border-top-right-radius: 10px;
 

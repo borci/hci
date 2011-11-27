@@ -26,7 +26,7 @@
     height: 248px;
     position: absolute;
     background-color: #D7ECE8;
-    top: 57px;
+    top: 37px;
     left: 300px;
     font-size: 15px; 
     z-index:2;
@@ -88,6 +88,7 @@
     left: 30px; 
     line-height: 15px;
     font-size: 13px;
+    cursor: pointer;
 }
 
 #sipka_h {
@@ -132,6 +133,30 @@
     margin: 0px;
     position: absolute;
     left: 10px;
+    top: 307px;
+    z-index: 2;
+}
+
+#sipka_h3 {
+    width: 25px;
+    height: 20px;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 310px;
+    top: 15px;
+    z-index: 2;
+}
+
+#sipka_d3 {
+    width: 25px;
+    height: 20px;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 310px;
     top: 307px;
     z-index: 2;
 }
@@ -235,6 +260,8 @@
     border: 0px;
     font: bold;
     width: 95px;
+    cursor: pointer;
+    
     -moz-border-radius-topright: 10px;
     -webkit-border-top-right-radius: 10px;
     -moz-border-radius-bottomright: 10px;
@@ -255,6 +282,7 @@
     border: 0px;
     font: bold;
     width: 95px;
+    cursor: pointer;
 
     -moz-border-radius-topright: 10px;
     -webkit-border-top-right-radius: 10px;
