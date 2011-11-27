@@ -12,23 +12,23 @@
                     <input type="password" name="password" id="password" value="pass" />
                 </div>
                 <div class="form_button">
-                    <input class="button" type="submit" value="Prihlásiť" onclick="javascript:vypln_adresu();" />
-                    <input class="button" type="submit" value="Registrovať" />
+                    <input class="button" type="submit" value="Prihlásiť" onclick="loginUser();" id="adresa_prihlasit" />
+                    <input class="button" type="submit" value="Registrovať" onclick="registerUser();" id="adresa_registrovat" />
                 </div>
             </div>
 
             <div class="form_subblock">
                 <div class="form_element">
-                    <label for="meno">Meno:</label>
-                    <input type="text" name="meno" id="meno" />
+                    <label for="adresa_meno">Meno:</label>
+                    <input type="text" name="meno" id="adresa_meno" />
                 </div>
                 <div class="form_element">
-                    <label for="ulica">Kontakt:</label>
-                    <input type="text" name="ulica" id="ulica" />
+                    <label for="adresa_kontakt">Kontakt:</label>
+                    <input type="text" name="ulica" id="adresa_kontakt" />
                 </div>
                 <div class="form_element">
-                    <label for="mesto">Adresa:</label>
-                    <input type="text" name="mesto" id="mesto" />
+                    <label for="adresa_adresa">Adresa:</label>
+                    <input type="text" name="mesto" id="adresa_adresa" />
                 </div>
             </div>
         </form>

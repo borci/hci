@@ -23,7 +23,7 @@ $(document).ready(function(){
     });
 
     
-    $('#infolist h3 .kosik_delitem').click(function(){
+    $('#infolist h3 .kosik_delitem').click(function(){ // TODO: delete this function
         var nadpis = $(this).parent();
         var obsah = $(nadpis).next();
         $(obsah).fadeOut("medium", function(){
@@ -37,7 +37,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $('#infolist h3 .kosik_plus').click(function(){
+    $('#infolist h3 .kosik_plus').click(function(){ // TODO: delete this function
          var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
          var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
          suma /= pocet;        
@@ -49,7 +49,7 @@ $(document).ready(function(){
          return false;
     });
 
-    $('#infolist h3 .kosik_minus').click(function(){
+    $('#infolist h3 .kosik_minus').click(function(){ // TODO: delete this function
          var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
          var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
          suma /= pocet;

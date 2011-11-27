@@ -15,6 +15,7 @@
         <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 
         <script type="text/javascript" src="skript.js"></script>
+	<script type="text/javascript" src="adresa.js"></script>
 
     </head>
     <body>
