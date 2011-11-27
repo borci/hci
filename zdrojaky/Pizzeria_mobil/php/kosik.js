@@ -76,20 +76,17 @@ function update_platit_spolu() {
 function on_clicked_pridat_suroviny() {
     var zoznam = $(this).next();
     pridat_suroviny(zoznam);
-    pridat_suroviny_test(zoznam);
+//    pridat_suroviny_test(zoznam);
 }
 
 function vloz_surovinu(zoznam, surovina, cena) { // zavolaj tuto funkciu, ked chces, aby sa pridala do nejakeho zoznamu nova surovina
-    zoznam.append('<li><span class="surovina_nazov">' + surovina + '</span> <span class="surovina_cena">' + cena + '</span><span>€</span>' + '</li>');
-    zoznam.children().last().click(function() {
-//        alert('a');
-        $(this).remove();
-//         $(nadpis).fadeOut("medium", function(){
-//            $(nadpis).remove();
-//            update_platit_spolu();
-//        });
+    zoznam.append('<li><span class="surovina_delete"></span><span class="surovina_nazov">' + surovina + '</span> <span class="surovina_cena">' + cena + '</span><span>€</span>' + '</li>');
+    zoznam.children().last().children('.surovina_delete').click(function() {
+         $(this).parent().fadeOut("medium", function(){
+            $(this).remove();
+            update_platit_spolu();
+        });
     });
-    
 }
 
 function pridat_suroviny_test(zoznam) { // TOTO je iba testovacie demo, realna funkcia je inde
