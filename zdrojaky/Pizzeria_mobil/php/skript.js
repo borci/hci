@@ -64,22 +64,22 @@ $(document).ready(function(){
     });
     
 //    ************ zoznam pizz ********************
-    $('#menu').kinetic();
+    $('.menu').kinetic();
     $('#left').click(function(){
-        $('#menu').kinetic('start', {
+        $('.menu').kinetic('start', {
             velocity: 0
         });
     });
     $('#right').click(function(){
-        $('#menu').kinetic('start', {
+        $('.menu').kinetic('start', {
             velocity: 0
         });
     });
     $('#end').click(function(){
-        $('#menu').kinetic('end');
+        $('.menu').kinetic('end');
     });
     $('#stop').click(function(){
-        $('#menu').kinetic('stop');
+        $('.menu').kinetic('stop');
 
 
     });
