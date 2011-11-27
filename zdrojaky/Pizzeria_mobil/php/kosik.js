@@ -82,7 +82,7 @@ function vloz_surovinu(zoznam, surovina, cena) { // zavolaj tuto funkciu, ked ch
     zoznam.append('<li>' + surovina + ' ' + cena + '€' + '</li>');
 }
 
-function pridat_suroviny(zoznam) { // TOTO je iba testovacie demo, realna funkcia je inde
-    vloz_surovinu(zoznam, "surka", 2);
-}
+//function pridat_suroviny(zoznam) { // TOTO je iba testovacie demo, realna funkcia je inde
+//    vloz_surovinu(zoznam, "surka", 2);
+//}
 
