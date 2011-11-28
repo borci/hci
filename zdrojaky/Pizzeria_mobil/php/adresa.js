@@ -1,5 +1,6 @@
 function init_adresa()
 {
+//    
 //    $('#adresa_prihlasit').click(test);
 //    $('#adresa_prihlasit').click(loginUser);
 //    $('#adresa_odhlasit');

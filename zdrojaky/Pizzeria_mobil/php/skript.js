@@ -22,4 +22,5 @@ $(document).ready(function(){
 
     // inicializacia centralnej casti (menu pizze)    
     init_menu_pizze();
+    
 });
