@@ -1,9 +1,8 @@
 function pridat_do_kosika(nazov_pizze, jednotkova_cena) {
     $('#infolist').accordion("destroy"); // docasne zrusenie accordionu, aby sa mohla pridat nova polozka
-    var newstr = '<h3> <span class="kosik_item_header"> <span class="kosik_pocet">1</span> <span>x</span> <span>' +
-    nazov_pizze +
-    '</span> <span class="kosik_pizza_cena"><span class="suma">' +
-    jednotkova_cena +
+    var newstr = '<h3> <span class="kosik_item_header"> <span class="kosik_pocet">1</span> <span>x</span> <span>' + nazov_pizze +
+    '</span> <span class="kosik_pizza_cena"><span class="jednotkova_cena">' + jednotkova_cena +
+    '</span> <span class="suma">' + jednotkova_cena +
     '</span><span>€</span></span></span> <span class="kosik_plus"></span> <span class="kosik_minus"></span> <span class="kosik_delitem"></span> </h3>' +
     '<div><span class="kosik_add_suroviny">Pridať suroviny</span> <ul class="kosik_pizza_suroviny"> </ul></div>';
     $('#infolist').append(newstr);
@@ -24,28 +23,22 @@ function pridat_do_kosika(nazov_pizze, jednotkova_cena) {
 
     // handler pre tlacidlo plus
     $('#infolist h3:last .kosik_plus').click(function(){
-        var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
-        var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
-        suma /= pocet;
-        pocet = Number(pocet) + 1;
-        suma *= pocet;
+        var pocet = Number($(this).parent().children(".kosik_item_header").children(".kosik_pocet").html());
+        pocet += 1;
         $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
-        $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
+
         update_platit_spolu();
         return false;
     });
 
     // handler pre tlacidlo minus
     $('#infolist h3:last .kosik_minus').click(function(){
-        var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
-        var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
-        suma /= pocet;
-        pocet = Number(pocet) - 1;
+        var pocet = Number($(this).parent().children(".kosik_item_header").children(".kosik_pocet").html());
+        pocet -= 1;
         if (pocet < 1)
             return false;
-        suma *= pocet;
         $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
-        $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
+
         update_platit_spolu();
         return false;
     });
@@ -64,13 +57,25 @@ function pridat_do_kosika(nazov_pizze, jednotkova_cena) {
     update_platit_spolu();
 }
 
-function update_platit_spolu() {
+function roundit(cislo) {
+    return Math.round(cislo * 100) / 100;
+}
+
+function update_platit_spolu() { // funckia updatuje najskor sumy za jendotlive pizze, a potom aj celkovu sumu za objednavku
     $('#kosik_sumar .kosik_suma .suma').text(0);
+    var objednavka_suma = 0;
     $('#infolist h3').each(function() {
-        var cena_pizze = $(this).children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
-        var suma = Number($('#kosik_sumar .kosik_suma .suma').text()) + Number(cena_pizze);
-        $('#kosik_sumar .kosik_suma .suma').text(suma);
+        // 1.) update sumu kazdej pizze
+        var jednotkova_cena = Number($(this).children(".kosik_item_header").children(".kosik_pizza_cena").children(".jednotkova_cena").text());
+        var pocet_pizz = Number($(this).children(".kosik_item_header").children(".kosik_pocet").text());
+        var pizza_suma = roundit(jednotkova_cena * pocet_pizz);
+        $(this).children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(pizza_suma);
+        
+        // 2.) zapocitanie do sumy objednavky
+        objednavka_suma += pizza_suma;
     });
+    // 3.) aktualizovanie html sumy objednavky
+    $('#kosik_sumar .kosik_suma .suma').text(objednavka_suma);
 }
 
 function on_clicked_pridat_suroviny() {
@@ -83,12 +88,12 @@ function vloz_surovinu(zoznam, surovina, cena) { // zavolaj tuto funkciu, ked ch
     zoznam.append('<li><span class="surovina_delete"></span><span class="surovina_nazov">' + surovina + '</span> <span class="surovina_cena">' + cena + '</span><span>€</span>' + '</li>');
     
     // prepocitavanie ceny
+    var jednotkova_cena = Number(zoznam.parent().prev().children(".kosik_item_header").children(".kosik_pizza_cena").children(".jednotkova_cena").text());
+    jednotkova_cena += Number(cena);
+    zoznam.parent().prev().children(".kosik_item_header").children(".kosik_pizza_cena").children(".jednotkova_cena").text(jednotkova_cena);
+    
+
     var pridana_surovina = zoznam.children().last();
-    var kosik_item_header = pridana_surovina.parent().parent().prev().children(".kosik_item_header");
-    var celkova_suma = Number(kosik_item_header.children(".kosik_pizza_cena").children(".suma").text());
-    var pocet_pizz = Number(kosik_item_header.children(".kosik_pocet").text());
-    var nova_celkova_suma = celkova_suma + pocet_pizz * Number(cena);
-    kosik_item_header.children(".kosik_pizza_cena").children(".suma").text(nova_celkova_suma);
     update_platit_spolu();
     
     // zaregistrovanie handleru na odstranenie
@@ -108,11 +113,10 @@ function odstran_surovinu(zoznam, surovina) { // zavolaj tuto funkciu, ked chces
                 
             // prepocitanie ceny
             var cena_suroviny = Number($(this).children('.surovina_cena').text());
-            var kosik_item_header = $(this).parent().parent().prev().children(".kosik_item_header");
-            var celkova_suma = Number(kosik_item_header.children(".kosik_pizza_cena").children(".suma").text());
-            var pocet_pizz = Number(kosik_item_header.children(".kosik_pocet").text());
-            var nova_celkova_suma = celkova_suma - pocet_pizz * cena_suroviny;
-            kosik_item_header.children(".kosik_pizza_cena").children(".suma").text(nova_celkova_suma);
+            var jednotkova_cena = Number(zoznam.parent().prev().children(".kosik_item_header").children(".kosik_pizza_cena").children(".jednotkova_cena").text());
+            jednotkova_cena -= cena_suroviny;
+            zoznam.parent().prev().children(".kosik_item_header").children(".kosik_pizza_cena").children(".jednotkova_cena").text(jednotkova_cena);
+    
             update_platit_spolu();
                 
             // odstranenie z efektom
