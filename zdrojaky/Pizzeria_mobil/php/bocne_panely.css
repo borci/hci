@@ -8,7 +8,7 @@
     top: 0px;
     display: none;
     background: #000000;
-    border:1px solid #111111;
+    border:0px solid #111111;
     filter: alpha(opacity=85);
     /*    opacity: .85;*/
     margin: 0 auto;
@@ -90,6 +90,8 @@ ul li{
     -webkit-border-top-left-radius: 20px;
     -moz-border-radius-bottomleft: 20px;
     -webkit-border-bottom-left-radius: 20px;
+    
+    overflow: hidden;
 }
 
 a.right_trigger{

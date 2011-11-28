@@ -50,3 +50,29 @@ input[type=submit] {
     display: none;
 }
 
+.adresa_prihlaseny_hlavicka_text {
+    display: block;
+/*    clear: left;*/
+    float: left;
+/*    clear: left;*/
+}
+
+.adresa_prihlaseny_hlavicka_icon {
+    background-image: url(images/kosik_plus20.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+/*    clear: left;*/
+/*    padding: 20px 20px;*/
+    display: block;
+    /*    position: absolute;
+        right: 45px;
+        top: 7px;
+        z-index: 100;
+        background-image: url(images/kosik_plus20.png);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        display: block;*/
+}
