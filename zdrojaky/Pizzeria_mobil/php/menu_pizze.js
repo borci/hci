@@ -1,6 +1,10 @@
 var obj_pizza;
+var menu_scroll;
+var pridavanie_scroll;
+var filter_scroll;
 
 function init_menu_pizze() {
+	
 	// **************************************************************************
 	// *************************** zoznam pizz **********************************
 	// **************************************************************************
@@ -72,37 +76,24 @@ function init_menu_pizze() {
     $('.pridavanie input').each( function () {
         $(this).removeAttr('checked');
     });
-    
-    
          
     $('.filter').hide();
     $('.pridavanie').hide();
    
-	 $('.menu').css('z-index','-1');
-    $('.menu').animate({scrollTop: '10000px'},0);
-    var menu_scroll = $('.menu').scrollTop();
-    $('.menu').animate({scrollTop: '0px'},0);
-    $('.menu').css('z-index','1');
-    
-    $('.filter').css('z-index','-2');
-    $('.filter').show();
-    $('.filter').animate({scrollTop: '10000px'},0);
-    var filter_scroll = $('.filter').scrollTop();
-    $('.filter').animate({scrollTop: '0px'},0);
-    $('.filter').hide();
-    $('.filter').css('z-index','2');
-      
-    
+	 scrollovanie();
+        
     $('#sipka_h').hide();
 	 $('#sipka_d').show();
 	 
 	 $('#sipka_h2').hide();
 	 $('#sipka_d2').hide();
 	 
+	 $('#sipka_h3').hide();
+	 $('#sipka_d3').hide();
+	 
     $('#button_f').click( function() {
 				if ($('.filter').is(":visible")) {
-								
-									
+														
 					$('.menu').animate({scrollTop: '10000px'},0);
 					menu_scroll = $('.menu').scrollTop();
 					$('.menu').animate({scrollTop: '0px'},0);
@@ -186,6 +177,22 @@ function init_menu_pizze() {
 		else {
 			$('#sipka_d2').show();
 			$('#sipka_h2').show();
+		}
+    });
+    
+    $('.pridavanie').scroll(function () { 
+				
+      if ($('.pridavanie').scrollTop() == pridavanie_scroll) {
+			 $('#sipka_d3').hide();
+			 $('#sipka_h3').show();	 
+		}
+		else if ($('.pridavanie').scrollTop() == 0) {
+			 $('#sipka_h3').hide();
+			 $('#sipka_d3').show();			
+		}
+		else {
+			$('#sipka_d3').show();
+			$('#sipka_h3').show();
 		}
     });
 
@@ -277,22 +284,26 @@ function init_menu_pizze() {
 		var surovina_cena_pole = surovina_cena.split('@');
 		var surovina = surovina_cena_pole[0];
 		var cena = surovina_cena_pole[1];
-		$('#button_t').text(surovina);
-		
-		if ($(this).is(':checked')) {  vloz_surovinu(obj_pizza, surovina, cena);  }
-		else 
-		odstran_surovinu(obj_pizza, surovina);
+				
+		if ($(this).is(':checked')) vloz_surovinu(obj_pizza, surovina, cena); 
+		else 	odstran_surovinu(obj_pizza, surovina);
 		});	 
 }
 
 //***************** Pridavanie surovin ************************
 
 function pridat_suroviny(zoznam) {
+	$('.pridavanie input').each( function () {
+        $(this).removeAttr('checked');
+    });
+    
 	$('.pridavanie').show();
+	$('.pridavanie').animate({scrollTop: '0px'},0);
+	$('#sipka_h3').hide();
+	$('#sipka_d3').show();
 	obj_pizza = zoznam;
 	var pole = new Array();
 	pole = get_suroviny(zoznam);
-	
 	for(var j=0;j<pole.length;j++) { checkni(pole[j]); }
 	
 	}
@@ -346,6 +357,30 @@ function checkni(a) {
 	});
 }
 
+
 // *****************************************************************************
 // *****************************************************************************
 
+function scrollovanie() {
+	 $('.menu').css('z-index','-1');
+    $('.menu').animate({scrollTop: '10000px'},0);
+    menu_scroll = $('.menu').scrollTop();
+    $('.menu').animate({scrollTop: '0px'},0);
+    $('.menu').css('z-index','1');
+    
+    $('.pridavanie').css('z-index','-1');
+    $('.pridavanie').show();
+    $('.pridavanie').animate({scrollTop: '10000px'},0);
+    pridavanie_scroll = $('.pridavanie').scrollTop();
+    $('.pridavanie').animate({scrollTop: '0px'},0);
+    $('.pridavanie').hide();
+    $('.pridavanie').css('z-index','1');
+    
+    $('.filter').css('z-index','-2');
+    $('.filter').show();
+    $('.filter').animate({scrollTop: '10000px'},0);
+    filter_scroll = $('.filter').scrollTop();
+    $('.filter').animate({scrollTop: '0px'},0);
+    $('.filter').hide();
+    $('.filter').css('z-index','2');
+}
