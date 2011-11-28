@@ -40,7 +40,8 @@
 .left_panel {
     padding: 5px 5px 0px 15px;
     width: 200px;
-    height: auto;
+    height: 345px;
+/*    height: auto;*/
     left: 0;    
     -moz-border-radius-topright: 20px;
     -webkit-border-top-right-radius: 20px;

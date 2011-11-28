@@ -43,9 +43,11 @@ function onLoginResponse(response_text) // callback volany ajaxom pri prijati od
         $('#adresa_kontakt').attr("value", response["kontakt"]);
         $('#adresa_adresa').attr("value", response["adresa"]);
                 
-        $('.show_on_logout').fadeOut("medium");
-        $('.show_on_login').show();
-                
+        //        $('.show_on_logout').fadeOut();
+        $('.show_on_logout').hide();
+        $('.show_on_login').show("medium");
+        //        $('.show_on_login').fadeIn("medium");
+
         $('.adresa_prihlaseny_hlavicka .prihlaseny_hlavicka_login').text($("#adresa_login").attr('value'));
 
 
@@ -69,7 +71,8 @@ function onRegisterResponse(response_text)
     }
     
     if (response["status"] == 'OK') { // registration OK
-        alert('Registrácia OK');
+        //        alert('Registrácia OK');
+        loginUser(); // zaroven pouzivatela prihlasit
     } else if (response['status'] == 'Error') { // Registration failed, server hlasi chybu
         alert(response['message']);        
     } else { // neznama chyba
@@ -100,7 +103,7 @@ function loginUser()
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-//            alert("Login Response:\n" + xmlhttp.responseText);
+            //            alert("Login Response:\n" + xmlhttp.responseText);
             onLoginResponse(xmlhttp.responseText);
         }
     };
@@ -117,7 +120,7 @@ function registerUser()
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-//            alert("Register Response:\n" + xmlhttp.responseText);
+            //            alert("Register Response:\n" + xmlhttp.responseText);
             onRegisterResponse(xmlhttp.responseText);
         }
     };
@@ -139,7 +142,7 @@ function saveUserContact() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-//            alert("Save Response:\n" + xmlhttp.responseText);
+            //            alert("Save Response:\n" + xmlhttp.responseText);
             onSaveResponse(xmlhttp.responseText);
         }
     };
@@ -157,8 +160,10 @@ function saveUserContact() {
 
 function logoutUser()
 {
-    $('.show_on_login').fadeOut("medium");
-    $('.show_on_logout').show();
+    //    $('.show_on_login').fadeOut();
+    //    $('.show_on_logout').fadeIn("medium");
+    $('.show_on_login').hide();
+    $('.show_on_logout').show("medium");
     
     $('#adresa_meno').attr("value", '');
     $('#adresa_kontakt').attr("value", '');
