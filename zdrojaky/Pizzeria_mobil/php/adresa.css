@@ -50,29 +50,44 @@ input[type=submit] {
     display: none;
 }
 
+.adresa_prihlaseny_hlavicka {
+    position: relative;
+/*    background-color: yellow;*/
+}
+
 .adresa_prihlaseny_hlavicka_text {
-    display: block;
-/*    clear: left;*/
-    float: left;
-/*    clear: left;*/
+    position: relative;
+    width: 70px;
+    height: 64px;
+    float: right;
+    /*    padding: 10px 10px 10px 10px;*/
 }
 
 .adresa_prihlaseny_hlavicka_icon {
-    background-image: url(images/kosik_plus20.png);
+    background-image: url(images/adresa64.png);
     background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    float: left;
-/*    clear: left;*/
-/*    padding: 20px 20px;*/
-    display: block;
-    /*    position: absolute;
-        right: 45px;
-        top: 7px;
-        z-index: 100;
-        background-image: url(images/kosik_plus20.png);
-        background-repeat: no-repeat;
-        width: 20px;
-        height: 20px;
-        display: block;*/
+    width: 64px;
+    height: 64px;
+    /*    position: relative;*/
+    /*    bohuzial musi ist absolute*/
+    position: absolute;
+    left: 115px;
+    /*    float: left;*/
+}
+
+.prihlaseny_hlavicka_login {
+
+}
+
+/* specialna animacia potvrdenie - OK */
+#obrazok_potvrdenie_fajka {
+    background-image: url(images/fajka128.png);
+    background-repeat: no-repeat;
+    top: 100px;
+    left: 80px;
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    z-index: 300;
+    display: none;
 }

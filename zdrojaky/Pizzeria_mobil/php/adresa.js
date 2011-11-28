@@ -90,7 +90,10 @@ function onSaveResponse(response_text)
     }
     
     if (response["status"] == 'OK') { // registration OK
-        alert('Kontaktné údaje uložené');
+//        alert('Kontaktné údaje uložené');
+        $('#obrazok_potvrdenie_fajka').fadeIn("slow", function() {
+            $(this).fadeOut("slow");
+        })
     } else if (response['status'] == 'Error') { // Registration failed, server hlasi chybu
         alert(response['message']);        
     } else { // neznama chyba
