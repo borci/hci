@@ -4,6 +4,7 @@ $(document).ready(function(){
         $(".right_trigger").toggle();
         $(".left_panel").toggle("fast");
         $(this).toggleClass("active");
+        uprav_indexy_sipok();
         return false;
     });
                 
@@ -11,6 +12,7 @@ $(document).ready(function(){
         $(".left_trigger").toggle();
         $(".right_panel").toggle("fast");
         $(this).toggleClass("active");
+        uprav_indexy_sipok();
         return false;
     });
             
