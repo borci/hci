@@ -6,7 +6,7 @@ var filter_scroll;
 function init_menu_pizze() {
 	
 	// **************************************************************************
-	// *************************** zoznam pizz **********************************
+	// ********************** zoznam pizz scrollovanie **************************
 	// **************************************************************************
     $('.menu').kinetic();
     $('#left').click(function(){
@@ -25,9 +25,9 @@ function init_menu_pizze() {
     $('#stop').click(function(){
         $('.menu').kinetic('stop');
     });
-    // *************************************************
-    // ********************* kosik *********************
-    // *************************************************
+    // *************************************************************************
+    // ************************* kosik  scrollovanie ***************************
+    // *************************************************************************
     $('.right_panel').kinetic();
     $('#left').click(function(){
         $('.right_panel').kinetic('start', {
@@ -70,8 +70,7 @@ function init_menu_pizze() {
     
     // **************************************************************************
     // **************************** filter scrollovanie *************************
-    // **************************************************************************
-    
+    // **************************************************************************  
     $('.filter').kinetic();
     $('#left').click(function(){
         $('.filter').kinetic('start', {
@@ -100,13 +99,15 @@ function init_menu_pizze() {
          
     $('.filter').hide();
     $('.pridavanie').hide();
+    $('#info').hide();
     $('#prazdny').hide();
     $('#pridavanie_titulka').hide();
+    $('#filtrovanie_titulka').hide();
+    $('#informacie_titulka').hide();
+    $('#potvrdenie_o_pridani').hide();
    
 	 scrollovanie();
-        
-    $('#filtrovanie_titulka').hide();
-        
+
     $('#sipka_h').hide();
 	 $('#sipka_d').show();
 	 
@@ -115,6 +116,12 @@ function init_menu_pizze() {
 	 
 	 $('#sipka_h3').hide();
 	 $('#sipka_d3').hide();
+	 
+	 $('#informacie').click (function() {
+		 $('#prazdny').show();
+		 $('#info').slideDown(300);
+		 $('#informacie_titulka').slideDown(300);
+	 });
 	 
 	 $('.ukonci_pridavanie').click (function() {
 		 $('#prazdny').hide();
@@ -158,6 +165,27 @@ function init_menu_pizze() {
 						$('#sipka_h').show();
 					}
 		});
+		
+	$('.ukonci_informacie').click (function() {
+				 
+		 $('#info').slideUp(300);
+		 $('#informacie_titulka').slideUp(300);
+		 $('#prazdny').hide();
+		 
+		if ( $('.menu').scrollTop() == 0) {
+				$('#sipka_h').hide();
+				$('#sipka_d').show();				
+					}					
+		else if ($('.menu').scrollTop() == menu_scroll) {
+				$('#sipka_d').hide();
+				$('#sipka_h').show();		
+					}
+		else {
+				$('#sipka_d').show();
+				$('#sipka_h').show();
+					}
+		});
+	 	
 	  	 
     $('#button_f').click( function() {
 		  $('#prazdny').show();
@@ -309,6 +337,8 @@ function init_menu_pizze() {
 		 var meno_cena_pole = meno_cena.split('@');
 		 var meno = meno_cena_pole[0];
 		 var cena = meno_cena_pole[1];
+		 $('#potvrdenie_o_pridani').slideDown(700);
+		 $('#potvrdenie_o_pridani').slideUp(700);
 		 pridat_do_kosika(meno,cena);
 		 });
 		
@@ -345,6 +375,7 @@ function pridat_suroviny(zoznam) {
 	for(var j=0;j<pole.length;j++) { checkni(pole[j]); }
 	
 	}
+	
 // **************************************************************************
 // *********************** funkcie k filtrovaniu ****************************
 // **************************************************************************
