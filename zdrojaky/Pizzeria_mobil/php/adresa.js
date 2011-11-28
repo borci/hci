@@ -7,26 +7,6 @@ function init_adresa()
 //    $('#adresa_save');
 }
 
-//function test() 
-//{
-//    var login = $("#adresa_login").attr('value');
-//    alert('test login:' + login);
-//}
-
-function loadXMLDoc() // TODO: delete this function // vzorova funckia
-{
-    xmlhttp=new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function()
-    {
-        if (xmlhttp.readyState==4 && xmlhttp.status==200)
-        {
-            document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-        }
-    }
-    xmlhttp.open("GET","ajax_info.txt",true);
-    xmlhttp.send();
-}
-
 function onLoginResponse(response_text) // callback volany ajaxom pri prijati odpovedi (na poziadavku prihlasenia) zo serveru
 {
     var response = new Array();
@@ -123,7 +103,6 @@ function registerUser()
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-            //            alert("Register Response:\n" + xmlhttp.responseText);
             onRegisterResponse(xmlhttp.responseText);
         }
     };
@@ -131,7 +110,7 @@ function registerUser()
     var login = $("#adresa_login").attr('value');
     var password = $("#adresa_password").attr('value');
     
-    var meno = $("#adresa_meno").attr('value'); // TODO
+    var meno = $("#adresa_meno").attr('value');
     var kontakt = $("#adresa_kontakt").attr('value');
     var adresa = $("#adresa_adresa").attr('value');
     
@@ -145,7 +124,6 @@ function saveUserContact() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-            //            alert("Save Response:\n" + xmlhttp.responseText);
             onSaveResponse(xmlhttp.responseText);
         }
     };

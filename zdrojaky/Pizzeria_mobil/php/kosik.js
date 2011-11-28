@@ -205,6 +205,23 @@ function pridat_suroviny_test(zoznam) { // TOTO je iba testovacie demo, realna f
 }
 
 function on_kosik_objednaj() {
-    global_message_info('Objednávka odoslaná', 'normal');
     
+    var meno = $("#adresa_meno").attr('value'); 
+    var kontakt = $("#adresa_kontakt").attr('value');
+    var adresa = $("#adresa_adresa").attr('value');
+    
+    if (meno.length < 3) {
+        global_message_error("Uvedte prosím Vaše meno", 'normal');
+        return;
+    }
+    if (kontakt.length < 3) {
+        global_message_error("Uvedte prosím Vaše telefónne číslo", 'normal');
+        return;
+    }
+    if (adresa.length < 3) {
+        global_message_error("Uvedte prosím Vašu adresu doručenia", 'normal');
+        return;
+    }
+    
+    global_message_info('Objednávka odoslaná', 'normal');
 }

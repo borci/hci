@@ -8,6 +8,9 @@ function global_message_info(text, duration) {
     if (duration == 'normal') {
         duration = 1000;
     }
+    if (duration == 'long') {
+        duration = 1500;
+    }
     
     $('#global_message_info').text(text);
     $('#global_message_info').fadeIn('medium', function() {
@@ -19,6 +22,10 @@ function global_message_error(text, duration) {
     if (duration == 'normal') {
         duration = 1000;
     }
+    if (duration == 'long') {
+        duration = 1500;
+    }
+    
     $('#global_message_error').text(text);
     $('#global_message_error').fadeIn('medium', function() {
         $(this).delay(duration).fadeOut('slow');
