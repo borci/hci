@@ -41,7 +41,9 @@ a.active.trigger {
 a.trigger{
     /*    position: absolute;*/
     position: relative;
-    width: 50px;
+    
+/*    tymto parametrom sa da jednoducho nastavit sirka oboch triggerov*/
+    width: 40px;
     text-decoration: none;
     top: 5px;
     font-size: 14px;

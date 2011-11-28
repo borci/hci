@@ -1,0 +1,39 @@
+/* specialna animacia potvrdenie - OK */
+#obrazok_potvrdenie_fajka {
+    background-image: url(images/fajka128.png);
+    background-repeat: no-repeat;
+    top: 100px;
+    left: 80px;
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    z-index: 300;
+    display: none;
+}
+
+
+#global_message_info {
+    background-image: url(images/info128.png);
+    background-repeat: no-repeat;
+    top: 100px;
+    left: 80px;
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    z-index: 300;
+    display: none;
+}
+
+#global_message_error {
+    background-image: url(images/error128.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    top: 100px;
+    left: 80px;
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    z-index: 300;
+    display: none;
+}

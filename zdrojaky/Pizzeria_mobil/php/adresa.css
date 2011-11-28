@@ -78,16 +78,3 @@ input[type=submit] {
 .prihlaseny_hlavicka_login {
 
 }
-
-/* specialna animacia potvrdenie - OK */
-#obrazok_potvrdenie_fajka {
-    background-image: url(images/fajka128.png);
-    background-repeat: no-repeat;
-    top: 100px;
-    left: 80px;
-    width: 128px;
-    height: 128px;
-    position: absolute;
-    z-index: 300;
-    display: none;
-}

@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="adresa.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="menu_pizze.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="kosik.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="dialogy.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/jquery-ui-1.8.16.custom.css" type="text/css" />
 
         <script type="text/javascript" src="js/jquery-1.6.3.js"></script>
@@ -23,6 +24,7 @@
         <script type="text/javascript" src="adresa.js"></script>
         <script type="text/javascript" src="kosik.js"></script>
         <script type="text/javascript" src="menu_pizze.js"></script>
+        <script type="text/javascript" src="dialogy.js"></script>
 
     </head>
     <body>
@@ -46,6 +48,10 @@
 
 
             <div style="clear:both;"></div>
+
+            <?php
+            include 'dialogy.html';
+            ?>
 
         </div>
     </body>

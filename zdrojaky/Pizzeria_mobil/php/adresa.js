@@ -74,7 +74,8 @@ function onRegisterResponse(response_text)
         //        alert('Registrácia OK');
         loginUser(); // zaroven pouzivatela prihlasit
     } else if (response['status'] == 'Error') { // Registration failed, server hlasi chybu
-        alert(response['message']);        
+//        alert(response['message']);  
+        global_message_error(response['message'], 1000);
     } else { // neznama chyba
         alert('Unknown Error');        
     }
@@ -91,11 +92,10 @@ function onSaveResponse(response_text)
     
     if (response["status"] == 'OK') { // registration OK
 //        alert('Kontaktné údaje uložené');
-        $('#obrazok_potvrdenie_fajka').fadeIn("slow", function() {
-            $(this).fadeOut("slow");
-        })
+        animacia_fajka('slow');
     } else if (response['status'] == 'Error') { // Registration failed, server hlasi chybu
-        alert(response['message']);        
+//        alert(response['message']);
+        global_message_error(response['message']);
     } else { // neznama chyba
         alert('Unknown Error');        
     }   
