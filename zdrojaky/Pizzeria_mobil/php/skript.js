@@ -16,7 +16,9 @@ $(document).ready(function(){
             
     // inicializacia kosika
     init_kosik();
-   
+    
+    // inicializacia adresy
+    init_adresa();
 
     // inicializacia centralnej casti (menu pizze)    
     init_menu_pizze();

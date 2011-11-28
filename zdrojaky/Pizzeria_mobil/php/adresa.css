@@ -40,3 +40,13 @@ input[type=submit] {
 .form_button {
     margin-bottom: 15px;    
 }
+
+/************* Hlavicka Prihlaseny ******/
+/*.adresa_prihlaseny_hlavicka {
+    display: none;
+}*/
+
+.show_on_login {
+    display: none;
+}
+
