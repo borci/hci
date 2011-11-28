@@ -14,7 +14,7 @@
 #global_message_error {
     position: absolute;
     top: 80px;
-    z-index: 300;
+    z-index: 500;
     display: none;
     -moz-border-radius: 10px 10px 10px 10px;
     background-color: red;
@@ -27,7 +27,7 @@
 #global_message_info {
     position: absolute;
     top: 80px;
-    z-index: 300;
+    z-index: 500;
     display: none;
     -moz-border-radius: 10px 10px 10px 10px;
     background-color: green;

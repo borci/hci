@@ -204,7 +204,15 @@ function pridat_suroviny_test(zoznam) { // TOTO je iba testovacie demo, realna f
     vloz_surovinu(zoznam, "surka", 2);
 }
 
+function is_kosik_empty() {
+    return $('#infolist h3').size() == 0;
+}
+
 function on_kosik_objednaj() {
+    if (is_kosik_empty()) {
+        global_message_error('Nemáte nič objednané', 'normal');
+        return;
+    }
     
     var meno = $("#adresa_meno").attr('value'); 
     var kontakt = $("#adresa_kontakt").attr('value');

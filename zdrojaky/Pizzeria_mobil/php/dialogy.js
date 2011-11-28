@@ -22,6 +22,9 @@ function animacia_fajka(speed) {
 }
 
 function global_message_info(text, duration) {
+    if (duration == 'short') {
+        duration = 500;
+    }
     if (duration == 'normal') {
         duration = 1000;
     }
@@ -36,6 +39,9 @@ function global_message_info(text, duration) {
 }
 
 function global_message_error(text, duration) {
+    if (duration == 'short') {
+        duration = 1000;
+    }
     if (duration == 'normal') {
         duration = 1000;
     }

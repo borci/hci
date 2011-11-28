@@ -19,7 +19,8 @@ function onLoginResponse(response_text) // callback volany ajaxom pri prijati od
     //    alert('status == ' + response['status'])
     
     if (response["status"] == 'OK') { // login OK
-        //                alert('Login OK');
+        global_message_info('Prihlásenie úspešné', 'short');
+
         $('#adresa_meno').attr("value", response["meno"]);
         $('#adresa_kontakt').attr("value", response["kontakt"]);
         $('#adresa_adresa').attr("value", response["adresa"]);
@@ -33,7 +34,7 @@ function onLoginResponse(response_text) // callback volany ajaxom pri prijati od
 
 
     } else if (response['status'] == 'Error') { // Login failed, server hlasi chybu
-//        alert(response['message']);
+        //        alert(response['message']);
         global_message_error(response['message'], 'normal');
     } else { // neznama chyba
         alert('Unknown Error (login)');        
@@ -55,7 +56,7 @@ function onRegisterResponse(response_text)
         global_message_info('Registrácia dokončená', 'normal');
         loginUser(); // zaroven pouzivatela prihlasit
     } else if (response['status'] == 'Error') { // Registration failed, server hlasi chybu
-//        alert(response['message']);  
+        //        alert(response['message']);  
         global_message_error(response['message'], 'normal');
     } else { // neznama chyba
         alert('Unknown Error');        
@@ -72,10 +73,10 @@ function onSaveResponse(response_text)
     }
     
     if (response["status"] == 'OK') { // registration OK
-//        alert('Kontaktné údaje uložené');
+        //        alert('Kontaktné údaje uložené');
         animacia_fajka('slow');
     } else if (response['status'] == 'Error') { // Registration failed, server hlasi chybu
-//        alert(response['message']);
+        //        alert(response['message']);
         global_message_error(response['message'], 'normal');
     } else { // neznama chyba
         alert('Unknown Error');        
@@ -144,6 +145,7 @@ function logoutUser()
 {
     //    $('.show_on_login').fadeOut();
     //    $('.show_on_logout').fadeIn("medium");
+    global_message_info('Boli ste odhlásení', 'short');
     $('.show_on_login').hide();
     $('.show_on_logout').show("medium");
     
