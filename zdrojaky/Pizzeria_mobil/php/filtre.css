@@ -8,7 +8,7 @@
     top: 57px;
     left: 3px;
     font-size: 15px; 
-    z-index:2;
+    z-index:3;
     border: 0px;
     overflow: hidden;
 
@@ -71,12 +71,12 @@
 
 #button_f {
     position: absolute;
-    left: 75px;
-    top: 36px;
+    left: 87px;
+    top: 16px;
     color: black;
     background-color: white;
     border: 1px;
-    width: 60px;
+    width: 45px;
     border: 1px;
     border-style: solid;
     cursor: pointer;
@@ -89,4 +89,54 @@
     -webkit-border-top-left-radius: 10px;
 
 }
+
+#filtrovanie_titulka {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: black;
+    background-color: #D7ECE8;
+    border: 1px;
+    width: 218px;
+    height: 35px;
+    border: 1px;
+    border-style: solid;
+    z-index: 112;
+    
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+}
+
+#filtrovanie_titulka p {
+	line-height: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0px;
+	margin-top: 5px;
+	padding: 0px;
+	color: green;
+}
+
+.ukonci_filtrovanie {
+	
+	background-image: url(images/panel_close20.png);
+	background-repeat: no-repeat;
+   position: absolute;
+   right: 0;
+   top: 5px;
+   z-index: 100;
+   
+   width: 35px;
+   height: 35px;
+   display: block;
+   cursor: pointer;   
+ 
+}
 /************** filtre ****************/
+/*************ku pridavaniu************/
+

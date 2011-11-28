@@ -1,15 +1,23 @@
+<div id="prazdny"></div> 
 <div class="pizze_menu"> 
-	<button id="button_t"> test </button>
 	<button id="button_f"> filtruj </button>
+	<button id="informacie"> Informácie o pizzérií </button>
+	<div id="filtrovanie_titulka">
+		<span class="ukonci_filtrovanie"></span>
+		 <center><p>Filtrovanie</p></center> 
+		 </div>
+	<div id="pridavanie_titulka">
+		<span class="ukonci_pridavanie"></span>
+		 <p>Pridavanie surovin</p> </div>
 	
-	<img id="sipka_h" src="images/sh.jpeg" alt="sipka_hore"> </img>
-	<img id="sipka_d" src="images/sd.JPG" alt="sipka_dole" > </img>
+	<img id="sipka_h" src="images/sipka_seda.bmp" alt="sipka_hore" />
+	<img id="sipka_d" src="images/sipka_seda2.bmp" alt="sipka_dole" />
 	
-	<img id="sipka_h2" src="images/sh.jpeg" alt="sipka_hore2"> </img>
-	<img id="sipka_d2" src="images/sd.JPG" alt="sipka_dole2" > </img>
+	<img id="sipka_h2" src="images/sipka_seda.bmp" alt="sipka_hore2" />
+	<img id="sipka_d2" src="images/sipka_seda2.bmp" alt="sipka_dole2" />
 	
-	<img id="sipka_h3" src="images/sh.jpeg" alt="sipka_hore3"> </img>
-	<img id="sipka_d3" src="images/sd.JPG" alt="sipka_dole3" > </img>
+	<img id="sipka_h3" src="images/sipka_seda.bmp" alt="sipka_hore3" />
+	<img id="sipka_d3" src="images/sipka_seda2.bmp" alt="sipka_dole3" />
 	
 	   	<ul class="menu">
 					 <li class="Paradajkový základ,mozzarella,niva,parmezán,balkánsky syr">
@@ -52,51 +60,52 @@
       </ul>
 
 <ul class="filter">
-			<li><input type="checkbox" value="filterAll" id="filterIDall" ></input><label for="filterIDall">nefiltruj</label></li>
+			<li><input type="checkbox" value="filterAll" id="filterIDall" /><label for="filterIDall">nefiltruj</label></li>
 			<p> Mäso </p>
-			<li><input type="checkbox" value="kuracie mäso" id="f_kuracie" ></input><label for="f_kuracie">kuracie mäso</label></li>
-			<li><input type="checkbox" value="šunka" id="f_sunka" ></input><label for="f_sunka">šunka</label></li>
-			<li><input type="checkbox" value="salama" id="f_salama" ></input><label for="f_salam">salama</label></li>
-			<li><input type="checkbox" value="slanina" id="f_slanina" ></input><label for="f_slanina">slanina</label></li>
+			<li><input type="checkbox" value="kuracie mäso" id="f_kuracie" /><label for="f_kuracie">kuracie mäso</label></li>
+			<li><input type="checkbox" value="šunka" id="f_sunka" /><label for="f_sunka">šunka</label></li>
+			<li><input type="checkbox" value="salama" id="f_salama" /><label for="f_salam">salama</label></li>
+			<li><input type="checkbox" value="slanina" id="f_slanina" /><label for="f_slanina">slanina</label></li>
 			<p> Syry </p>
-			<li><input type="checkbox" value="balkánsky syr" id="f_balkansky" ></input><label for="f_balkansky">balkánsky syr</label></li>
-			<li><input type="checkbox" value="mozzarella" id="f_mozzarella" ></input><label for="f_mozzarella">mozzarella</label></li>
-			<li><input type="checkbox" value="niva" id="f_niva" ></input><label for="f_niva">niva</label></li>
-			<li><input type="checkbox" value="parmezán" id="f_parmezan" ></input><label for="f_parmezan">parmezán</label></li>
+			<li><input type="checkbox" value="balkánsky syr" id="f_balkansky" /><label for="f_balkansky">balkánsky syr</label></li>
+			<li><input type="checkbox" value="mozzarella" id="f_mozzarella" /><label for="f_mozzarella">mozzarella</label></li>
+			<li><input type="checkbox" value="niva" id="f_niva" /><label for="f_niva">niva</label></li>
+			<li><input type="checkbox" value="parmezán" id="f_parmezan" /><label for="f_parmezan">parmezán</label></li>
 			<p> Zelenina </p>
-			<li><input type="checkbox" value="ananás" id="f_ananas" ></input><label for="f_ananas">ananás</label></li>
-			<li><input type="checkbox" value="cibuľa" id="f_cibula" ></input><label for="f_cibula">cibuľa</label></li>
-			<li><input type="checkbox" value="čily papričky" id="f_chili" ></input><label for="f_chili">čily papričky</label></li>
-			<li><input type="checkbox" value="feferóny" id="f_feferony" ></input><label for="f_feferony">feferóny</label></li>
-			<li><input type="checkbox" value="hrášok" id="f_hrasok" ></input><label for="f_hrasok">hrášok</label></li>
-			<li><input type="checkbox" value="kukurica" id="f_kukurica" ></input><label for="f_kukurica">kukurica</label></li>
-			<li><input type="checkbox" value="olivy" id="f_olivy" ></input><label for="f_olivy">paradajky</label></li>
-			<li><input type="checkbox" value="paradajky" id="f_paradajky" ></input><label for="f_paradajky">paradajky</label></li>
+			<li><input type="checkbox" value="ananás" id="f_ananas" /><label for="f_ananas">ananás</label></li>
+			<li><input type="checkbox" value="cibuľa" id="f_cibula" /><label for="f_cibula">cibuľa</label></li>
+			<li><input type="checkbox" value="čily papričky" id="f_chili" /><label for="f_chili">čily papričky</label></li>
+			<li><input type="checkbox" value="feferóny" id="f_feferony" /><label for="f_feferony">feferóny</label></li>
+			<li><input type="checkbox" value="hrášok" id="f_hrasok" /><label for="f_hrasok">hrášok</label></li>
+			<li><input type="checkbox" value="kukurica" id="f_kukurica" /><label for="f_kukurica">kukurica</label></li>
+			<li><input type="checkbox" value="olivy" id="f_olivy" /><label for="f_olivy">paradajky</label></li>
+			<li><input type="checkbox" value="paradajky" id="f_paradajky" /><label for="f_paradajky">paradajky</label></li>
 			<p> Iné </p>
-			<li><input type="checkbox" value="smotana" id="f_smotana" ></input><label for="f_smotana">smotana</label></li>
+			<li><input type="checkbox" value="smotana" id="f_smotana" /><label for="f_smotana">smotana</label></li>
 </ul>
 
 <ul class="pridavanie"> 
 			<p> Mäso </p>
-			<li><input type="checkbox" value="kuracie mäso@0.3" id="filterIDall" ></input><label for="filterIDall">kuracie mäso 0.3 €</label></li>
-			<li><input type="checkbox" value="šunka@0.3" id="sunka" ></input><label for="sunka">šunka 0.3 €</label></li>
-			<li><input type="checkbox" value="salama@0.3" id="salama" ></input><label for="salama">salama 0.3 €</label></li>
-			<li><input type="checkbox" value="slanina@0.3" id="slanina" ></input><label for="slanina">slanina 0.3 €</label></li>
+			<li><input type="checkbox" value="kuracie mäso@0.3" id="filterIDall" /><label for="filterIDall">kuracie mäso 0.3 €</label></li>
+			<li><input type="checkbox" value="šunka@0.3" id="sunka" /><label for="sunka">šunka 0.3 €</label></li>
+			<li><input type="checkbox" value="salama@0.3" id="salama" /><label for="salama">salama 0.3 €</label></li>
+			<li><input type="checkbox" value="slanina@0.3" id="slanina" /><label for="slanina">slanina 0.3 €</label></li>
 			<p> Syry </p>
-			<li><input type="checkbox" value="balkánsky syr@0.3" id="balkansky" ></input><label for="balkansky">balkánsky syr 0.3 €</label></li>
-			<li><input type="checkbox" value="mozzarella@0.3" id="mozzarela" ></input><label for="mozzarela">mozzarella 0.3 €</label></li>
-			<li><input type="checkbox" value="niva@0.3" id="niva" ></input><label for="niva">niva 0.3 €</label></li>
-			<li><input type="checkbox" value="parmezán@0.3" id="parmezan" ></input><label for="parmezan">parmezán 0.3 €</label></li>
+			<li><input type="checkbox" value="balkánsky syr@0.3" id="balkansky" /><label for="balkansky">balkánsky syr 0.3 €</label></li>
+			<li><input type="checkbox" value="mozzarella@0.3" id="mozzarela" /><label for="mozzarela">mozzarella 0.3 €</label></li>
+			<li><input type="checkbox" value="niva@0.3" id="niva" /><label for="niva">niva 0.3 €</label></li>
+			<li><input type="checkbox" value="parmezán@0.3" id="parmezan" /><label for="parmezan">parmezán 0.3 €</label></li>
 			<p> Zelenina </p>
-			<li><input type="checkbox" value="ananás@0.3" id="ananas" ></input><label for="ananas">ananás 0.3 €</label></li>
-			<li><input type="checkbox" value="cibuľa@0.3" id="cibula" ></input><label for="cibula">cibuľa 0.3 €</label></li>
-			<li><input type="checkbox" value="čily papričky@0.3" id="chili" ></input><label for="chili">čily papričky 0.3 €</label></li>
-			<li><input type="checkbox" value="feferóny@0.3" id="feferony" ></input><label for="feferony">feferóny 0.3 €</label></li>
-			<li><input type="checkbox" value="hrášok@0.3" id="hrasok" ></input><label for="hrasok">hrášok 0.3 €</label></li>
-			<li><input type="checkbox" value="kukurica@0.3" id="kukurica" ></input><label for="kukurica">kukurica 0.3 €</label></li>
-			<li><input type="checkbox" value="paradajky@0.3" id="paradajky" ></input><label for="pradajky">paradajky 0.3 €</label></li>
+			<li><input type="checkbox" value="ananás@0.3" id="ananas" /><label for="ananas">ananás 0.3 €</label></li>
+			<li><input type="checkbox" value="cibuľa@0.3" id="cibula" /><label for="cibula">cibuľa 0.3 €</label></li>
+			<li><input type="checkbox" value="čily papričky@0.3" id="chili" /><label for="chili">čily papričky 0.3 €</label></li>
+			<li><input type="checkbox" value="feferóny@0.3" id="feferony" /><label for="feferony">feferóny 0.3 €</label></li>
+			<li><input type="checkbox" value="hrášok@0.3" id="hrasok" /><label for="hrasok">hrášok 0.3 €</label></li>
+			<li><input type="checkbox" value="kukurica@0.3" id="kukurica" /><label for="kukurica">kukurica 0.3 €</label></li>
+			<li><input type="checkbox" value="olivy@0.3" id="olivy" /><label for="olivy">olivy 0.3 €</label></li>
+			<li><input type="checkbox" value="paradajky@0.3" id="paradajky" /><label for="pradajky">paradajky 0.3 €</label></li>
 			<p> Iné </p>
-			<li><input type="checkbox" value="smotana@0.3" id="smotana" ></input><label for="smotana">smotana 0.3 €</label></li>
+			<li><input type="checkbox" value="smotana@0.3" id="smotana" /><label for="smotana">smotana 0.3 €</label></li>
 </ul>
 
 </div>

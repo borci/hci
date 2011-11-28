@@ -2,6 +2,18 @@
 /*******************ponuka pizz********************/
 /**************************************************/
 
+#prazdny {
+	width: 220px;
+	height: 350px;
+	background-color: grey;
+	z-index: 2;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+	z-index: 111;
+}
+
 #button_t {
     position: absolute;
     left: 375px;
@@ -21,13 +33,32 @@
 
 }
 
+#informacie {
+    position: absolute;
+    left: 30px;
+    top: 331px;
+    color: black;
+    background-color: white;
+    border: 1px;
+    width: 160px;
+    border: 1px;
+    border-style: solid;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+
+}
+
 .pridavanie {
     width: 214px;
     height: 248px;
     position: absolute;
     background-color: #D7ECE8;
-    top: 37px;
-    left: 300px;
+    top: 57px;
+    left: 2px;
     font-size: 15px; 
     z-index:2;
     border: 0px;
@@ -47,6 +78,22 @@
     -webkit-border-bottom-left-radius: 10px;
 
 
+}
+
+.ukonci_pridavanie {
+	
+	background-image: url(images/panel_close20.png);
+	background-repeat: no-repeat;
+   position: absolute;
+   right: 0;
+   top: 5px;
+   z-index: 100;
+   
+   width: 35px;
+   height: 35px;
+   display: block;
+   cursor: pointer;   
+ 
 }
 
 .pridavanie p {
@@ -91,74 +138,115 @@
     cursor: pointer;
 }
 
+#pridavanie_titulka {
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: black;
+    background-color: #D7ECE8;
+    border: 1px;
+    width: 218px;
+    height: 35px;
+    border: 1px;
+    border-style: solid;
+    z-index: 112;  
+    
+    -moz-user-select: none;
+    
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+}
+
+#pridavanie_titulka p {
+	line-height: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0px;
+	margin-top: 5px;
+	margin-left: 10px;
+	padding: 0px;
+	color: green;
+}
+
+
 #sipka_h {
-    width: 25px;
+    width: 220px;
     height: 20px;
     background: none;
     padding: 0px;
     margin: 0px;
     position: absolute;
-    left: 170px;
+    left: 0px;
     top: 35px;
+    border: 0px;
 }
 
 #sipka_d {
-    width: 25px;
+    width: 220px;
     height: 20px;
     background: none;
     padding: 0px;
     margin: 0px;
+    border: 1px;
     position: absolute;
-    left: 170px;
+    left: 0px;
     top: 307px;
 }
 
 #sipka_h2 {
-    width: 25px;
+    width: 220px;
     height: 20px;
     background: none;
     padding: 0px;
     margin: 0px;
+    border: 0px;
     position: absolute;
-    left: 10px;
+    left: 0px;
     top: 35px;
-    z-index: 2;
+    z-index: 112;
 }
 
 #sipka_d2 {
-    width: 25px;
+    width: 220px;
     height: 20px;
     background: none;
     padding: 0px;
     margin: 0px;
+    border: 0px;
     position: absolute;
-    left: 10px;
+    left: 0px;
     top: 307px;
-    z-index: 2;
+    z-index: 112;
 }
 
 #sipka_h3 {
-    width: 25px;
+    width: 218px;
     height: 20px;
     background: none;
     padding: 0px;
     margin: 0px;
+    border: 0px;
     position: absolute;
-    left: 310px;
-    top: 15px;
-    z-index: 2;
+    left: 0px;
+    top: 35px;
+    z-index: 112;
 }
 
 #sipka_d3 {
-    width: 25px;
+    width: 218px;
     height: 20px;
     background: none;
     padding: 0px;
     margin: 0px;
+    border: 0px;
     position: absolute;
-    left: 310px;
+    left: 0px;
     top: 307px;
-    z-index: 2;
+    z-index: 112;
 }
 
 

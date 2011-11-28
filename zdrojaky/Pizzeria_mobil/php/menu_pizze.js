@@ -25,6 +25,27 @@ function init_menu_pizze() {
     $('#stop').click(function(){
         $('.menu').kinetic('stop');
     });
+    // *************************************************
+    // ********************* kosik *********************
+    // *************************************************
+    $('.right_panel').kinetic();
+    $('#left').click(function(){
+        $('.right_panel').kinetic('start', {
+            velocity: 0
+        });
+    });
+    $('#right').click(function(){
+        $('.right_panel').kinetic('start', {
+            velocity: 0
+        });
+    });
+    $('#end').click(function(){
+        $('.right_panel').kinetic('end');
+    });
+    $('#stop').click(function(){
+        $('.right_panel').kinetic('stop');
+    });
+    
     
     // **************************************************************************
     // ************************ pridavanie scrollovanie *************************
@@ -79,8 +100,12 @@ function init_menu_pizze() {
          
     $('.filter').hide();
     $('.pridavanie').hide();
+    $('#prazdny').hide();
+    $('#pridavanie_titulka').hide();
    
 	 scrollovanie();
+        
+    $('#filtrovanie_titulka').hide();
         
     $('#sipka_h').hide();
 	 $('#sipka_d').show();
@@ -91,20 +116,33 @@ function init_menu_pizze() {
 	 $('#sipka_h3').hide();
 	 $('#sipka_d3').hide();
 	 
-    $('#button_f').click( function() {
-				if ($('.filter').is(":visible")) {
-														
-					$('.menu').animate({scrollTop: '10000px'},0);
-					menu_scroll = $('.menu').scrollTop();
-					$('.menu').animate({scrollTop: '0px'},0);
-					$('.filter').slideUp(350);
-					
-					$('#sipka_h2').hide();
-					$('#sipka_d2').hide();
-					
-					if ( $('.menu').scrollTop() == 0) {
+	 $('.ukonci_pridavanie').click (function() {
+		 $('#prazdny').hide();
+		 $('.pridavanie').hide();
+		 $('#pridavanie_titulka').hide();
+
+	 
+		 $('#sipka_h3').hide();
+		 $('#sipka_d3').hide();
+		 });
+		 
+	 $('.ukonci_filtrovanie').click (function() {
+		
+		 $('#sipka_h2').hide();
+		 $('#sipka_d2').hide();
+		 
+		 $('.filter').slideUp(300);
+		 $('#filtrovanie_titulka').slideUp(300);
+		  $('#prazdny').hide();
+		 
+		 $('.menu').animate({scrollTop: '10000px'},0);
+		 menu_scroll = $('.menu').scrollTop();
+		 $('.menu').animate({scrollTop: '0px'},0);
+		 
+		 if ( $('.menu').scrollTop() == 0) {
 						$('.menu').animate({scrollTop: '1px'},0);
 						var a = $('.menu').scrollTop();
+						$('.menu').animate({scrollTop: '0px'},0);
 						$('#sipka_h').hide();
 						$('#sipka_d').show();
 						if (menu_scroll == 0) $('#sipka_d').hide();
@@ -119,16 +157,15 @@ function init_menu_pizze() {
 						$('#sipka_d').show();
 						$('#sipka_h').show();
 					}
-					}
-				else {
-					
+		});
+	  	 
+    $('#button_f').click( function() {
+		  $('#prazdny').show();
+					$('#filtrovanie_titulka').slideDown(350);
 					$('.filter').slideDown(350);
 					
-					 
 					$('#sipka_h').hide();
 					$('#sipka_d').hide();
-					$('#sipka_h2').show();
-					$('#sipka_d2').show();
 					
 					if ($('.filter').scrollTop() == filter_scroll) {
 						$('#sipka_d2').hide();
@@ -142,7 +179,7 @@ function init_menu_pizze() {
 						$('#sipka_d2').show();
 						$('#sipka_h2').show();
 					}
-				}
+				
 		  });
    
 	$('.menu').scroll(function () { 
@@ -296,8 +333,9 @@ function pridat_suroviny(zoznam) {
 	$('.pridavanie input').each( function () {
         $(this).removeAttr('checked');
     });
-    
+   $('#prazdny').show(); 
 	$('.pridavanie').show();
+	$('#pridavanie_titulka').show();
 	$('.pridavanie').animate({scrollTop: '0px'},0);
 	$('#sipka_h3').hide();
 	$('#sipka_d3').show();
@@ -374,7 +412,7 @@ function scrollovanie() {
     pridavanie_scroll = $('.pridavanie').scrollTop();
     $('.pridavanie').animate({scrollTop: '0px'},0);
     $('.pridavanie').hide();
-    $('.pridavanie').css('z-index','1');
+    $('.pridavanie').css('z-index','112');
     
     $('.filter').css('z-index','-2');
     $('.filter').show();
@@ -382,5 +420,5 @@ function scrollovanie() {
     filter_scroll = $('.filter').scrollTop();
     $('.filter').animate({scrollTop: '0px'},0);
     $('.filter').hide();
-    $('.filter').css('z-index','2');
+    $('.filter').css('z-index','112');
 }
