@@ -43,10 +43,8 @@
     height: 345px;
 /*    height: auto;*/
     left: 0;    
-    -moz-border-radius-topright: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -moz-border-radius-bottomright: 20px;
-    -webkit-border-bottom-right-radius: 20px;
+/*    -moz-border-radius-topright: 20px;*/
+/*    -moz-border-radius-bottomright: 20px;*/
 }
 
 a.left_trigger{
@@ -56,11 +54,7 @@ a.left_trigger{
     background:#333333 url(images/adresa20.png) no-repeat;    
     background-position: 85% 55%;    
     -moz-border-radius-topright: 20px;
-    -webkit-border-top-right-radius: 20px;
     -moz-border-radius-bottomright: 20px;
-    -webkit-border-bottom-right-radius: 20px;
-    -moz-border-radius-bottomleft: 0px;
-    -webkit-border-bottom-left-radius: 0px;    
 }
 a.left_trigger:hover {
     padding-left: 15px;
@@ -86,11 +80,8 @@ ul li{
     /*    height: auto;*/
     height: 345px;
     right: 0;
-    -moz-border-radius-topleft: 20px;
-    -webkit-border-top-left-radius: 20px;
-    -moz-border-radius-bottomleft: 20px;
-    -webkit-border-bottom-left-radius: 20px;
-    
+/*    -moz-border-radius-topleft: 20px;*/
+/*    -moz-border-radius-bottomleft: 20px;*/
     overflow: hidden;
 }
 
@@ -103,11 +94,7 @@ a.right_trigger{
 
     text-align: right;
     -moz-border-radius-topleft: 20px;
-    -webkit-border-top-left-radius: 20px;
     -moz-border-radius-bottomleft: 20px;
-    -webkit-border-bottom-left-radius: 20px;
-    -moz-border-radius-bottomright: 0px;
-    -webkit-border-bottom-left-radius: 0px;   
 }
 
 a.right_trigger:hover {

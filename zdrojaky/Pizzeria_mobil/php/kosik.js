@@ -205,6 +205,6 @@ function pridat_suroviny_test(zoznam) { // TOTO je iba testovacie demo, realna f
 }
 
 function on_kosik_objednaj() {
-    alert('Objednavka odoslana');
+    global_message_info('Objednávka odoslaná', 'normal');
     
 }
