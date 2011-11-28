@@ -14,7 +14,7 @@ $(document).ready(function(){
         return false;
     });
             
-    //    ******************* kosik ****************************
+    // inicializacia kosika
     init_kosik();
    
 

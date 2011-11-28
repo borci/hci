@@ -5,7 +5,9 @@
         <title>Pizzerka-mobil</title>
 
         <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="bocne_panely.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="filtre.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="adresa.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="menu_pizze.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="kosik.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/jquery-ui-1.8.16.custom.css" type="text/css" />
