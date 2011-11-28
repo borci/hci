@@ -107,15 +107,9 @@ function init_menu_pizze() {
     $('#potvrdenie_o_pridani').hide();
    
 	 scrollovanie();
-
-    $('#sipka_h').hide();
-	 $('#sipka_d').show();
 	 
-	 $('#sipka_h2').hide();
-	 $('#sipka_d2').hide();
-	 
-	 $('#sipka_h3').hide();
-	 $('#sipka_d3').hide();
+	 show_sipka_hore(false);
+	 show_sipka_dole(true); 
 	 
 	 $('#informacie').click (function() {
 		 $('#prazdny').show();
@@ -128,15 +122,14 @@ function init_menu_pizze() {
 		 $('.pridavanie').hide();
 		 $('#pridavanie_titulka').hide();
 
-	 
-		 $('#sipka_h3').hide();
-		 $('#sipka_d3').hide();
+		 show_sipka_hore(false);
+		 show_sipka_dole(false);
 		 });
 		 
 	 $('.ukonci_filtrovanie').click (function() {
 		
-		 $('#sipka_h2').hide();
-		 $('#sipka_d2').hide();
+		 show_sipka_hore(false);
+		 show_sipka_dole(false);
 		 
 		 $('.filter').slideUp(300);
 		 $('#filtrovanie_titulka').slideUp(300);
@@ -150,19 +143,20 @@ function init_menu_pizze() {
 						$('.menu').animate({scrollTop: '1px'},0);
 						var a = $('.menu').scrollTop();
 						$('.menu').animate({scrollTop: '0px'},0);
-						$('#sipka_h').hide();
-						$('#sipka_d').show();
+						show_sipka_hore(false);
+				      show_sipka_dole(true);
+						
 						if (menu_scroll == 0) $('#sipka_d').hide();
 					}
 					
 					else if ($('.menu').scrollTop() == menu_scroll) {
-						$('#sipka_h').hide();
-						$('#sipka_d').show();
+						show_sipka_hore(true);
+						show_sipka_dole(false);
 						
 					}
 					else {
-						$('#sipka_d').show();
-						$('#sipka_h').show();
+						show_sipka_hore(true);
+						show_sipka_dole(true);
 					}
 		});
 		
@@ -173,16 +167,16 @@ function init_menu_pizze() {
 		 $('#prazdny').hide();
 		 
 		if ( $('.menu').scrollTop() == 0) {
-				$('#sipka_h').hide();
-				$('#sipka_d').show();				
+				show_sipka_hore(false);
+				show_sipka_dole(true);				
 					}					
 		else if ($('.menu').scrollTop() == menu_scroll) {
-				$('#sipka_d').hide();
-				$('#sipka_h').show();		
+				show_sipka_hore(true);
+				show_sipka_dole(false);		
 					}
 		else {
-				$('#sipka_d').show();
-				$('#sipka_h').show();
+				show_sipka_hore(true);
+				show_sipka_dole(true);
 					}
 		});
 	 	
@@ -192,72 +186,73 @@ function init_menu_pizze() {
 					$('#filtrovanie_titulka').slideDown(350);
 					$('.filter').slideDown(350);
 					
-					$('#sipka_h').hide();
-					$('#sipka_d').hide();
+					show_sipka_hore(false);
+					show_sipka_dole(false);
 					
 					if ($('.filter').scrollTop() == filter_scroll) {
-						$('#sipka_d2').hide();
-						$('#sipka_h2').show();
+						show_sipka_hore(true);
+						show_sipka_dole(false);
 					}
 					else if ($('.filter').scrollTop() == 0) {
-						$('#sipka_h2').hide();
-						$('#sipka_d2').show();
+						show_sipka_hore(false);
+						show_sipka_dole(true);
 					}
 					else {
-						$('#sipka_d2').show();
-						$('#sipka_h2').show();
+						show_sipka_hore(true);
+						show_sipka_dole(true);
 					}
 				
 		  });
    
+   
 	$('.menu').scroll(function () { 
       
       if ($('.menu').scrollTop() == menu_scroll) {
-			 $('#sipka_d').hide();
-			 $('#sipka_h').show();
+			 show_sipka_hore(true);
+			 show_sipka_dole(false);
 			 if ( $('.menu').scrollTop() == 0) {
-				$('#sipka_h').hide();
-				$('#sipka_d').hide();
+				show_sipka_hore(false);
+				show_sipka_dole(false);
 			}
 		}
 		else if ( $('.menu').scrollTop() == 0) {
-			 $('#sipka_h').hide();
-			 $('#sipka_d').show();
+			 show_sipka_hore(false);
+			 show_sipka_dole(true);
 		}
 		else {
-			$('#sipka_d').show();
-			$('#sipka_h').show();}
+			show_sipka_hore(true);
+			show_sipka_dole(true);}
     });
     
     $('.filter').scroll(function () { 
 				
       if ($('.filter').scrollTop() == filter_scroll) {
-			 $('#sipka_d2').hide();
-			 $('#sipka_h2').show();	 
+			 show_sipka_hore(true);
+			 show_sipka_dole(false);	 
 		}
 		else if ($('.filter').scrollTop() == 0) {
-			 $('#sipka_h2').hide();
-			 $('#sipka_d2').show();			
+			show_sipka_hore(false);
+			show_sipka_dole(true);			
 		}
 		else {
-			$('#sipka_d2').show();
-			$('#sipka_h2').show();
+			show_sipka_hore(true);
+			show_sipka_dole(true);
 		}
     });
     
     $('.pridavanie').scroll(function () { 
 				
       if ($('.pridavanie').scrollTop() == pridavanie_scroll) {
-			 $('#sipka_d3').hide();
-			 $('#sipka_h3').show();	 
+			 show_sipka_hore(true);
+			 show_sipka_dole(false);	 
 		}
 		else if ($('.pridavanie').scrollTop() == 0) {
-			 $('#sipka_h3').hide();
-			 $('#sipka_d3').show();			
+			 show_sipka_hore(false);
+			 show_sipka_dole(true);;			
 		}
 		else {
-			$('#sipka_d3').show();
-			$('#sipka_h3').show();
+			show_sipka_hore(true);
+			show_sipka_dole(true);
 		}
     });
 
@@ -453,3 +448,15 @@ function scrollovanie() {
     $('.filter').hide();
     $('.filter').css('z-index','112');
 }
+
+function uprav_indexy_sipok() {
+	var i = $('#global_sipka_hore').css('z-index');
+	if (i == 250) {
+		$('#global_sipka_hore').css('z-index',0);
+		$('#global_sipka_dole').css('z-index',0);
+		}
+	else {
+		$('#global_sipka_hore').css('z-index',250);
+		$('#global_sipka_dole').css('z-index',250);}	
+	
+	}
