@@ -4,16 +4,23 @@ function animacia_fajka(speed) {
     })
 }
 
-function global_message_info(text, speed) {
+function global_message_info(text, duration) {
+    if (duration == 'normal') {
+        duration = 1000;
+    }
+    
     $('#global_message_info').text(text);
-    $('#global_message_info').fadeIn(speed, function() {
-        $(this).fadeOut(speed);
+    $('#global_message_info').fadeIn('medium', function() {
+        $(this).delay(duration).fadeOut('slow');
     })
 }
 
-function global_message_error(text, speed) {
-    $('#global_message_error .message_text').text(text);
-    $('#global_message_error').fadeIn(speed, function() {
-        $(this).fadeOut(speed);
+function global_message_error(text, duration) {
+    if (duration == 'normal') {
+        duration = 1000;
+    }
+    $('#global_message_error').text(text);
+    $('#global_message_error').fadeIn('medium', function() {
+        $(this).delay(duration).fadeOut('slow');
     })
 }

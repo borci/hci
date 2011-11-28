@@ -52,8 +52,8 @@ function onLoginResponse(response_text) // callback volany ajaxom pri prijati od
 
 
     } else if (response['status'] == 'Error') { // Login failed, server hlasi chybu
-        //        alert('Nesprávne prihlasovacie údaje!');
-        alert(response['message']);
+//        alert(response['message']);
+        global_message_error(response['message'], 'normal');
     } else { // neznama chyba
         alert('Unknown Error (login)');        
     }
@@ -71,11 +71,11 @@ function onRegisterResponse(response_text)
     }
     
     if (response["status"] == 'OK') { // registration OK
-        //        alert('Registrácia OK');
+        global_message_info('Registrácia dokončená', 'normal');
         loginUser(); // zaroven pouzivatela prihlasit
     } else if (response['status'] == 'Error') { // Registration failed, server hlasi chybu
 //        alert(response['message']);  
-        global_message_error(response['message'], 1000);
+        global_message_error(response['message'], 'normal');
     } else { // neznama chyba
         alert('Unknown Error');        
     }
@@ -95,7 +95,7 @@ function onSaveResponse(response_text)
         animacia_fajka('slow');
     } else if (response['status'] == 'Error') { // Registration failed, server hlasi chybu
 //        alert(response['message']);
-        global_message_error(response['message']);
+        global_message_error(response['message'], 'normal');
     } else { // neznama chyba
         alert('Unknown Error');        
     }   
