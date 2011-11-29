@@ -5,6 +5,7 @@
 
 .right_panel {
     -moz-user-select: none;
+    width: 250px;
 }
 
 .right_panel .kosik_nadpis {
