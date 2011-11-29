@@ -11,6 +11,9 @@
     z-index:112;
     border: 0px;
     overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
 
     -moz-user-select: none;
 

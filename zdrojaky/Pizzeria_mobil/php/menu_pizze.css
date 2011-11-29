@@ -1,12 +1,47 @@
 /**************************************************/
 /*******************ponuka pizz********************/
 /**************************************************/
+#uvodna_stranka {
+	width: 220px;
+	height: 350px;
+	background-color: grey;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+	z-index: 300;
+}
+
+#vstupit {
+	width: 200px;
+	height: 40px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	z-index: 301;
+	font-size: 16px;
+	border: 0px;
+	background-color: #D7ECE8;
+	
+	-moz-user-select: none;
+
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+	
+
+}
 
 #prazdny {
 	width: 220px;
 	height: 350px;
 	background-color: grey;
-	z-index: 2;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -45,6 +80,9 @@
     z-index:2;
     border: 0px;
     overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
 
     -moz-user-select: none;
 
@@ -218,11 +256,14 @@
 .menu {
     width: 216px;
     height: 252px;
+    padding: 0px;
+    margin: 0px;
     position: absolute;
     top: 55px;
     left: 2px;
     overflow:  hidden;
     list-style: none;
+    list-style-type: none;
     background-repeat:  repeat;
 
     -moz-user-select: none;
@@ -250,6 +291,7 @@
     border-bottom: 1px;
     border-color: black;
     border-style: solid;
+    list-style-type: none;
 
     -moz-border-radius-topleft: 10px;
     -webkit-border-top-left-radius: 10px;

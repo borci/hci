@@ -111,6 +111,10 @@ function init_menu_pizze() {
 	 show_sipka_hore(false);
 	 show_sipka_dole(true); 
 	 
+	 $('#vstupit').click(function() {
+		 $('#uvodna_stranka').slideUp(500);
+		 });
+	 
 	 $('#informacie').click (function() {
 		 $('#prazdny').show();
 		 $('#info').slideDown(300);
@@ -292,7 +296,7 @@ function init_menu_pizze() {
 		 var meno = meno_cena_pole[0];
 		 var cena = meno_cena_pole[1];
 		 pridat_do_kosika(meno,cena);
-		 global_message_info("Pridana pizza: " + meno,"normal");
+		 global_message_info("Pridaná pizza: " + meno,"normal");
 		 });
 		
 	// **************************************************************************	 
