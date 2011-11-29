@@ -78,8 +78,8 @@
 }
 
 .pridavanie {
-    width: 212px;
-    height: 288px;
+   width: 214px;
+    height: 360px;
     position: absolute;
     background-color: #D7ECE8;
     top: 50px;
@@ -87,7 +87,7 @@
     font-size: 15px; 
     z-index:2;
     border: 0px;
-    overflow: hidden;
+    overflow: auto;
     padding: 0px;
     margin: 0px;
     list-style-type: none;
@@ -166,39 +166,7 @@
     cursor: pointer;
 }
 
-#pridavanie_titulka {
 
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    color: black;
-    background-color: #D7ECE8;
-    border: 1px;
-    width: 218px;
-    height: 35px;
-    border: 1px;
-    border-style: solid;
-    z-index: 112;  
-    
-    -moz-user-select: none;
-    
-    -moz-border-radius-bottomright: 10px;
-    -webkit-border-bottom-right-radius: 10px;
-
-    -moz-border-radius-bottomleft: 10px;
-    -webkit-border-bottom-left-radius: 10px;
-}
-
-#pridavanie_titulka p {
-	line-height: 16px;
-	font-size: 14px;
-	font-weight: bold;
-	margin: 0px;
-	margin-top: 3px;
-	margin-left: 10px;
-	padding: 0px;
-	color: green;
-}
 
 #pridavanie_titulka h5 {
 	line-height: 12px;
@@ -418,6 +386,67 @@
 	color: black;
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+
+
+#pridavanie_titulka {
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: black;
+    background-color: #D7ECE8;
+    border: 1px;
+    width: 218px;
+    height: 35px;
+    border: 1px;
+    border-style: solid;
+    z-index: 112;  
+    
+    -moz-user-select: none;
+    
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+}
+
+#pridavanie_titulka p {
+	line-height: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0px;
+	margin-top: 5px;
+	margin-left: 10px;
+	padding: 0px;
+	color: green;
+}
+
+#pridavanie_div {
+    width: 220px;
+    height: 400px;
+    position: absolute;
+    background-color: #D7ECE8;
+    top: 0px;
+    right: 0px;
+    font-size: 15px; 
+    z-index:112;
+    border: 2px;
+    border-style: solid;
+    overflow: hidden;
+
+    -moz-user-select: none;
+
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
 }
 
 .kinetic-moving-up {

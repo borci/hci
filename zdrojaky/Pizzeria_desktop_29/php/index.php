@@ -12,13 +12,23 @@
         <link rel="stylesheet" href="kosik.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="dialogy.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/jquery-ui-1.8.16.custom.css" type="text/css" />
+        <link rel="stylesheet" href="css/jquery.jscrollpane.css"  type="text/css"  media="all" />
 
+        <script type="text/javascript" src="js/jquery_1.4.3.min.js"></script>
         <script type="text/javascript" src="js/jquery-1.6.3.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.js"></script>
         <script type="text/javascript" src="js/jquery.kinetic.js"></script>
 <!--        <script type="text/javascript" src="js/jquery.kineticscrollbar.js"></script>-->
         <script type="text/javascript" src="js/transify.js"></script>
 <!--        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>-->
+
+
+
+
+
+        
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
 
         <script type="text/javascript" src="skript.js"></script>
         <script type="text/javascript" src="adresa.js"></script>

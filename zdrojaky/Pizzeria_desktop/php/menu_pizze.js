@@ -97,12 +97,10 @@ function init_menu_pizze() {
         $(this).removeAttr('checked');
     });
          
-    $('.filter').hide();
-    $('.pridavanie').hide();
     $('#info').hide();
     $('#prazdny').hide();
-    $('#pridavanie_titulka').hide();
-    $('#filtrovanie_titulka').hide();
+    $('#pridavanie_div').hide();
+    $('#filtrovanie').hide();
     $('#informacie_titulka').hide();
 	 
 	 show_sipka_hore(false);
@@ -115,15 +113,11 @@ function init_menu_pizze() {
 	 
 	 $('.ukonci_pridavanie').click (function() {
 		 
-		 $('.pridavanie').slideUp(300);
-		 $('#pridavanie_titulka').slideUp(300);
-		 $('#prazdny').hide();
+		 $('#pridavanie_div').hide();
 	});
 		 
 	 $('.ukonci_filtrovanie').click (function() {
-       $('.filter').slideUp(300);
-		 $('#filtrovanie_titulka').slideUp(300);
-		 $('#prazdny').hide();
+       $('#filtrovanie').hide();
 		 
 	});
 		
@@ -136,9 +130,9 @@ function init_menu_pizze() {
 	 	
 	  	 
     $('#button_f').click( function() {
-		 $('#prazdny').show();
-		 $('#filtrovanie_titulka').slideDown(350);
-		 $('.filter').slideDown(350);
+	
+		 $('#filtrovanie').show();
+		
 	 });
    
    
@@ -247,9 +241,7 @@ function pridat_suroviny(zoznam, nazov_pizze) {
     });
    $('#pridavanie_titulka h5').text("pre pizzu ");
    $('#pridavanie_titulka h5').append(nazov_pizze);
-   $('#prazdny').show(); 
-	$('.pridavanie').slideDown(300);
-	$('#pridavanie_titulka').slideDown(300);
+   $('#pridavanie_div').show();
 	//$('.pridavanie').animate({scrollTop: '0px'},0);
 	obj_pizza = zoznam;
 	var pole = new Array();
@@ -314,16 +306,3 @@ function checkni(a) {
 
 
 
-function uprav_indexy_sipok() {
-	var i = $('#global_sipka_hore').css('z-index');
-	zisti_scroll_menu();
-	if (i == 250) {
-		$('#global_sipka_hore').css('z-index',0);
-		$('#global_sipka_dole').css('z-index',0);
-		}
-	else {
-		$('#global_sipka_hore').css('z-index',250);
-		$('#global_sipka_dole').css('z-index',250);
-		}	
-	
-	}
