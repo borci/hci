@@ -3,8 +3,8 @@
 /*************** K O S I K *************************/
 /*****************************************************************/
 
-ul {list-style-type: none}
-img {padding-right: 20px; float:left}
+/*ul {list-style-type: none}
+img {padding-right: 20px; float:left}*/
 
 .right_panel {
     -moz-user-select: none;
@@ -21,6 +21,13 @@ img {padding-right: 20px; float:left}
     /*    todo*/
     width:220px;
     -moz-user-select: none;
+}
+
+p.kosik_nadpis {
+    color:#cccccc;
+    line-height:22px;
+    padding: 0 0 10px;
+    margin: 20px 0 20px 0;
 }
 
 #infolist h3 {

@@ -15,19 +15,14 @@ body {
 a:focus {
     outline: none;
 }
-img{
+/*img{
     float: right;
     margin: 3px 3px 6px 8px;
     padding: 5px;
     background: #222222;
     border: 1px solid #333333;
-}
-p {
-    color:#cccccc;
-    line-height:22px;
-    padding: 0 0 10px;
-    margin: 20px 0 20px 0;
-}
+}*/
+
 
 /*--------------------------------------------*/
 /* ****************** Triggery panelov *****************/

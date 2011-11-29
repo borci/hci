@@ -13,7 +13,7 @@
     /*    opacity: .85;*/
     margin: 0 auto;
     z-index: 90;
-
+/*    -moz-user-select: none;*/
 }
 .panel p{
     margin: 0 0 15px 0;
