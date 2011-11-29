@@ -104,121 +104,44 @@ function init_menu_pizze() {
     $('#pridavanie_titulka').hide();
     $('#filtrovanie_titulka').hide();
     $('#informacie_titulka').hide();
-   
-   
-	 scrollovanie();
 	 
 	 show_sipka_hore(false);
-	 show_sipka_dole(true); 
+	 show_sipka_dole(false); 
 	 
 	 $('#vstupit').click(function() {
 		 $('#vstupit').hide();
 		 $('#uvodna_stranka').slideUp(500);
 		 });
 	 
-	 $('#informacie').click (function() {
-		 $('#prazdny').show();
-		 $('#info').slideDown(300);
-		 $('#informacie_titulka').slideDown(300);
-		 uprav_indexy_sipok()
-	 });
-	 
 	 $('.ukonci_pridavanie').click (function() {
 		 
 		 $('.pridavanie').slideUp(300);
 		 $('#pridavanie_titulka').slideUp(300);
 		 $('#prazdny').hide();
-
-		 $('#global_sipka_hore').css('z-index',0);
-		 $('#global_sipka_dole').css('z-index',0);
-		 });
+	});
 		 
 	 $('.ukonci_filtrovanie').click (function() {
-		
-		 show_sipka_hore(false);
-		 show_sipka_dole(false);
-		 
-		 $('.filter').slideUp(300);
+       $('.filter').slideUp(300);
 		 $('#filtrovanie_titulka').slideUp(300);
 		 $('#prazdny').hide();
 		 
-		zisti_scroll_menu();
-		});
+	});
 		
-	$('.ukonci_informacie').click (function() {
-				 
+	$('.ukonci_informacie').click (function() {			 
 		 $('#info').slideUp(300);
 		 $('#informacie_titulka').slideUp(300);
 		 $('#prazdny').hide();
-		 
-		zisti_scroll_menu();
-		uprav_indexy_sipok()
-		});
+
+	});
 	 	
 	  	 
     $('#button_f').click( function() {
-					$('#prazdny').show();
-					$('#filtrovanie_titulka').slideDown(350);
-					$('.filter').slideDown(350);
-					
-					show_sipka_hore(false);
-					show_sipka_dole(false);
-					
-					zisti_scroll_filtra()
-				
-		  });
+		 $('#prazdny').show();
+		 $('#filtrovanie_titulka').slideDown(350);
+		 $('.filter').slideDown(350);
+	 });
    
    
-	$('.menu').scroll(function () { 
-      
-      if ($('.menu').scrollTop() == menu_scroll) {
-			 show_sipka_hore(true);
-			 show_sipka_dole(false);
-			 if ( $('.menu').scrollTop() == 0) {
-				show_sipka_hore(false);
-				show_sipka_dole(false);
-			}
-		}
-		else if ( $('.menu').scrollTop() == 0) {
-			 show_sipka_hore(false);
-			 show_sipka_dole(true);
-		}
-		else {
-			show_sipka_hore(true);
-			show_sipka_dole(true);}
-    });
-    
-   $('.filter').scroll(function () { 
-				
-      if ($('.filter').scrollTop() == filter_scroll) {
-			 show_sipka_hore(true);
-			 show_sipka_dole(false);	 
-		}
-		else if ($('.filter').scrollTop() == 0) {
-			show_sipka_hore(false);
-			show_sipka_dole(true);			
-		}
-		else {
-			show_sipka_hore(true);
-			show_sipka_dole(true);
-		}
-    });
-    
-   $('.pridavanie').scroll(function () { 
-				
-      if ($('.pridavanie').scrollTop() == pridavanie_scroll) {
-			 show_sipka_hore(true);
-			 show_sipka_dole(false);	 
-		}
-		else if ($('.pridavanie').scrollTop() == 0) {
-			 show_sipka_hore(false);
-			 show_sipka_dole(true);;			
-		}
-		else {
-			show_sipka_hore(true);
-			show_sipka_dole(true);
-		}
-    });
 
 
 	var stringOfClassNames = '';                                    		// vytvorenie a vynulovanie premennej
@@ -328,7 +251,6 @@ function pridat_suroviny(zoznam, nazov_pizze) {
 	$('.pridavanie').slideDown(300);
 	$('#pridavanie_titulka').slideDown(300);
 	//$('.pridavanie').animate({scrollTop: '0px'},0);
-	zisti_scroll_pridavania();
 	obj_pizza = zoznam;
 	var pole = new Array();
 	pole = get_suroviny(zoznam);
@@ -390,29 +312,7 @@ function checkni(a) {
 // *****************************************************************************
 // *****************************************************************************
 
-function scrollovanie() {
-	 $('.menu').css('z-index','-1');
-    $('.menu').animate({scrollTop: '10000px'},0);
-    menu_scroll = $('.menu').scrollTop();
-    $('.menu').animate({scrollTop: '0px'},0);
-    $('.menu').css('z-index','1');
-    
-    $('.pridavanie').css('z-index','-1');
-    $('.pridavanie').show();
-    $('.pridavanie').animate({scrollTop: '10000px'},0);
-    pridavanie_scroll = $('.pridavanie').scrollTop();
-    $('.pridavanie').animate({scrollTop: '0px'},0);
-    $('.pridavanie').hide();
-    $('.pridavanie').css('z-index','112');
-    
-    $('.filter').css('z-index','-2');
-    $('.filter').show();
-    $('.filter').animate({scrollTop: '10000px'},0);
-    filter_scroll = $('.filter').scrollTop();
-    $('.filter').animate({scrollTop: '0px'},0);
-    $('.filter').hide();
-    $('.filter').css('z-index','112');
-}
+
 
 function uprav_indexy_sipok() {
 	var i = $('#global_sipka_hore').css('z-index');
@@ -427,58 +327,3 @@ function uprav_indexy_sipok() {
 		}	
 	
 	}
-	
-function zisti_scroll_menu() {
-	var a = $('.menu').scrollTop() +'px';
-	$('.menu').animate({scrollTop: '10000px'},0);
-	menu_scroll = $('.menu').scrollTop();
-	$('.menu').animate({scrollTop: a},0);
-		 
-	if ( $('.menu').scrollTop() == 0) {
-		show_sipka_hore(false);
-	   show_sipka_dole(true);
-						
-		if (menu_scroll == 0) show_sipka_dole(false);
-	}
-	else if ($('.menu').scrollTop() == menu_scroll) {
-		show_sipka_hore(true);
-		show_sipka_dole(false);
-	}
-	else {
-		show_sipka_hore(true);
-		show_sipka_dole(true);
-	}
-}	
-	
-function zisti_scroll_filtra() {
-	if ( $('.filter').scrollTop() == 0) {
-		show_sipka_hore(false);
-		show_sipka_dole(true);
-	}
-	else if ($('.filter').scrollTop() == filter_scroll) {
-		show_sipka_hore(true);
-		show_sipka_dole(false);
-	}
-	else {
-		show_sipka_hore(true);
-		show_sipka_dole(true);
-	}
-}	
-
-function zisti_scroll_pridavania() {
-	
-	$('#global_sipka_hore').css('z-index',250);
-	$('#global_sipka_dole').css('z-index',250);
-	if ( $('.pridavanie').scrollTop() == 0) {
-		show_sipka_hore(false);
-		show_sipka_dole(true);
-	}
-	else if ($('.pridavanie').scrollTop() == filter_scroll) {
-		show_sipka_hore(true);
-		show_sipka_dole(false);
-	}
-	else {
-		show_sipka_hore(true);
-		show_sipka_dole(true);
-	}
-}

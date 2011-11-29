@@ -16,8 +16,6 @@
 	color: green;
 	margin: 0px;
 	font-size: 16px;
-
-
 }
 
 #vstupit {
@@ -213,39 +211,7 @@
 	color: green;
 }
 
-#informacie_titulka {
 
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    color: black;
-    background-color: #D7ECE8;
-    border: 1px;
-    width: 218px;
-    height: 35px;
-    border: 1px;
-    border-style: solid;
-    z-index: 112;  
-    
-    -moz-user-select: none;
-    
-    -moz-border-radius-bottomright: 10px;
-    -webkit-border-bottom-right-radius: 10px;
-
-    -moz-border-radius-bottomleft: 10px;
-    -webkit-border-bottom-left-radius: 10px;
-}
-
-#informacie_titulka p {
-	line-height: 20px;
-	font-size: 15px;
-	font-weight: bold;
-	margin: 0px;
-	margin-top: 5px;
-	margin-left: 10px;
-	padding: 0px;
-	color: green;
-}
 
 .ukonci_informacie {
 	
@@ -264,19 +230,14 @@
 }
 
 .menu {
-    width: 216px;
-    height: 252px;
-    padding: 0px;
-    margin: 0px;
+    width: 630px;
+    height: 412px;
     position: absolute;
-    top: 55px;
-    left: 2px;
-    overflow:  hidden;
+    top: 70px;
+    left: 315px;
+    overflow:  auto;
     list-style: none;
-    list-style-type: none;
     background-repeat:  repeat;
-
-    -moz-user-select: none;
 
     -moz-border-radius-topleft: 10px;
     -webkit-border-top-left-radius: 10px;
@@ -290,8 +251,8 @@
 }
 
 .menu li {
-    width:211px;
-    height: 81px;
+     width:600px;
+    height: 100px;
     background-color: #D7ECE8;
     position: relative;
     top: 0px;
@@ -301,32 +262,29 @@
     border-bottom: 1px;
     border-color: black;
     border-style: solid;
-    list-style-type: none;
 
-    -moz-border-radius-topleft: 10px;
-    -webkit-border-top-left-radius: 10px;
-    -moz-border-radius-bottomleft: 10px;
-    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 50px;
+    -webkit-border-top-left-radius: 50px;
+    -moz-border-radius-bottomleft: 50px;
+    -webkit-border-bottom-left-radius: 50px;
 
-    -moz-border-radius-topright: 10px;
-    -webkit-border-top-right-radius: 10px;
-    -moz-border-radius-bottomright: 10px;
-    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topright: 50px;
+    -webkit-border-top-right-radius: 50px;
+    -moz-border-radius-bottomright: 50px;
+    -webkit-border-bottom-right-radius: 50px;
 
 }
 
 .menu li h3 {
-
-    position: absolute;
     top: 0px;
-    left: 10px;
     padding: 0px;
-    margin: 0px;
+    margin: auto;
     padding-bottom: 2px;
     border: 0px;
     font-family: 'Palatino Linotype';
-    font-size: 14px;
+    font-size: 18px;
     color: green;
+    font: bolder;
 }
 
 .menu li h5 {
@@ -345,32 +303,41 @@
 .menu li p {
     color:black;
     position: absolute;
-    top: 17px;
+    top: 24px;
     left: 5px;
     padding: 0px;
     margin: 0px;
     border: 0px;
     font: normal;
-    font-size: 10px;
-    line-height: 11px;
+  
+    font-size: 12px;
 
+}
+
+.pizza {
+    width: 380px;
+    height: 98px;
+    position: absolute;
+    left: 110px;
+    top: 1px;
 }
 
 .Pridat {
     position: absolute;
-    left: 112px;
-    bottom: 5px;
+    right: 5px;
+    bottom: 2px;
     color: black;
     background-color: #49BC22;
     border: 0px;
     font: bold;
-    width: 95px;
-    cursor: pointer;
+    width: 100px;
+    height: 47px;
     
-    -moz-border-radius-topright: 10px;
-    -webkit-border-top-right-radius: 10px;
-    -moz-border-radius-bottomright: 10px;
-    -webkit-border-bottom-right-radius: 10px;
+     font-size: 17px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-radius-bottomright: 45px;
+    -webkit-border-bottom-right-radius: 45px;
 
     -moz-border-radius-topleft: 10px;
     -webkit-border-top-left-radius: 10px;
@@ -379,20 +346,21 @@
 }
 
 .Pridat_m {
-    position: absolute;
-    left: 5px;
-    bottom: 5px;
+     position: absolute;
+    right: 5px;
+    top: 2px;
     color: black;
     background-color: #49BC22;
     border: 0px;
     font: bold;
-    width: 95px;
-    cursor: pointer;
+    width: 100px;
+    height: 47px;
+    font-size: 17px;
 
-    -moz-border-radius-topright: 10px;
-    -webkit-border-top-right-radius: 10px;
-    -moz-border-radius-bottomright: 10px;
-    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topright: 45px;
+    -webkit-border-top-right-radius: 45px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
 
     -moz-border-radius-topleft: 10px;
     -webkit-border-top-left-radius: 10px;
