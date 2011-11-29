@@ -228,21 +228,26 @@ function on_kosik_objednaj() {
     var kontakt = $("#adresa_kontakt").attr('value');
     var adresa = $("#adresa_adresa").attr('value');
     
-    if (meno.length < 3) {
+    if (meno.length < 1) {
         global_message_error("Uvedte prosím Vaše meno", 'normal');
         return;
     }
-    if (kontakt.length < 3) {
+    if (kontakt.length < 1) {
         global_message_error("Uvedte prosím Vaše telefónne číslo", 'normal');
         return;
     }
-    if (adresa.length < 3) {
+    if (!check_kontakt()) {
+        return;
+    }
+    if (adresa.length < 1) {
         global_message_error("Uvedte prosím Vašu adresu doručenia", 'normal');
         return;
     }
     
     global_message_info('Objednávka odoslaná', 'normal');
+    setTimeout(function() { $(".right_trigger").click(); }, 500);
     empty_kosik();
+//    $(".right_trigger").click();
 }
 
 function update_kosik_trigger_image() { // nastavi pozadie trigger-u na plny/prazdny kosik
