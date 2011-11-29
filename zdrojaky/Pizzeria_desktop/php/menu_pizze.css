@@ -152,11 +152,11 @@
 }
 
 .menu {
-    width: 630px;
-    height: 390px;
+    width: 549px;
+    height: 392px;
     position: absolute;
     top: 80px;
-    left: 315px;
+    left: 355px;
     overflow:  auto;
     list-style: none;
     margin: 0px;
@@ -175,8 +175,8 @@
 }
 
 .menu li {
-    width:600px;
-    height: 75px;
+    width:520px;
+    height: 95px;
     background-color: #D7ECE8;
     position: relative;
     top: 0px;
@@ -229,8 +229,8 @@
     position: absolute;
     top: 2px;
     left: 4px;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     background: none;
     padding: 0px;
     margin: 0px;
@@ -238,11 +238,12 @@
 }
 
 .pizza {
-    width: 400px;
+    width: 317px;
     height: 98px;
     position: absolute;
-    left: 90px;
+    left: 95px;
     top: 1px;
+
 }
 
 .Pridat {
@@ -254,7 +255,7 @@
     border: 0px;
     font: bold;
     width: 100px;
-    height: 30px;
+    height: 40px;
     
      font-size: 17px;
     -moz-border-radius-topright: 0px;
@@ -277,7 +278,7 @@
     border: 0px;
     font: bold;
     width: 100px;
-    height: 30px;
+    height: 40px;
     font-size: 17px;
 
     -moz-border-radius-topright: 45px;
@@ -404,4 +405,21 @@
     -webkit-border-bottom-left-radius: 10px;
 }
 
-
+#spodok {
+	width: 1000px;
+	height: 75px;
+	background-color: #D7ECE8;
+	position: absolute;
+	bottom: 0px;
+	left: 100px;
+	display: block;
+	z-index: 111;
+	
+	-moz-border-radius-topleft: 50px;
+   -webkit-border-top-left-radius: 50px;
+  
+   -moz-border-radius-topright: 50px;
+   -webkit-border-top-right-radius: 50px;
+   
+	
+}

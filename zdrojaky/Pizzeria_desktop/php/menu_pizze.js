@@ -10,6 +10,7 @@ function init_menu_pizze() {
    $('#pridavanie_div').hide();
    $('#filtrovanie').hide();
    $('#informacie_titulka').hide();
+   $('#spodok').show();
    
    $('.pridavanie input').each( function () {
       $(this).removeAttr('checked');
