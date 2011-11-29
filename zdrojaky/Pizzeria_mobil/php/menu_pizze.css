@@ -93,7 +93,7 @@
     top: 1px;
     left: 1px;
     width: 190px;
-    height: 15px;
+    height: 19px;
     border: 0px;
     border-style: solid;
 }
@@ -114,6 +114,7 @@
     position: absolute;
     top: -3px;
     left: 30px; 
+    margin-top: 5px;
     line-height: 15px;
     font-size: 13px;
     cursor: pointer;
@@ -162,83 +163,6 @@
 	margin-left: 15px;
 	padding: 0px;
 	color: green;
-}
-
-
-#sipka_h {
-    width: 220px;
-    height: 20px;
-    background: none;
-    padding: 0px;
-    margin: 0px;
-    position: absolute;
-    left: 0px;
-    top: 35px;
-    border: 0px;
-}
-
-#sipka_d {
-    width: 220px;
-    height: 20px;
-    background: none;
-    padding: 0px;
-    margin: 0px;
-    border: 1px;
-    position: absolute;
-    left: 0px;
-    top: 307px;
-}
-
-#sipka_h2 {
-    width: 220px;
-    height: 20px;
-    background: none;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    position: absolute;
-    left: 0px;
-    top: 35px;
-    z-index: 112;
-}
-
-#sipka_d2 {
-    width: 220px;
-    height: 20px;
-    background: none;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    position: absolute;
-    left: 0px;
-    top: 307px;
-    z-index: 112;
-}
-
-#sipka_h3 {
-    width: 218px;
-    height: 20px;
-    background: none;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    position: absolute;
-    left: 0px;
-    top: 35px;
-    z-index: 112;
-}
-
-#sipka_d3 {
-    width: 218px;
-    height: 20px;
-    background: none;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    position: absolute;
-    left: 0px;
-    top: 307px;
-    z-index: 112;
 }
 
 #informacie_titulka {

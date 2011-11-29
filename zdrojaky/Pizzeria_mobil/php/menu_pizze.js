@@ -292,7 +292,7 @@ function init_menu_pizze() {
 		 var meno = meno_cena_pole[0];
 		 var cena = meno_cena_pole[1];
 		 pridat_do_kosika(meno,cena);
-		 global_message_info("Pridana pizza: " + meno,500);
+		 global_message_info("Pridana pizza: " + meno,"normal");
 		 });
 		
 	// **************************************************************************	 
@@ -307,6 +307,7 @@ function init_menu_pizze() {
 				
 		if ($(this).is(':checked')) vloz_surovinu(obj_pizza, surovina, cena);
 		else 	odstran_surovinu(obj_pizza, surovina);
+		return true;
 		});	 
 }
 
