@@ -27,6 +27,8 @@
     </head>
     <body>
         <div class="body_div">
+            <div class="main_hlavicka"></div>
+            
             <!--            tu bude zoznam pizz-->
             <?php
             include 'menu-pizze.html';
