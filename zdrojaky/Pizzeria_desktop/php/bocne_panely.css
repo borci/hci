@@ -26,7 +26,7 @@ a.trigger{
     -moz-user-select: none;
 }
 a.trigger:hover{
-    background-color: #222222;
+/*    background-color: #222222;*/
 }
 
 /* **************************************************************** */
@@ -35,14 +35,14 @@ a.trigger:hover{
 
 .panel {
     position: absolute;
-    top: 0px;
-    display: none;
+    top: 100px;
     background: #000000;
     border:0px solid #111111;
     filter: alpha(opacity=85);
     /*    opacity: .85;*/
     margin: 0 auto;
-    z-index: 90;
+/*    z-index: 90;*/
+    display: block;
 /*    -moz-user-select: none;*/
 }
 .panel p{
@@ -87,7 +87,7 @@ a.left_trigger{
     -moz-border-radius-bottomright: 20px;
 }
 a.left_trigger:hover {
-    padding-left: 15px;
+/*    padding-left: 15px;*/
 }
 
 /********************** Pravy panel *********************************/
@@ -120,6 +120,6 @@ a.kosik_full.right_trigger {
 }
 
 a.right_trigger:hover {
-    padding-right: 15px;
+/*    padding-right: 15px;*/
 }
 

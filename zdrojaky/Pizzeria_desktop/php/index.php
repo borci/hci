@@ -16,9 +16,7 @@
         <script type="text/javascript" src="js/jquery-1.6.3.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.js"></script>
         <script type="text/javascript" src="js/jquery.kinetic.js"></script>
-<!--        <script type="text/javascript" src="js/jquery.kineticscrollbar.js"></script>-->
         <script type="text/javascript" src="js/transify.js"></script>
-<!--        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>-->
 
         <script type="text/javascript" src="skript.js"></script>
         <script type="text/javascript" src="adresa.js"></script>
