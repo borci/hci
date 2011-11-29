@@ -1,32 +1,29 @@
 /* ****************** Triggery panelov *****************/
 
-a.active.trigger, a.active.trigger.right_trigger.kosik_full {
-    /*    background-image: url(images/minus.png);*/
-    background-image: url(images/panel_close20.png);
-    background-color: #222222;
-}
-
 a.trigger{
     /*    position: absolute;*/
     position: relative;
 
     /*    tymto parametrom sa da jednoducho nastavit sirka oboch triggerov*/
-    width: 40px;
-    text-decoration: none;
-    top: 5px;
-    font-size: 14px;
-    letter-spacing:-1px;
-    font-family: verdana, helvetica, arial, sans-serif;
+    width: 190px;
+/*    height: 40px;*/
+    top: 65px;
+
     color:#fff;
-    font-weight: 700;
     /*    background:#333333 url(images/plus.png) no-repeat;*/
     border:1px solid #444444;
     display: block;
-    z-index: 95;
+    z-index: 1;
+    font-family: verdana, helvetica, arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 700;
     -moz-user-select: none;
+    cursor: default;
 }
 a.trigger:hover{
-/*    background-color: #222222;*/
+    /*    background-color: #222222;*/
 }
 
 /* **************************************************************** */
@@ -37,13 +34,13 @@ a.trigger:hover{
     position: absolute;
     top: 100px;
     background: #000000;
-    border:0px solid #111111;
+    border:1px solid #111111;
     filter: alpha(opacity=85);
     /*    opacity: .85;*/
     margin: 0 auto;
-/*    z-index: 90;*/
+    /*    z-index: 90;*/
     display: block;
-/*    -moz-user-select: none;*/
+    /*    -moz-user-select: none;*/
 }
 .panel p{
     margin: 0 0 15px 0;
@@ -70,11 +67,11 @@ a.trigger:hover{
 .left_panel {
     padding: 5px 5px 0px 15px;
     width: 200px;
-    height: 345px;
-/*    height: auto;*/
+    height: 380px;
+    /*    height: auto;*/
     left: 0;    
-/*    -moz-border-radius-topright: 20px;*/
-/*    -moz-border-radius-bottomright: 20px;*/
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
 }
 
 a.left_trigger{
@@ -87,7 +84,7 @@ a.left_trigger{
     -moz-border-radius-bottomright: 20px;
 }
 a.left_trigger:hover {
-/*    padding-left: 15px;*/
+    /*    padding-left: 15px;*/
 }
 
 /********************** Pravy panel *********************************/
@@ -96,10 +93,10 @@ a.left_trigger:hover {
     padding: 5px 5px 0px 0px;
     width: 215px;
     /*    height: auto;*/
-    height: 345px;
+    height: 380px;
     right: 0;
-/*    -moz-border-radius-topleft: 20px;*/
-/*    -moz-border-radius-bottomleft: 20px;*/
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
     overflow: hidden;
 }
 
@@ -120,6 +117,6 @@ a.kosik_full.right_trigger {
 }
 
 a.right_trigger:hover {
-/*    padding-right: 15px;*/
+    /*    padding-right: 15px;*/
 }
 
