@@ -101,7 +101,7 @@ function init_menu_pizze() {
     $('.pridavanie').hide();
     $('#info').hide();
     $('#filtrovanie').hide();
-    //$('#pridavanie_titulka').hide();
+    $('#pridavanie_div').hide();
     $('#filtrovanie_titulka').hide();
     $('#informacie_titulka').hide();
     $('#potvrdenie_o_pridani').hide();
