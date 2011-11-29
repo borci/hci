@@ -67,7 +67,7 @@ function pridat_do_kosika(nazov_pizze, jednotkova_cena) {
     var newstr = '<h3> <div class="kosik_item_header"> <span class="kosik_pocet">1</span> <span>x</span> <span class="kosik_nazov_pizze">' + nazov_pizze +
     '</span> <span class="kosik_pizza_cena"><span class="jednotkova_cena">' + jednotkova_cena +
     '</span> <span class="suma">' + jednotkova_cena +
-    '</span><span>€</span></span></div> <span class="kosik_plus"></span> <span class="kosik_minus"></span> <span class="kosik_delitem"></span> </h3>' +
+    '</span><span class="euro_sign">€</span></span></div> <span class="kosik_plus"></span> <span class="kosik_minus"></span> <span class="kosik_delitem"></span> </h3>' +
     '<div><span class="kosik_add_suroviny">Pridať suroviny</span> <ul class="kosik_pizza_suroviny"> </ul></div>';
     $('#infolist').append(newstr);
 

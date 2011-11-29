@@ -51,10 +51,13 @@ p.kosik_nadpis {
     position: relative;
     left: -5px;
     width: 140px;
-    padding: 8px;
+    padding: 6px;
     padding-left: 17px;
     display: block;
     /*    float: left;*/
+    /*    color: #1c6c5c;*/
+    color: #06501d;
+    color: #2d4d24;
 
     font-size: 14px;
     font-weight: normal;
@@ -65,6 +68,16 @@ p.kosik_nadpis {
     /*    float: left;*/
 }
 
+#infolist h3 .kosik_item_header .suma {
+    color: brown;
+}
+#infolist h3 .kosik_item_header .euro_sign {
+    color: brown;
+}
+#infolist h3 .kosik_item_header .kosik_pocet {
+/*    color: brown;*/
+}
+
 #infolist h3 .kosik_item_header .jednotkova_cena {
     display: none;
 }
@@ -72,7 +85,7 @@ p.kosik_nadpis {
 #infolist h3 .kosik_delitem {
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 3px;
     z-index: 100;
     background: url(images/kosik_delete24.png) center center no-repeat;
     width: 24px;
@@ -82,7 +95,7 @@ p.kosik_nadpis {
 #infolist h3 .kosik_plus {
     position: absolute;
     right: 45px;
-    top: 7px;
+    top: 5px;
     z-index: 100;
     background-image: url(images/kosik_plus20.png);
     background-repeat: no-repeat;
@@ -94,7 +107,7 @@ p.kosik_nadpis {
 #infolist h3 .kosik_minus {
     position: absolute;
     right: 25px;
-    top: 7px;
+    top: 5px;
     z-index: 100;
     background-image: url(images/kosik_minus20.png);
     background-repeat: no-repeat;
