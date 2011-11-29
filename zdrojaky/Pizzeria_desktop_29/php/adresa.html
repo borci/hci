@@ -1,0 +1,58 @@
+<!--   *****************      Lavy vysuvaci panel **********************-->
+<div class="left_panel panel">
+    <div class="login_form">
+        <form action="javascript:">
+            <div class="form_subblock adresa_prihlaseny_hlavicka show_on_login">
+                <div class="form_element">
+                    <div class="adresa_prihlaseny_hlavicka_text">
+                        <h5><span></span> <span class="prihlaseny_hlavicka_login">username</span></h5>
+                    </div>
+                    <div class="adresa_prihlaseny_hlavicka_icon">
+                    </div>
+
+                    <!--                    <input class="button" type="submit" value="Odhlásiť" onclick="logoutUser();" id="adresa_odhlasit" />-->
+                </div>
+            </div>
+
+            <div class="form_subblock show_on_logout">
+                <div class="form_element">
+                    <label for="login">Login:</label>
+                    <input type="text" name="login" id="adresa_login" value="jnovak" />
+                </div>
+                <div class="form_element">
+                    <label for="password" >Heslo:</label>
+                    <input type="password" name="password" id="adresa_password" value="pass" />
+                </div>
+                <div class="form_button">
+                    <input class="button" type="submit" value="Prihlásiť" onclick="loginUser();" id="adresa_prihlasit" />
+                    <input class="button" type="submit" value="Registrovať" onclick="registerUser();" id="adresa_registrovat" />
+                </div>
+            </div>
+
+            <div class="form_subblock">
+                <div class="form_element">
+                    <label for="adresa_meno">Meno:</label>
+                    <input type="text" name="meno" id="adresa_meno" />
+                </div>
+                <div class="form_element">
+                    <label for="adresa_kontakt">Kontakt:</label>
+                    <input type="text" name="ulica" id="adresa_kontakt" />
+                </div>
+                <div class="form_element">
+                    <label for="adresa_adresa">Adresa:</label>
+                    <input type="text" name="mesto" id="adresa_adresa" />
+                </div>
+            </div>
+
+            <div class="form_subblock adresa_prihlaseny_pata show_on_login">
+                <div class="form_button">
+                    <!--                    <h4><span>Prihlásený</span> <span class="prihlaseny_hlavicka_login"></span></h4>-->
+                    <input class="button" type="submit" value="Uložiť" onclick="saveUserContact();" id="adresa_save" />
+                    <input class="button" type="submit" value="Odhlásiť" onclick="logoutUser();" id="adresa_odhlasit" />
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

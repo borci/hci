@@ -1,0 +1,80 @@
+/***************** Login form *********************/
+
+.login_form {
+    position: relative;
+    left: 0;
+    clear: left;
+    width: 200px;
+    color: #cccccc;
+    padding-top: 30px;
+}
+
+.form_element {
+    margin-top:3px;
+    margin-bottom:10px;
+    width: 80px;
+}
+
+.form_subblock {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+label {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    font-size: 12px;
+}
+input {
+    margin-top:2px;
+    width: 170px;
+    -moz-border-radius: 10px;
+    border: 1px solid gray;
+    padding: 3px 8px;
+}
+input[type=submit] {
+    width: 90px;
+    cursor: pointer;
+}
+
+.form_button {
+    margin-bottom: 15px;    
+}
+
+/************* Hlavicka Prihlaseny ******/
+/*.adresa_prihlaseny_hlavicka {
+    display: none;
+}*/
+
+.show_on_login {
+    display: none;
+}
+
+.adresa_prihlaseny_hlavicka {
+    position: relative;
+/*    background-color: yellow;*/
+}
+
+.adresa_prihlaseny_hlavicka_text {
+    position: relative;
+    width: 70px;
+    height: 64px;
+    float: right;
+    /*    padding: 10px 10px 10px 10px;*/
+}
+
+.adresa_prihlaseny_hlavicka_icon {
+    background-image: url(images/adresa64.png);
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    /*    position: relative;*/
+    /*    bohuzial musi ist absolute*/
+    position: absolute;
+    left: 115px;
+    /*    float: left;*/
+}
+
+.prihlaseny_hlavicka_login {
+
+}

@@ -1,0 +1,171 @@
+/************** filtre ****************/
+#filtrovanie {
+    width: 220px;
+    height: 400px;
+    position: absolute;
+    background-color: #D7ECE8;
+    top: 37px;
+    left: 3px;
+    font-size: 15px; 
+    z-index:112;
+    border: 2px;
+    border-style: solid;
+    overflow: hidden;
+
+    -moz-user-select: none;
+
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+}
+
+#filtrovanie_titulka {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: black;
+    background-color: #D7ECE8;
+    border: 0px;
+    border-bottom: 1px;
+    width: 218px;
+    height: 35px;
+    
+    border-style: solid;
+    z-index: 112;
+    
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+}
+
+#filtrovanie_titulka p {
+	line-height: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0px;
+	margin-top: 5px;
+	padding: 0px;
+	color: green;
+}
+
+.ukonci_filtrovanie {
+	
+	background-image: url(images/panel_close20.png);
+	background-repeat: no-repeat;
+   position: absolute;
+   right: 0;
+   top: 5px;
+   z-index: 100;
+   
+   width: 35px;
+   height: 35px;
+   display: block;
+   cursor: pointer;   
+ 
+}
+
+.filter {
+    width: 215px;
+    height: 360px;
+    position: absolute;
+    background-color: #D7ECE8;
+    top: 40px;
+    left: 3px;
+    font-size: 15px; 
+    z-index:112;
+    border: 0px;
+    overflow: auto;
+
+    -moz-user-select: none;
+
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+
+}
+
+.filter p {
+    line-height: 20px; 
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 3px;
+    margin-left: 40px;
+    color: green;
+    font-weight: bold;
+}
+
+.filter li {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    width: 190px;
+    height: 15px;
+    border: 0px;
+    border-style: solid;
+}
+
+.filter li input {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    float: left;
+    cursor: pointer;
+}
+
+.filter li label {
+    height: 14px;
+    width: 160px;
+    position: absolute;
+    top: -3px;
+    left: 30px; 
+    line-height: 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#button_f {
+    position: absolute;
+    left: 565px;
+    top: 55px;
+    color: black;
+    background-color: white;
+    border: 1px;
+    width: 150px;
+    height: 25px;
+    border: 1px;
+    border-style: solid;
+    cursor: pointer;
+    
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+
+}
+
+/************** filtre ****************/
