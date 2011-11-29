@@ -21,11 +21,15 @@ function init_menu_pizze() {
 	});
 		 
 	$('.ukonci_filtrovanie').click (function() {
-       $('#filtrovanie').hide();	 
+       $('#filtrovanie').hide();
+       $('.menu').css('top',80);
+		$('.menu').css('height',392);	 
 	});
 	 	  	 
     $('#button_f').click( function() {
 		$('#filtrovanie').show();
+		$('.menu').css('top',175);
+		$('.menu').css('height',294);
 	});
    
 	filtrovanie();

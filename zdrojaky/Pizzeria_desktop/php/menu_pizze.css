@@ -156,7 +156,7 @@
     height: 392px;
     position: absolute;
     top: 80px;
-    left: 221px;
+    left: 250px;
     overflow:  auto;
     list-style: none;
     margin: 0px;
@@ -344,7 +344,6 @@
 	margin-bottom: 0px;
 }
 
-
 #pridavanie_titulka {
 
     position: absolute;
@@ -406,14 +405,16 @@
 }
 
 #spodok {
-	width: 1000px;
-	height: 75px;
+	width: 620px;
+	height: 65px;
 	background-color: #D7ECE8;
 	position: absolute;
 	bottom: 0px;
-	left: 100px;
+	left: 220px;
 	display: block;
 	z-index: 111;
+	border: 2px;
+	border-style: solid;
 	
 	-moz-border-radius-topleft: 50px;
    -webkit-border-top-left-radius: 50px;

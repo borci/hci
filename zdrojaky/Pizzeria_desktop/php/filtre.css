@@ -1,13 +1,13 @@
 /************** filtre ****************/
 #filtrovanie {
-    width: 220px;
-    height: 400px;
+    width: 500px;
+    height: 160px;
     position: absolute;
     background-color: #D7ECE8;
-    top: 37px;
-    left: 3px;
+    top: 0px;
+    left: 270px;
     font-size: 15px; 
-    z-index:112;
+    z-index:110;
     border: 2px;
     border-style: solid;
     overflow: hidden;
@@ -33,7 +33,7 @@
     background-color: #D7ECE8;
     border: 0px;
     border-bottom: 1px;
-    width: 218px;
+    width: 165px;
     height: 35px;
     
     border-style: solid;
@@ -49,6 +49,8 @@
 }
 
 #filtrovanie_titulka p {
+	position: absolute;
+	left: 10px;
 	line-height: 20px;
 	font-size: 15px;
 	font-weight: bold;
@@ -75,14 +77,14 @@
 }
 
 .filter {
-    width: 215px;
+    width: 500px;
     height: 360px;
     position: absolute;
     background-color: #D7ECE8;
-    top: 50px;
+    top: 0px;
     left: 4px;
     font-size: 15px; 
-    z-index:112;
+    z-index:111;
     border: 0px;
     overflow: auto;
     padding: 0px;
@@ -120,7 +122,7 @@
     top: 1px;
     left: 1px;
     width: 190px;
-    height: 19px;
+    height: 16px;
     border: 0px;
     border-style: solid;
 }
@@ -148,7 +150,7 @@
 }
 #button_f {
     position: absolute;
-    left: 550px;
+    left: 275px;
     top: 50px;
     color: black;
     background-color: #D7ECE8;
@@ -170,7 +172,53 @@
     -webkit-border-bottom-left-radius: 10px;
 
 }
+#nic {
+	position: absolute;
+	top:40px;
+	left:5px;
+}
 
+#nic_label {
+	position: absolute;
+	top:40px;
+	left: 30px;
+}
+#maso {
+	position: absolute;
+	background-color: #D7ECE8;
+	width: 165px;
+	height: 100px;
+	top: 60px;
+}
+#syry {
+	position: absolute;
+	background-color: #D7ECE8;
+	width: 165px;
+	height: 100px;
+	top: 5px;
+	left: 170px;
+	z-index: 112;
+}
+
+#zelenina {
+	position: absolute;
+	background-color: #D7ECE8;
+	width: 150px;
+	height: 100px;
+	top: 5px;
+	left: 340px;
+	z-index: 112;
+}
+
+#ine {
+	position: absolute;
+	background-color: #D7ECE8;
+	width: 165px;
+	height: 40px;
+	top: 110px;
+	left: 170px;
+	z-index: 112;
+}
 /************** filtre ****************/
-/*************ku pridavaniu************/
+
 
