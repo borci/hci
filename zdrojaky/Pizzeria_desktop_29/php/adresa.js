@@ -1,11 +1,24 @@
 function init_adresa()
 {
+    $('#adresa_kontakt').focusout(function() {
+        check_kontakt();
+    });
 //    
 //    $('#adresa_prihlasit').click(test);
 //    $('#adresa_prihlasit').click(loginUser);
 //    $('#adresa_odhlasit');
 //    $('#adresa_registrovat');
 //    $('#adresa_save');
+}
+
+function check_kontakt() { // zkontroluje, ci kontakt (telefon) obsahuje cislo (prip. zacinajuce predvolbou: +)
+    var kontakt = $('#adresa_kontakt').attr('value');
+    kontakt = kontakt.split(' ').join(''); // ignoracia medzier
+    if (kontakt[0] == '-' || isNaN(kontakt)) {
+        global_message_error('Telefón obsahuje nepovolené znaky', 'normal');
+        return false;
+    }
+    return true;
 }
 
 function onLoginResponse(response_text) // callback volany ajaxom pri prijati odpovedi (na poziadavku prihlasenia) zo serveru
@@ -19,7 +32,7 @@ function onLoginResponse(response_text) // callback volany ajaxom pri prijati od
     //    alert('status == ' + response['status'])
     
     if (response["status"] == 'OK') { // login OK
-        global_message_info('Prihlásenie úspešné', 'short');
+        //        global_message_info('Prihlásenie úspešné', 'short');
 
         $('#adresa_meno').attr("value", response["meno"]);
         $('#adresa_kontakt').attr("value", response["kontakt"]);
@@ -152,4 +165,6 @@ function logoutUser()
     $('#adresa_meno').attr("value", '');
     $('#adresa_kontakt').attr("value", '');
     $('#adresa_adresa').attr("value", '');
+    $('#adresa_password').attr("value", '');
+    $('#adresa_login').attr("value", '');
 }

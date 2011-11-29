@@ -20,19 +20,20 @@
     margin-bottom:10px;
 }
 
-label {
+.login_form label {
     padding-top: 5px;
     padding-bottom: 0px;
     font-size: 12px;
+    -moz-user-select: none;
 }
-input {
+.login_form input {
     margin-top:2px;
     width: 170px;
     -moz-border-radius: 10px;
     border: 1px solid gray;
     padding: 3px 8px;
 }
-input[type=submit] {
+.login_form input[type=submit] {
     width: 90px;
     cursor: pointer;
 }
@@ -52,7 +53,7 @@ input[type=submit] {
 
 .adresa_prihlaseny_hlavicka {
     position: relative;
-/*    background-color: yellow;*/
+    /*    background-color: yellow;*/
 }
 
 .adresa_prihlaseny_hlavicka_text {
