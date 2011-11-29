@@ -1,0 +1,19 @@
+root { 
+    display: block;
+}
+body {
+    background-color: #1a1a1a;
+}
+.body_div {
+    position: relative;
+    width: 220px;
+    height: 350px;
+    background-color: gray;
+    border: 0px solid green;
+    margin: 0 auto; 
+}
+a:focus {
+    outline: none;
+}
+
+/*--------------------------------------------*/
