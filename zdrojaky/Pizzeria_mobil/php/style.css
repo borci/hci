@@ -32,7 +32,7 @@ p {
 /*--------------------------------------------*/
 /* ****************** Triggery panelov *****************/
 
-a.active.trigger {
+a.active.trigger, a.active.trigger.right_trigger.kosik_full {
     /*    background-image: url(images/minus.png);*/
     background-image: url(images/panel_close20.png);
     background-color: #222222;
@@ -41,8 +41,8 @@ a.active.trigger {
 a.trigger{
     /*    position: absolute;*/
     position: relative;
-    
-/*    tymto parametrom sa da jednoducho nastavit sirka oboch triggerov*/
+
+    /*    tymto parametrom sa da jednoducho nastavit sirka oboch triggerov*/
     width: 40px;
     text-decoration: none;
     top: 5px;

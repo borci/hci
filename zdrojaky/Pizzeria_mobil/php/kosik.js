@@ -79,6 +79,7 @@ function pridat_do_kosika(nazov_pizze, jednotkova_cena) {
         });
         $(nadpis).fadeOut("medium", function(){
             $(nadpis).remove();
+            update_kosik_trigger_image();
             update_platit_spolu();
         });
         return false;
@@ -117,6 +118,7 @@ function pridat_do_kosika(nazov_pizze, jednotkova_cena) {
         header: 'h3'
     });
     
+    update_kosik_trigger_image();
     update_platit_spolu();
 }
 
@@ -208,6 +210,14 @@ function is_kosik_empty() {
     return $('#infolist h3').size() == 0;
 }
 
+function empty_kosik() {
+    $('#infolist').children().fadeOut('slow', function() {
+        $(this).remove();
+        update_platit_spolu();
+        update_kosik_trigger_image();
+    })
+}
+
 function on_kosik_objednaj() {
     if (is_kosik_empty()) {
         global_message_error('Nemáte nič objednané', 'normal');
@@ -232,4 +242,13 @@ function on_kosik_objednaj() {
     }
     
     global_message_info('Objednávka odoslaná', 'normal');
+    empty_kosik();
+}
+
+function update_kosik_trigger_image() { // nastavi pozadie trigger-u na plny/prazdny kosik
+    if (is_kosik_empty()) {
+        $('.right_trigger').removeClass('kosik_full');
+    } else {
+        $('.right_trigger').addClass('kosik_full');
+    }
 }

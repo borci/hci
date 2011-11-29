@@ -85,11 +85,11 @@ ul li{
     overflow: hidden;
 }
 
-a.right_trigger{
+a.right_trigger {
     right: 0;
     float: right;
     padding: 5px 5px 5px 30px;
-    background:#333333 url(images/kosik_plny.png) no-repeat;
+    background:#333333 url(images/kosik20.png) no-repeat;
     background-position: 15% 55%;
 
     text-align: right;
@@ -97,7 +97,7 @@ a.right_trigger{
     -moz-border-radius-bottomleft: 20px;
 }
 
-a.kosk_full.right_trigger {
+a.kosik_full.right_trigger {
     background-image: url(images/kosik_plny20.png);    
 }
 
