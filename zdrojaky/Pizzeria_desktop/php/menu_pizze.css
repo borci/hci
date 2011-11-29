@@ -153,7 +153,7 @@
 
 .menu {
     width: 630px;
-    height: 412px;
+    height: 390px;
     position: absolute;
     top: 80px;
     left: 315px;
@@ -176,7 +176,7 @@
 
 .menu li {
     width:600px;
-    height: 85px;
+    height: 75px;
     background-color: #D7ECE8;
     position: relative;
     top: 0px;
@@ -215,13 +215,12 @@
 .menu li p {
     color:black;
     position: absolute;
-    top: 24px;
+    top: 20px;
     left: 5px;
     padding: 0px;
     margin: 0px;
     border: 0px;
     font: normal;
-  
     font-size: 12px;
 
 }
@@ -230,8 +229,8 @@
     position: absolute;
     top: 2px;
     left: 4px;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background: none;
     padding: 0px;
     margin: 0px;
@@ -239,10 +238,10 @@
 }
 
 .pizza {
-    width: 380px;
+    width: 400px;
     height: 98px;
     position: absolute;
-    left: 110px;
+    left: 90px;
     top: 1px;
 }
 
@@ -255,7 +254,7 @@
     border: 0px;
     font: bold;
     width: 100px;
-    height: 35px;
+    height: 30px;
     
      font-size: 17px;
     -moz-border-radius-topright: 0px;
@@ -278,7 +277,7 @@
     border: 0px;
     font: bold;
     width: 100px;
-    height: 35px;
+    height: 30px;
     font-size: 17px;
 
     -moz-border-radius-topright: 45px;

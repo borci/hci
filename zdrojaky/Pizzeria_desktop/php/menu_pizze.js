@@ -27,73 +27,7 @@ function init_menu_pizze() {
 		$('#filtrovanie').show();
 	});
    
-	var stringOfClassNames = '';                                    		// vytvorenie a vynulovanie premennej
-	$('.menu > li').each( function (i) {
-		var thisClassString = $(this).attr('class');    						// ulozenie classu do premennej
-		stringOfClassNames = stringOfClassNames +','+ thisClassString   	// postupne pridava do stringu classy
-	});
-
-	stringOfClassNames = jQuery.trim(stringOfClassNames);   // zbavi sa zbytocnych prazdnych znakov
-	var arrayClasses = stringOfClassNames.split(',');       // vytvori sa pole s prvkami classou
-   var arrayClasses = arrayClasses.sort();
-	arrayUniqueClasses = (unique(arrayClasses));            // ako v shelly :-)
-	
-	if (arrayUniqueClasses.length > 1) {
-		          $('.filter input').each( function () {
-                        $(this).removeAttr('checked');
-                    });
-
-                $('.filter input').click( function() {
-                        
-                    if ($(this).is(':checked')) { 
-                        var meno = $(this).val();
-                        if (meno == "filterAll") {
-                            $('.menu li').each( function () {
-                                $(this).slideDown();
-                            });
-
-                            $('.filter input').each( function () {
-                                $(this).removeAttr('checked');
-                            });
-                            return;
-                        }
-                  
-                        
-                    }
-                    else {$(this).removeAttr('checked');}
-                    
-                    var zapnuteFiltre = '';
-                    $('.filter input').each( function () {
-                        var surovina = $(this).val();
-                        if ($(this).is(':checked')) { zapnuteFiltre = zapnuteFiltre +','+ surovina;}
-                    });
-                    var poleZapnutychFiltrov = zapnuteFiltre.split(',');
-             
-
-                    if (poleZapnutychFiltrov.length == 1) {
-                         $('.menu li').each( function () {
-                            $(this).slideDown();
-                        });
-                    }
-
-                    else  {
-                        if (poleZapnutychFiltrov[1].length > 1) {
-                        $('.menu li').each( function () {
-                            var klasa = $(this).attr('class');
-                            
-                            var pole = klasa.split(',');
-                            if(obsahuje(pole, poleZapnutychFiltrov,zapnuteFiltre)){
-                                $(this).slideDown();
-                                
-                        }
-                        else { $(this).slideUp(); }
-
-                        });
-                    }
-               }
-        });
-    }
-    
+	filtrovanie();
     // **************************************************************************
     //************************ pridavanie do kosika *****************************
     // **************************************************************************
@@ -188,6 +122,75 @@ function checkni(a) {
 	});
 }
 
+function filtrovanie() {
+	var stringOfClassNames = '';                                    		// vytvorenie a vynulovanie premennej
+	$('.menu > li').each( function (i) {
+		var thisClassString = $(this).attr('class');    						// ulozenie classu do premennej
+		stringOfClassNames = stringOfClassNames +','+ thisClassString   	// postupne pridava do stringu classy
+	});
+
+	stringOfClassNames = jQuery.trim(stringOfClassNames);   // zbavi sa zbytocnych prazdnych znakov
+	var arrayClasses = stringOfClassNames.split(',');       // vytvori sa pole s prvkami classou
+   var arrayClasses = arrayClasses.sort();
+	arrayUniqueClasses = (unique(arrayClasses));            // ako v shelly :-)
+	
+	if (arrayUniqueClasses.length > 1) {
+		          $('.filter input').each( function () {
+                        $(this).removeAttr('checked');
+                    });
+
+                $('.filter input').click( function() {
+                        
+                    if ($(this).is(':checked')) { 
+                        var meno = $(this).val();
+                        if (meno == "filterAll") {
+                            $('.menu li').each( function () {
+                                $(this).slideDown();
+                            });
+
+                            $('.filter input').each( function () {
+                                $(this).removeAttr('checked');
+                            });
+                            return;
+                        }
+                  
+                        
+                    }
+                    else {$(this).removeAttr('checked');}
+                    
+                    var zapnuteFiltre = '';
+                    $('.filter input').each( function () {
+                        var surovina = $(this).val();
+                        if ($(this).is(':checked')) { zapnuteFiltre = zapnuteFiltre +','+ surovina;}
+                    });
+                    var poleZapnutychFiltrov = zapnuteFiltre.split(',');
+             
+
+                    if (poleZapnutychFiltrov.length == 1) {
+                         $('.menu li').each( function () {
+                            $(this).slideDown();
+                        });
+                    }
+
+                    else  {
+                        if (poleZapnutychFiltrov[1].length > 1) {
+                        $('.menu li').each( function () {
+                            var klasa = $(this).attr('class');
+                            
+                            var pole = klasa.split(',');
+                            if(obsahuje(pole, poleZapnutychFiltrov,zapnuteFiltre)){
+                                $(this).slideDown();
+                                
+                        }
+                        else { $(this).slideUp(); }
+
+                        });
+                    }
+               }
+        });
+    }
+    
+	}
 
 // *****************************************************************************
 // *****************************************************************************
