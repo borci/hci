@@ -1,50 +1,6 @@
 /**************************************************/
 /*******************ponuka pizz********************/
 /**************************************************/
-#uvodna_stranka {
-	width: 220px;
-	height: 350px;
-	background-color: #D7ECE8;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	display: block;
-	z-index: 300;
-}
-
-#uvodna_stranka h3{
-	color: green;
-	margin: 0px;
-	font-size: 16px;
-}
-
-#vstupit {
-	width: 200px;
-	height: 40px;
-	position: absolute;
-	bottom: 10px;
-	left: 10px;
-	z-index: 301;
-	font-size: 16px;
-	border: 0px;
-	color: white;
-	background-color: green;
-	cursor: pointer;
-	
-	-moz-user-select: none;
-
-    -moz-border-radius-topright: 10px;
-    -webkit-border-top-right-radius: 10px;
-    -moz-border-radius-bottomright: 10px;
-    -webkit-border-bottom-right-radius: 10px;
-
-    -moz-border-radius-topleft: 10px;
-    -webkit-border-top-left-radius: 10px;
-    -moz-border-radius-bottomleft: 10px;
-    -webkit-border-bottom-left-radius: 10px;
-	
-
-}
 
 #prazdny {
 	width: 220px;
@@ -70,8 +26,6 @@
     cursor: pointer;
     -moz-border-radius-topright: 10px;
     -webkit-border-top-right-radius: 10px;
-
-
     -moz-border-radius-topleft: 10px;
     -webkit-border-top-left-radius: 10px;
 
@@ -201,10 +155,12 @@
     width: 630px;
     height: 412px;
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 315px;
     overflow:  auto;
     list-style: none;
+    margin: 0px;
+    padding: 0px;
     background-repeat:  repeat;
 
     -moz-border-radius-topleft: 10px;
@@ -219,13 +175,14 @@
 }
 
 .menu li {
-     width:600px;
-    height: 100px;
+    width:600px;
+    height: 85px;
     background-color: #D7ECE8;
     position: relative;
     top: 0px;
-    left: 1px;
-    margin-bottom: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
     border: 2px;
     border-bottom: 1px;
     border-color: black;
@@ -247,25 +204,12 @@
     top: 0px;
     padding: 0px;
     margin: auto;
-    padding-bottom: 2px;
+    padding-bottom: 0px;
     border: 0px;
     font-family: 'Palatino Linotype';
-    font-size: 18px;
+    font-size: 16px;
     color: green;
     font: bolder;
-}
-
-.menu li h5 {
-    color:black;
-    position: absolute;
-    top: 19px;
-    left: 5px;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    font: normal;
-    font-size: 9px;
-
 }
 
 .menu li p {
@@ -282,6 +226,18 @@
 
 }
 
+.menu li .obr_pizze {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 80px;
+    height: 80px;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 45px;
+}
+
 .pizza {
     width: 380px;
     height: 98px;
@@ -293,13 +249,13 @@
 .Pridat {
     position: absolute;
     right: 5px;
-    bottom: 2px;
+    bottom: 5px;
     color: black;
     background-color: #49BC22;
     border: 0px;
     font: bold;
     width: 100px;
-    height: 47px;
+    height: 35px;
     
      font-size: 17px;
     -moz-border-radius-topright: 0px;
@@ -314,15 +270,15 @@
 }
 
 .Pridat_m {
-     position: absolute;
+    position: absolute;
     right: 5px;
-    top: 2px;
+    top: 5px;
     color: black;
     background-color: #49BC22;
     border: 0px;
     font: bold;
     width: 100px;
-    height: 47px;
+    height: 35px;
     font-size: 17px;
 
     -moz-border-radius-topright: 45px;
@@ -449,27 +405,4 @@
     -webkit-border-bottom-left-radius: 10px;
 }
 
-.kinetic-moving-up {
-    border-top-color: green !important;
-}
-.kinetic-moving-down {
-    border-bottom-color: green !important;
-}
-.kinetic-moving-left {
-    border-left-color: green !important;
-}
-.kinetic-moving-right {
-    border-right-color: green !important;
-}
-.kinetic-decelerating-up {
-    border-top-color: red !important;
-}
-.kinetic-decelerating-down {
-    border-bottom-color: red !important;
-}
-.kinetic-decelerating-left {
-    border-left-color: red !important;
-}
-.kinetic-decelerating-right {
-    border-right-color: red !important;
-}
+

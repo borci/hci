@@ -5,139 +5,28 @@ var filter_scroll;
 
 function init_menu_pizze() {
 	
-	// **************************************************************************
-	// ********************** zoznam pizz scrollovanie **************************
-	// **************************************************************************
-    $('.menu').kinetic();
-    $('#left').click(function(){
-        $('.menu').kinetic('start', {
-            velocity: 0
-        });
-    });
-    $('#right').click(function(){
-        $('.menu').kinetic('start', {
-            velocity: 0
-        });
-    });
-    $('#end').click(function(){
-        $('.menu').kinetic('end');
-    });
-    $('#stop').click(function(){
-        $('.menu').kinetic('stop');
-    });
-    // *************************************************************************
-    // ************************* kosik  scrollovanie ***************************
-    // *************************************************************************
-    $('.right_panel').kinetic();
-    $('#left').click(function(){
-        $('.right_panel').kinetic('start', {
-            velocity: 0
-        });
-    });
-    $('#right').click(function(){
-        $('.right_panel').kinetic('start', {
-            velocity: 0
-        });
-    });
-    $('#end').click(function(){
-        $('.right_panel').kinetic('end');
-    });
-    $('#stop').click(function(){
-        $('.right_panel').kinetic('stop');
-    });
-    
-    
-    // **************************************************************************
-    // ************************ pridavanie scrollovanie *************************
-    // **************************************************************************
-    $('.pridavanie').kinetic();
-    $('#left').click(function(){
-        $('.pridavanie').kinetic('start', {
-            velocity: 0
-        });
-    });
-    $('#right').click(function(){
-        $('.pridavanie').kinetic('start', {
-            velocity: 0
-        });
-    });
-    $('#end').click(function(){
-        $('.pridavanie').kinetic('end');
-    });
-    $('#stop').click(function(){
-        $('.pridavanie').kinetic('stop');
-    });
-    
-    // **************************************************************************
-    // **************************** filter scrollovanie *************************
-    // **************************************************************************  
-    $('.filter').kinetic();
-    $('#left').click(function(){
-        $('.filter').kinetic('start', {
-            velocity: 0
-        });
-    });
-    $('#right').click(function(){
-        $('.filter').kinetic('start', {
-            velocity: 0
-        });
-    });
-    $('#end').click(function(){
-        $('.filter').kinetic('end');
-    });
-    $('#stop').click(function(){
-        $('.filter').kinetic('stop');
-    });
-
-	 // **************************************************************************
-    // *********************************** filter *******************************
-    // **************************************************************************
-    
-    $('.pridavanie input').each( function () {
-        $(this).removeAttr('checked');
-    });
-         
-    $('#info').hide();
-    $('#prazdny').hide();
-    $('#pridavanie_div').hide();
-    $('#filtrovanie').hide();
-    $('#informacie_titulka').hide();
-	 
-	 show_sipka_hore(false);
-	 show_sipka_dole(false); 
-	 
-	 $('#vstupit').click(function() {
-		 $('#vstupit').hide();
-		 $('#uvodna_stranka').slideUp(500);
-		 });
-	 
-	 $('.ukonci_pridavanie').click (function() {
-		 
-		 $('#pridavanie_div').hide();
+	$('#info').hide();
+   $('#prazdny').hide();
+   $('#pridavanie_div').hide();
+   $('#filtrovanie').hide();
+   $('#informacie_titulka').hide();
+   
+   $('.pridavanie input').each( function () {
+      $(this).removeAttr('checked');
+   });
+          
+	$('.ukonci_pridavanie').click (function() {
+		  $('#pridavanie_div').hide();
 	});
 		 
-	 $('.ukonci_filtrovanie').click (function() {
-       $('#filtrovanie').hide();
-		 
+	$('.ukonci_filtrovanie').click (function() {
+       $('#filtrovanie').hide();	 
 	});
-		
-	$('.ukonci_informacie').click (function() {			 
-		 $('#info').slideUp(300);
-		 $('#informacie_titulka').slideUp(300);
-		 $('#prazdny').hide();
-
-	});
-	 	
-	  	 
+	 	  	 
     $('#button_f').click( function() {
-	
-		 $('#filtrovanie').show();
-		
-	 });
+		$('#filtrovanie').show();
+	});
    
-   
-
-
 	var stringOfClassNames = '';                                    		// vytvorenie a vynulovanie premennej
 	$('.menu > li').each( function (i) {
 		var thisClassString = $(this).attr('class');    						// ulozenie classu do premennej
@@ -242,7 +131,6 @@ function pridat_suroviny(zoznam, nazov_pizze) {
    $('#pridavanie_titulka h5').text("pre pizzu ");
    $('#pridavanie_titulka h5').append(nazov_pizze);
    $('#pridavanie_div').show();
-	//$('.pridavanie').animate({scrollTop: '0px'},0);
 	obj_pizza = zoznam;
 	var pole = new Array();
 	pole = get_suroviny(zoznam);
@@ -303,6 +191,3 @@ function checkni(a) {
 
 // *****************************************************************************
 // *****************************************************************************
-
-
-
