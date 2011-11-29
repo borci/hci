@@ -7,47 +7,47 @@ function init_kosik() { // funckia zavolana z $('document').ready
     });
 
     
-    $('#infolist h3 .kosik_delitem').click(function(){ // TODO: delete this function
-        var nadpis = $(this).parent();
-        var obsah = $(nadpis).next();
-        $(obsah).fadeOut("medium", function(){
-            $(obsah).remove();
-        });
-        $(nadpis).fadeOut("medium", function(){
-            $(nadpis).remove();
-            update_platit_spolu();
-        });
-        
-        return false;
-    });
+    //    $('#infolist h3 .kosik_delitem').click(function(){ // TODO: delete this function
+    //        var nadpis = $(this).parent();
+    //        var obsah = $(nadpis).next();
+    //        $(obsah).fadeOut("medium", function(){
+    //            $(obsah).remove();
+    //        });
+    //        $(nadpis).fadeOut("medium", function(){
+    //            $(nadpis).remove();
+    //            update_platit_spolu();
+    //        });
+    //        
+    //        return false;
+    //    });
 
-    $('#infolist h3 .kosik_plus').click(function(){ // TODO: delete this function
-        var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
-        var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
-        suma /= pocet;        
-        pocet = Number(pocet) + 1;        
-        suma *= pocet;        
-        $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
-        $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
-        update_platit_spolu();
-        return false;
-    });
-
-    $('#infolist h3 .kosik_minus').click(function(){ // TODO: delete this function
-        var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
-        var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
-        suma /= pocet;
-        pocet = Number(pocet) - 1;
-        if (pocet < 1)
-            return false;
-        suma *= pocet;
-        $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
-        $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
-        update_platit_spolu();        
-        return false;
-    });
-    
-    $('.kosik_add_suroviny').click(on_clicked_pridat_suroviny); // TODO: delete this function
+    //    $('#infolist h3 .kosik_plus').click(function(){ // TODO: delete this function
+    //        var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
+    //        var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
+    //        suma /= pocet;        
+    //        pocet = Number(pocet) + 1;        
+    //        suma *= pocet;        
+    //        $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
+    //        $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
+    //        update_platit_spolu();
+    //        return false;
+    //    });
+    //
+    //    $('#infolist h3 .kosik_minus').click(function(){ // TODO: delete this function
+    //        var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
+    //        var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
+    //        suma /= pocet;
+    //        pocet = Number(pocet) - 1;
+    //        if (pocet < 1)
+    //            return false;
+    //        suma *= pocet;
+    //        $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
+    //        $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
+    //        update_platit_spolu();        
+    //        return false;
+    //    });
+    //    
+    //    $('.kosik_add_suroviny').click(on_clicked_pridat_suroviny); // TODO: delete this function
     
     
     $('.kosik_button_objednat').click(function() {
@@ -55,9 +55,10 @@ function init_kosik() { // funckia zavolana z $('document').ready
     });
     
     // demo: pridanie niektorych pizz
-    pridat_do_kosika('Quatro', 4.2);
-    pridat_do_kosika('Klobásová', 4.5);
-    pridat_do_kosika('Hawai', 4.2);
+    //    pridat_do_kosika('Quatro', 4.2);
+    //    pridat_do_kosika('Klobásová', 4.5);
+    //    pridat_do_kosika('Hawai', 4.2);
+    update_kosik_trigger_image();
     
 }
 

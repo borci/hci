@@ -62,12 +62,10 @@ p.kosik_nadpis {
     /*    float: left;*/
 }
 
-
 #infolist h3 .kosik_item_header .jednotkova_cena {
     display: none;
 }
 
-/*#infolist h3*/
 #infolist h3 .kosik_delitem {
     position: absolute;
     right: 0;

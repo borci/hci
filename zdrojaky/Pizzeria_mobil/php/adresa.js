@@ -165,4 +165,6 @@ function logoutUser()
     $('#adresa_meno').attr("value", '');
     $('#adresa_kontakt').attr("value", '');
     $('#adresa_adresa').attr("value", '');
+    $('#adresa_password').attr("value", '');
+    $('#adresa_login').attr("value", '');
 }
