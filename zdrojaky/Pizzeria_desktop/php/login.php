@@ -7,12 +7,27 @@ $target = $_REQUEST['target'];
 $login = $_REQUEST['login'];
 $password = $_REQUEST['password'];
 
-$meno = $_REQUEST['meno'];
-$kontakt = $_REQUEST['kontakt'];
-$adresa = $_REQUEST['adresa'];
-
+if (isset($_REQUEST['meno'])) {
+    $meno = $_REQUEST['meno'];
+}
+if (isset($_REQUEST['kontakt'])) {
+    $kontakt = $_REQUEST['kontakt'];
+}
+if (isset($_REQUEST['adresa'])) {
+    $adresa = $_REQUEST['adresa'];
+}
 
 if ($target == 'login') { // login request
+    if (!isset($login) or strlen($login) < 1) {
+        echo "status=Error\n";
+        echo "message=Nebol zadaný login";
+        exit;
+    }
+    if (!isset($password) or strlen($password) < 1) { // TODO: overit to isset - ked sa do premennej priraduje neexistujuca premenna ... ?
+        echo "status=Error\n";
+        echo "message=Nebolo zadané heslo";
+        exit;
+    }
     if (!isset($_SESSION[$login])) { // ak pouzivatel neexistuje
         echo "status=Error\n";
         echo "message=Používateľ neexistuje";
@@ -34,6 +49,11 @@ if ($target == 'login') { // login request
     if (isset($_SESSION[$login])) { // ak je login uz obsadeny
         echo "status=Error\n";
         echo "message=Používateľ už existuje";
+        exit;
+    }
+    if (!isset($login) or strlen($login) < 1) {
+        echo "status=Error\n";
+        echo "message=Nebol zadaný login";
         exit;
     }
     if (!isset($password) or strlen($password) < 1) { // TODO: overit to isset - ked sa do premennej priraduje neexistujuca premenna ... ?

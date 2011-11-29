@@ -50,16 +50,32 @@ p.kosik_nadpis {
 #infolist h3 .kosik_item_header {
     position: relative;
     left: -5px;
+    width: 140px;
+    padding: 6px;
+    padding-left: 17px;
+    display: block;
+    /*    float: left;*/
+    /*    color: #1c6c5c;*/
+    color: #06501d;
+    color: #2d4d24;
+
     font-size: 14px;
     font-weight: normal;
     /*    color: #909c89;*/
-    width: 140px;
-    padding: 8px;
-    padding-left: 17px;
+
     text-decoration: none;
-    display: block;
     /*    clear: both;*/
     /*    float: left;*/
+}
+
+#infolist h3 .kosik_item_header .suma {
+    color: brown;
+}
+#infolist h3 .kosik_item_header .euro_sign {
+    color: brown;
+}
+#infolist h3 .kosik_item_header .kosik_pocet {
+/*    color: brown;*/
 }
 
 #infolist h3 .kosik_item_header .jednotkova_cena {
@@ -69,7 +85,7 @@ p.kosik_nadpis {
 #infolist h3 .kosik_delitem {
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 3px;
     z-index: 100;
     background: url(images/kosik_delete24.png) center center no-repeat;
     width: 24px;
@@ -79,10 +95,11 @@ p.kosik_nadpis {
 #infolist h3 .kosik_plus {
     position: absolute;
     right: 45px;
-    top: 7px;
+    top: 5px;
     z-index: 100;
     background-image: url(images/kosik_plus20.png);
     background-repeat: no-repeat;
+    background-position: center center;
     width: 20px;
     height: 20px;
     display: block;
@@ -90,7 +107,7 @@ p.kosik_nadpis {
 #infolist h3 .kosik_minus {
     position: absolute;
     right: 25px;
-    top: 7px;
+    top: 5px;
     z-index: 100;
     background-image: url(images/kosik_minus20.png);
     background-repeat: no-repeat;
@@ -99,9 +116,13 @@ p.kosik_nadpis {
     display: block;   
 }
 #infolist h3 .kosik_pizza_cena {
-    position: absolute;
+    /*        position: absolute;*/
+    /*    position: static;*/
+    /*position: relative;*/
     right: 15px;
     z-index: 100;
+    /*    float: right;*/
+
     /*    display: block;*/
 }
 
@@ -119,14 +140,16 @@ p.kosik_nadpis {
 #infolist .kosik_add_suroviny {
     position: relative;
     left: -5px;
-    padding: 0 0 15px 25px;
+    /*    padding: 0 0 25px 25px;*/
+    margin-bottom: 20px;
+    padding-left: 25px;
     /*    margin-bottom: 20px;*/
     /*    padding-left: 25px;*/
     top: 7px;
     /*    z-index: 100;*/
     background-image: url(images/kosik_pizza_add_suroviny20.png);
     background-repeat: no-repeat;
-    font-size: 13px;
+    font-size: 14px;
     /*    width: 20px;*/
     /*    height: 20px;*/
     /*    height: 20px;*/
@@ -137,6 +160,7 @@ p.kosik_nadpis {
 #infolist .kosik_pizza_suroviny {
     position: relative;
     /*    list-style-image: url(images/kosik_pizza_del_suroviny16.png);*/
+    /*    padding: 1px 0px 0px 10px;*/
     padding-left: 10px;
 
 }

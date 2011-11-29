@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Pizzerka-mobil</title>
+        <title>Pizzerka-desktop</title>
 
         <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="bocne_panely.css" type="text/css" media="screen" />
@@ -16,9 +16,9 @@
         <script type="text/javascript" src="js/jquery-1.6.3.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.js"></script>
         <script type="text/javascript" src="js/jquery.kinetic.js"></script>
-        <script type="text/javascript" src="js/jquery.kineticscrollbar.js"></script>
+<!--        <script type="text/javascript" src="js/jquery.kineticscrollbar.js"></script>-->
         <script type="text/javascript" src="js/transify.js"></script>
-        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<!--        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>-->
 
         <script type="text/javascript" src="skript.js"></script>
         <script type="text/javascript" src="adresa.js"></script>
