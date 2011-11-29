@@ -63,7 +63,7 @@ function init_kosik() { // funckia zavolana z $('document').ready
 
 function pridat_do_kosika(nazov_pizze, jednotkova_cena) {
     $('#infolist').accordion("destroy"); // docasne zrusenie accordionu, aby sa mohla pridat nova polozka
-    var newstr = '<h3> <span class="kosik_item_header"> <span class="kosik_pocet">1</span> <span>x</span> <span>' + nazov_pizze +
+    var newstr = '<h3> <span class="kosik_item_header"> <span class="kosik_pocet">1</span> <span>x</span> <span class="kosik_nazov_pizze">' + nazov_pizze +
     '</span> <span class="kosik_pizza_cena"><span class="jednotkova_cena">' + jednotkova_cena +
     '</span> <span class="suma">' + jednotkova_cena +
     '</span><span>€</span></span></span> <span class="kosik_plus"></span> <span class="kosik_minus"></span> <span class="kosik_delitem"></span> </h3>' +
@@ -146,8 +146,8 @@ function update_platit_spolu() { // funckia updatuje najskor sumy za jendotlive 
 
 function on_clicked_pridat_suroviny() {
     var zoznam = $(this).next();
-    pridat_suroviny(zoznam);
-//    pridat_suroviny_test(zoznam);
+    var nazov_pizze = zoznam.parent().prev().children(".kosik_item_header").children(".kosik_nazov_pizze").text();
+    pridat_suroviny(zoznam, nazov_pizze);
 }
 
 function vloz_surovinu(zoznam, surovina, cena) { // zavolaj tuto funkciu, ked chces, aby sa pridala do nejakeho zoznamu nova surovina
@@ -245,7 +245,9 @@ function on_kosik_objednaj() {
     }
     
     global_message_info('Objednávka odoslaná', 'normal');
-    setTimeout(function() { $(".right_trigger").click(); }, 500);
+    setTimeout(function() {
+        $(".right_trigger").click();
+    }, 500);
     empty_kosik();
 //    $(".right_trigger").click();
 }
