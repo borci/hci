@@ -203,18 +203,18 @@ p.kosik_nadpis {
     /*    position: absolute;*/
     position: relative;
     float: right;
-    right: 1px;
+/*    right: 1px;*/
     top: 2px;
     border: 1px solid gray;
     -moz-border-radius: 10px;
-    /*    margin-top: 2px;*/
+    margin-right: 30px;
     padding: 3px 8px;
     cursor: pointer;
 }
 
 #kosik_prazdny {
     color: white;
-    padding: 20px 5px 140px 10px;
+    padding: 20px 5px 140px 20px;
     background-image: url(images/napln_kosik128.png);
     background-repeat: no-repeat;
     background-position: bottom center;

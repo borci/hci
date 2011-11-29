@@ -6,14 +6,13 @@ a.trigger{
 
     /*    tymto parametrom sa da jednoducho nastavit sirka oboch triggerov*/
     width: 190px;
-/*    height: 40px;*/
+    /*    height: 40px;*/
     top: 65px;
 
     color:#fff;
-    /*    background:#333333 url(images/plus.png) no-repeat;*/
     border:1px solid #444444;
     display: block;
-    z-index: 1;
+    /*    z-index: 1;*/
     font-family: verdana, helvetica, arial, sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
@@ -21,10 +20,37 @@ a.trigger{
     font-weight: 700;
     -moz-user-select: none;
     cursor: default;
+    text-align: center;
 }
-a.trigger:hover{
-    /*    background-color: #222222;*/
+
+a.left_trigger{
+    left: 0;
+    float: left;
+    padding: 5px 30px 5px 5px;
+    background:#333333 url(images/adresa20.png) no-repeat;    
+    background-position: 85% 55%;    
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
 }
+
+a.right_trigger {
+    width: 220px;
+    right: 0;
+    float: right;
+    padding: 5px 5px 5px 30px;
+    background:#333333 url(images/kosik20.png) no-repeat;
+    background-position: 15% 55%;
+
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+}
+
+a.kosik_full.right_trigger {
+    background-image: url(images/kosik_plny20.png);    
+}
+
+
+
 
 /* **************************************************************** */
 /* ************** Postranne panely ******************************** */
@@ -54,13 +80,6 @@ a.trigger:hover{
     text-decoration: none;
     border-bottom: 1px solid #9FC54E;
 }
-.panel a:hover, .panel a:visited:hover{
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
-    text-decoration: none;
-    border-bottom: 1px solid #ffffff;
-}
 
 /* *********************  Lavy panel *************************** */
 
@@ -74,18 +93,6 @@ a.trigger:hover{
     -moz-border-radius-bottomright: 20px;
 }
 
-a.left_trigger{
-    left: 0;
-    float: left;
-    padding: 5px 30px 5px 5px;
-    background:#333333 url(images/adresa20.png) no-repeat;    
-    background-position: 85% 55%;    
-    -moz-border-radius-topright: 20px;
-    -moz-border-radius-bottomright: 20px;
-}
-a.left_trigger:hover {
-    /*    padding-left: 15px;*/
-}
 
 /********************** Pravy panel *********************************/
 
@@ -100,23 +107,4 @@ a.left_trigger:hover {
     overflow: hidden;
 }
 
-a.right_trigger {
-    right: 0;
-    float: right;
-    padding: 5px 5px 5px 30px;
-    background:#333333 url(images/kosik20.png) no-repeat;
-    background-position: 15% 55%;
-
-    text-align: right;
-    -moz-border-radius-topleft: 20px;
-    -moz-border-radius-bottomleft: 20px;
-}
-
-a.kosik_full.right_trigger {
-    background-image: url(images/kosik_plny20.png);    
-}
-
-a.right_trigger:hover {
-    /*    padding-right: 15px;*/
-}
 
