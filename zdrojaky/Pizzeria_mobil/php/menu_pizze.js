@@ -104,7 +104,7 @@ function init_menu_pizze() {
     $('#pridavanie_titulka').hide();
     $('#filtrovanie_titulka').hide();
     $('#informacie_titulka').hide();
-    $('#potvrdenie_o_pridani').hide();
+   
    
 	 scrollovanie();
 	 
@@ -119,14 +119,13 @@ function init_menu_pizze() {
 	 });
 	 
 	 $('.ukonci_pridavanie').click (function() {
+		 
+		 $('.pridavanie').slideUp(300);
+		 $('#pridavanie_titulka').slideUp(300);
 		 $('#prazdny').hide();
-		 $('.pridavanie').hide();
-		 $('#pridavanie_titulka').hide();
 
-		 show_sipka_hore(false);
-		 show_sipka_dole(false);
-		 $('#global_sipka_hore').css('z-index',250);
-		 $('#global_sipka_dole').css('z-index',250);
+		 $('#global_sipka_hore').css('z-index',0);
+		 $('#global_sipka_dole').css('z-index',0);
 		 });
 		 
 	 $('.ukonci_filtrovanie').click (function() {
@@ -292,9 +291,8 @@ function init_menu_pizze() {
 		 var meno_cena_pole = meno_cena.split('@');
 		 var meno = meno_cena_pole[0];
 		 var cena = meno_cena_pole[1];
-		 $('#potvrdenie_o_pridani').slideDown(700);
-		 $('#potvrdenie_o_pridani').slideUp(700);
 		 pridat_do_kosika(meno,cena);
+		 global_message_info("Pridana pizza: " + meno,500);
 		 });
 		
 	// **************************************************************************	 
@@ -307,20 +305,22 @@ function init_menu_pizze() {
 		var surovina = surovina_cena_pole[0];
 		var cena = surovina_cena_pole[1];
 				
-		if ($(this).is(':checked')) vloz_surovinu(obj_pizza, surovina, cena); 
+		if ($(this).is(':checked')) vloz_surovinu(obj_pizza, surovina, cena);
 		else 	odstran_surovinu(obj_pizza, surovina);
 		});	 
 }
 
 //***************** Pridavanie surovin ************************
 
-function pridat_suroviny(zoznam) {
+function pridat_suroviny(zoznam, nazov_pizze) {
 	$('.pridavanie input').each( function () {
         $(this).removeAttr('checked');
     });
+   $('#pridavanie_titulka h5').text("pre pizzu ");
+   $('#pridavanie_titulka h5').append(nazov_pizze);
    $('#prazdny').show(); 
-	$('.pridavanie').show();
-	$('#pridavanie_titulka').show();
+	$('.pridavanie').slideDown(300);
+	$('#pridavanie_titulka').slideDown(300);
 	//$('.pridavanie').animate({scrollTop: '0px'},0);
 	zisti_scroll_pridavania();
 	obj_pizza = zoznam;
@@ -410,6 +410,7 @@ function scrollovanie() {
 
 function uprav_indexy_sipok() {
 	var i = $('#global_sipka_hore').css('z-index');
+	zisti_scroll_menu();
 	if (i == 250) {
 		$('#global_sipka_hore').css('z-index',0);
 		$('#global_sipka_dole').css('z-index',0);

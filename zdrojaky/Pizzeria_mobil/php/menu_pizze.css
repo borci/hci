@@ -24,6 +24,7 @@
     width: 160px;
     border: 1px;
     border-style: solid;
+    cursor: pointer;
     -moz-border-radius-topright: 10px;
     -webkit-border-top-right-radius: 10px;
 
@@ -34,17 +35,16 @@
 }
 
 .pridavanie {
-    width: 214px;
-    height: 248px;
+    width: 212px;
+    height: 288px;
     position: absolute;
     background-color: #D7ECE8;
-    top: 57px;
-    left: 2px;
+    top: 50px;
+    left: 4px;
     font-size: 15px; 
     z-index:2;
     border: 0px;
     overflow: hidden;
-
 
     -moz-user-select: none;
 
@@ -143,12 +143,23 @@
 }
 
 #pridavanie_titulka p {
-	line-height: 20px;
-	font-size: 15px;
+	line-height: 16px;
+	font-size: 14px;
 	font-weight: bold;
 	margin: 0px;
-	margin-top: 5px;
+	margin-top: 3px;
 	margin-left: 10px;
+	padding: 0px;
+	color: green;
+}
+
+#pridavanie_titulka h5 {
+	line-height: 12px;
+	font-size: 10px;
+	font-weight: normal;
+	margin: 0px;
+	margin-top: 0px;
+	margin-left: 15px;
 	padding: 0px;
 	color: green;
 }
@@ -414,35 +425,14 @@
 
 }
 
-#potvrdenie_o_pridani {
-	height: 16px;
-	width: 220px;
-	background-color: black;
-	color: white;
-	z-index: 113;
-	position: absolute;
-	top: 37px;
-	left: 0px;
-	font-size: 12px;
-	-moz-border-radius-topright: 5px;
-    -webkit-border-top-right-radius: 5px;
-    -moz-border-radius-bottomright: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-
-    -moz-border-radius-topleft: 5px;
-    -webkit-border-top-left-radius: 5px;
-    -moz-border-radius-bottomleft: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-	
-}
 
 #info {
-    width: 215px;
-    height: 248px;
+    width: 212px;
+    height: 288px;
     position: absolute;
     background-color: #D7ECE8;
-    top: 57px;
-    left: 3px;
+    top: 50px;
+    left: 4px;
     font-size: 15px; 
     z-index:112;
     border: 0px;

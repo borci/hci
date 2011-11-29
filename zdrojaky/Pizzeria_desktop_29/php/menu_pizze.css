@@ -70,15 +70,15 @@
 
 .pridavanie {
     width: 214px;
-    height: 248px;
+    height: 360px;
     position: absolute;
     background-color: #D7ECE8;
-    top: 57px;
+    top: 40px;
     left: 2px;
     font-size: 15px; 
     z-index:2;
     border: 0px;
-    overflow: hidden;
+    overflow: auto;
 
 
     -moz-user-select: none;
@@ -333,6 +333,7 @@
     font: bold;
     width: 100px;
     height: 47px;
+    cursor: pointer;
     
      font-size: 17px;
     -moz-border-radius-topright: 0px;
@@ -357,6 +358,7 @@
     width: 100px;
     height: 47px;
     font-size: 17px;
+    cursor: pointer;
 
     -moz-border-radius-topright: 45px;
     -webkit-border-top-right-radius: 45px;
@@ -480,8 +482,8 @@
     height: 400px;
     position: absolute;
     background-color: #D7ECE8;
-    top: 37px;
-    left: 3px;
+    top: 0px;
+    right: 0px;
     font-size: 15px; 
     z-index:112;
     border: 2px;

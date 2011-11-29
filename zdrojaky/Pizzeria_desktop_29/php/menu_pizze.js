@@ -8,7 +8,7 @@ function init_menu_pizze() {
 	// **************************************************************************
 	// ********************** zoznam pizz scrollovanie **************************
 	// **************************************************************************
-    $('.menu').kinetic();
+   /* $('.menu').kinetic();
     $('#left').click(function(){
         $('.menu').kinetic('start', {
             velocity: 0
@@ -24,7 +24,7 @@ function init_menu_pizze() {
     });
     $('#stop').click(function(){
         $('.menu').kinetic('stop');
-    });
+    });*/
     // *************************************************************************
     // ************************* kosik  scrollovanie ***************************
     // *************************************************************************
@@ -97,14 +97,14 @@ function init_menu_pizze() {
         $(this).removeAttr('checked');
     });
          
-   //$('.filter').hide();
-    $('.pridavanie').hide();
+    $(function() {
+		$( "#kontakt" ).draggable();
+	});    
     $('#info').hide();
     $('#filtrovanie').hide();
     $('#pridavanie_div').hide();
-    $('#filtrovanie_titulka').hide();
     $('#informacie_titulka').hide();
-    $('#potvrdenie_o_pridani').hide();
+   
    
 	 uprav_indexy_sipok();
 	 
@@ -115,10 +115,7 @@ function init_menu_pizze() {
 	});
 	 
 	 $('.ukonci_pridavanie').click (function() {
-		 
-		 $('.pridavanie').hide();
-		 $('#pridavanie_titulka').hide();
-
+		 $('#pridavanie_div').hide();
 		 });
 		 
 	 $('.ukonci_filtrovanie').click (function() {
@@ -244,6 +241,7 @@ function pridat_suroviny(zoznam) {
         $(this).removeAttr('checked');
     });
    
+   $('#pridavanie_div').show();
 	$('.pridavanie').show();
 	$('#pridavanie_titulka').show();
 
@@ -311,16 +309,10 @@ function checkni(a) {
 
 
 function uprav_indexy_sipok() {
-	//var i = $('#global_sipka_hore').css('z-index');
-	//if (i == 250) {
+
 		$('#global_sipka_hore').css('z-index',-1);
 		$('#global_sipka_dole').css('z-index',-1);
-	//	}
-	//else {
-	//	$('#global_sipka_hore').css('z-index',250);
-	//	$('#global_sipka_dole').css('z-index',250);
-	//	}	
-	
+
 	}
 	
 
