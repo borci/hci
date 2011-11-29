@@ -15,42 +15,5 @@ body {
 a:focus {
     outline: none;
 }
-/*img{
-    float: right;
-    margin: 3px 3px 6px 8px;
-    padding: 5px;
-    background: #222222;
-    border: 1px solid #333333;
-}*/
-
 
 /*--------------------------------------------*/
-/* ****************** Triggery panelov *****************/
-
-a.active.trigger, a.active.trigger.right_trigger.kosik_full {
-    /*    background-image: url(images/minus.png);*/
-    background-image: url(images/panel_close20.png);
-    background-color: #222222;
-}
-
-a.trigger{
-    /*    position: absolute;*/
-    position: relative;
-
-    /*    tymto parametrom sa da jednoducho nastavit sirka oboch triggerov*/
-    width: 40px;
-    text-decoration: none;
-    top: 5px;
-    font-size: 14px;
-    letter-spacing:-1px;
-    font-family: verdana, helvetica, arial, sans-serif;
-    color:#fff;
-    font-weight: 700;
-    /*    background:#333333 url(images/plus.png) no-repeat;*/
-    border:1px solid #444444;
-    display: block;
-    z-index: 95;
-}
-a.trigger:hover{
-    background-color: #222222;
-}

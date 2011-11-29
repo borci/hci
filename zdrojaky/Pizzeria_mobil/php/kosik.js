@@ -151,6 +151,8 @@ function on_clicked_pridat_suroviny() {
 }
 
 function vloz_surovinu(zoznam, surovina, cena) { // zavolaj tuto funkciu, ked chces, aby sa pridala do nejakeho zoznamu nova surovina
+    odstran_surovinu(zoznam, surovina); // to je taky hack na duplicitne pridavanie surovin
+    
     zoznam.append('<li><span class="surovina_delete"></span><span class="surovina_nazov">' + surovina + '</span> <span class="surovina_cena">' + cena + '</span><span>€</span>' + '</li>');
     
     // prepocitavanie ceny

@@ -23,6 +23,18 @@ img {padding-right: 20px; float:left}*/
     -moz-user-select: none;
 }
 
+#infolist ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#infolist ul li{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
 p.kosik_nadpis {
     color:#cccccc;
     line-height:22px;
