@@ -248,7 +248,11 @@ function on_kosik_objednaj() {
 function update_kosik_trigger_image() { // nastavi pozadie trigger-u na plny/prazdny kosik
     if (is_kosik_empty()) {
         $('.right_trigger').removeClass('kosik_full');
+        $('#kosik_sumar').hide();
+        $('#kosik_prazdny').show();
     } else {
         $('.right_trigger').addClass('kosik_full');
+        $('#kosik_prazdny').hide();
+        $('#kosik_sumar').show();
     }
 }

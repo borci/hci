@@ -6,6 +6,10 @@
 ul {list-style-type: none}
 img {padding-right: 20px; float:left}
 
+.right_panel {
+    -moz-user-select: none;
+}
+
 .right_panel .kosik_nadpis {
     /*    padding: 1px 0 1px 30px;*/
     margin: 5px 0px 5px 20px;
@@ -75,7 +79,7 @@ img {padding-right: 20px; float:left}
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
-    display: block;
+    display: block;   
 }
 #infolist h3 .kosik_pizza_cena {
     position: absolute;
@@ -169,4 +173,11 @@ img {padding-right: 20px; float:left}
     cursor: pointer;
 }
 
-
+#kosik_prazdny {
+    color: white;
+    padding: 20px 5px 140px 10px;
+    background-image: url(images/napln_kosik128.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    display: none;
+}
