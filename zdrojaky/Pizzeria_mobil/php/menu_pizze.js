@@ -115,6 +115,7 @@ function init_menu_pizze() {
 		 $('#prazdny').show();
 		 $('#info').slideDown(300);
 		 $('#informacie_titulka').slideDown(300);
+		 uprav_indexy_sipok()
 	 });
 	 
 	 $('.ukonci_pridavanie').click (function() {
@@ -124,6 +125,8 @@ function init_menu_pizze() {
 
 		 show_sipka_hore(false);
 		 show_sipka_dole(false);
+		 $('#global_sipka_hore').css('z-index',250);
+		 $('#global_sipka_dole').css('z-index',250);
 		 });
 		 
 	 $('.ukonci_filtrovanie').click (function() {
@@ -133,31 +136,9 @@ function init_menu_pizze() {
 		 
 		 $('.filter').slideUp(300);
 		 $('#filtrovanie_titulka').slideUp(300);
-		  $('#prazdny').hide();
+		 $('#prazdny').hide();
 		 
-		 $('.menu').animate({scrollTop: '10000px'},0);
-		 menu_scroll = $('.menu').scrollTop();
-		 $('.menu').animate({scrollTop: '0px'},0);
-		 
-		 if ( $('.menu').scrollTop() == 0) {
-						$('.menu').animate({scrollTop: '1px'},0);
-						var a = $('.menu').scrollTop();
-						$('.menu').animate({scrollTop: '0px'},0);
-						show_sipka_hore(false);
-				      show_sipka_dole(true);
-						
-						if (menu_scroll == 0) $('#sipka_d').hide();
-					}
-					
-					else if ($('.menu').scrollTop() == menu_scroll) {
-						show_sipka_hore(true);
-						show_sipka_dole(false);
-						
-					}
-					else {
-						show_sipka_hore(true);
-						show_sipka_dole(true);
-					}
+		zisti_scroll_menu();
 		});
 		
 	$('.ukonci_informacie').click (function() {
@@ -166,41 +147,20 @@ function init_menu_pizze() {
 		 $('#informacie_titulka').slideUp(300);
 		 $('#prazdny').hide();
 		 
-		if ( $('.menu').scrollTop() == 0) {
-				show_sipka_hore(false);
-				show_sipka_dole(true);				
-					}					
-		else if ($('.menu').scrollTop() == menu_scroll) {
-				show_sipka_hore(true);
-				show_sipka_dole(false);		
-					}
-		else {
-				show_sipka_hore(true);
-				show_sipka_dole(true);
-					}
+		zisti_scroll_menu();
+		uprav_indexy_sipok()
 		});
 	 	
 	  	 
     $('#button_f').click( function() {
-		  $('#prazdny').show();
+					$('#prazdny').show();
 					$('#filtrovanie_titulka').slideDown(350);
 					$('.filter').slideDown(350);
 					
 					show_sipka_hore(false);
 					show_sipka_dole(false);
 					
-					if ($('.filter').scrollTop() == filter_scroll) {
-						show_sipka_hore(true);
-						show_sipka_dole(false);
-					}
-					else if ($('.filter').scrollTop() == 0) {
-						show_sipka_hore(false);
-						show_sipka_dole(true);
-					}
-					else {
-						show_sipka_hore(true);
-						show_sipka_dole(true);
-					}
+					zisti_scroll_filtra()
 				
 		  });
    
@@ -224,7 +184,7 @@ function init_menu_pizze() {
 			show_sipka_dole(true);}
     });
     
-    $('.filter').scroll(function () { 
+   $('.filter').scroll(function () { 
 				
       if ($('.filter').scrollTop() == filter_scroll) {
 			 show_sipka_hore(true);
@@ -240,7 +200,7 @@ function init_menu_pizze() {
 		}
     });
     
-    $('.pridavanie').scroll(function () { 
+   $('.pridavanie').scroll(function () { 
 				
       if ($('.pridavanie').scrollTop() == pridavanie_scroll) {
 			 show_sipka_hore(true);
@@ -361,9 +321,8 @@ function pridat_suroviny(zoznam) {
    $('#prazdny').show(); 
 	$('.pridavanie').show();
 	$('#pridavanie_titulka').show();
-	$('.pridavanie').animate({scrollTop: '0px'},0);
-	$('#sipka_h3').hide();
-	$('#sipka_d3').show();
+	//$('.pridavanie').animate({scrollTop: '0px'},0);
+	zisti_scroll_pridavania();
 	obj_pizza = zoznam;
 	var pole = new Array();
 	pole = get_suroviny(zoznam);
@@ -457,6 +416,62 @@ function uprav_indexy_sipok() {
 		}
 	else {
 		$('#global_sipka_hore').css('z-index',250);
-		$('#global_sipka_dole').css('z-index',250);}	
+		$('#global_sipka_dole').css('z-index',250);
+		}	
 	
 	}
+	
+function zisti_scroll_menu() {
+	var a = $('.menu').scrollTop() +'px';
+	$('.menu').animate({scrollTop: '10000px'},0);
+	menu_scroll = $('.menu').scrollTop();
+	$('.menu').animate({scrollTop: a},0);
+		 
+	if ( $('.menu').scrollTop() == 0) {
+		show_sipka_hore(false);
+	   show_sipka_dole(true);
+						
+		if (menu_scroll == 0) show_sipka_dole(false);
+	}
+	else if ($('.menu').scrollTop() == menu_scroll) {
+		show_sipka_hore(true);
+		show_sipka_dole(false);
+	}
+	else {
+		show_sipka_hore(true);
+		show_sipka_dole(true);
+	}
+}	
+	
+function zisti_scroll_filtra() {
+	if ( $('.filter').scrollTop() == 0) {
+		show_sipka_hore(false);
+		show_sipka_dole(true);
+	}
+	else if ($('.filter').scrollTop() == filter_scroll) {
+		show_sipka_hore(true);
+		show_sipka_dole(false);
+	}
+	else {
+		show_sipka_hore(true);
+		show_sipka_dole(true);
+	}
+}	
+
+function zisti_scroll_pridavania() {
+	
+	$('#global_sipka_hore').css('z-index',250);
+	$('#global_sipka_dole').css('z-index',250);
+	if ( $('.pridavanie').scrollTop() == 0) {
+		show_sipka_hore(false);
+		show_sipka_dole(true);
+	}
+	else if ($('.pridavanie').scrollTop() == filter_scroll) {
+		show_sipka_hore(true);
+		show_sipka_dole(false);
+	}
+	else {
+		show_sipka_hore(true);
+		show_sipka_dole(true);
+	}
+}
