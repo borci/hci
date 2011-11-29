@@ -17,11 +17,11 @@ a:focus {
 }
 
 .main_hlavicka {
+    position: absolute;
     background-image: url(images/logo237.png);
     background-repeat: no-repeat;
-    background-position: top left;
-    padding: 269px 950px;
-    z-index: 100;
+    background-position: top center;
+    margin: 5px;
+    width: 1100px;
+    height: 70px;
 }
-
-/*--------------------------------------------*/
