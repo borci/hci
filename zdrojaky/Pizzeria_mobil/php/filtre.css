@@ -1,12 +1,12 @@
 /************** filtre ****************/
 
 .filter {
-    width: 215px;
-    height: 248px;
+    width: 212px;
+    height: 288px;
     position: absolute;
     background-color: #D7ECE8;
-    top: 57px;
-    left: 3px;
+    top: 50px;
+    left: 4px;
     font-size: 15px; 
     z-index:112;
     border: 0px;
