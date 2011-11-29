@@ -2,7 +2,7 @@
 #obrazok_potvrdenie_fajka {
     background-image: url(images/fajka128.png);
     background-repeat: no-repeat;
-    top: 140px;
+    top: 220px;
     left: 80px;
     width: 128px;
     height: 128px;
@@ -13,28 +13,30 @@
 
 #global_message_error {
     position: absolute;
-    top: 80px;
+    top: 200px;
+    left: 300px;
     z-index: 500;
     display: none;
-    -moz-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 20px 20px 20px 20px;
     background-color: red;
     background-image: url(images/error64.png);
     background-repeat: no-repeat;
-    background-position: left center;
-    padding: 20px 10px 20px 80px;
+    background-position: 5% center;
+    padding: 40px 30px 40px 90px;
 }
 
 #global_message_info {
     position: absolute;
-    top: 80px;
+    top: 200px;
+    left: 300px;
     z-index: 500;
     display: none;
-    -moz-border-radius: 10px 10px 10px 10px;
+     -moz-border-radius: 20px 20px 20px 20px;
     background-color: green;
     background-image: url(images/info64.png);
     background-repeat: no-repeat;
-    background-position: left center;
-    padding: 20px 10px 20px 80px;
+    background-position: 5% center;
+    padding: 40px 30px 40px 90px;
 }
 
 #global_sipka_hore {
