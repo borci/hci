@@ -153,8 +153,12 @@
     top: 70px;
     color: black;
     background-color: #FFFFEA;
+    background-image: url("images/lupa20.png");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    padding-left:25px;
     border: 1px;
-    width: 70px;
+    width: 75px;
     height: 25px;
     border: 1px;
     border-style: solid;
