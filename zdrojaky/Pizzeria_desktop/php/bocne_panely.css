@@ -28,7 +28,7 @@ a.left_trigger{
     left: 0;
     float: left;
 /*    padding: 5px 30px 5px 5px;*/
-    background:#333333 url(images/adresa20.png) no-repeat;    
+    background:#333333 url(images/home32.png) no-repeat;    
     background-position: 85% 55%;    
     -moz-border-radius-topright: 20px;
 /*    -moz-border-radius-bottomright: 20px;*/
@@ -39,7 +39,7 @@ a.right_trigger {
     right: 0;
     float: right;
 /*    padding: 5px 5px 5px 30px;*/
-    background:#333333 url(images/kosik20.png) no-repeat;
+    background:#333333 url(images/kosik32.png) no-repeat;
     background-position: 15% 55%;
 
     -moz-border-radius-topleft: 20px;
@@ -47,7 +47,7 @@ a.right_trigger {
 }
 
 a.kosik_full.right_trigger {
-    background-image: url(images/kosik_plny20.png);    
+    background-image: url(images/kosik_plny32.png);    
 }
 
 /* **************************************************************** */
