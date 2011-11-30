@@ -37,7 +37,15 @@
     </head>
     <body>
         <div class="body_div">
-            <div class="main_hlavicka"></div>
+            <div class="main_hlavicka">
+                <div class="main_left_info">
+                    
+                </div>
+                <div class="main_right_info">
+                    streda, 30. november 2011<br />
+                    meniny má Ondrej
+                </div>
+            </div>
 
             <!--            tu bude zoznam pizz-->
             <?php

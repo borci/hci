@@ -28,3 +28,10 @@ a:focus {
     width: 1080px;
     height: 80px;
 }
+
+.main_hlavicka .main_right_info {
+    float: right;
+    padding: 30px 15px;
+    font-style: italic;
+    color: seashell;
+}
