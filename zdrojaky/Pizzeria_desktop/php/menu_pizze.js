@@ -21,24 +21,26 @@ function init_menu_pizze() {
 	});
 		 
 	$('.ukonci_filtrovanie').click (function() {
-       $('#filtrovanie').hide();
-       $('.menu').css('top',80);
-		$('.menu').css('height',392);	 
+       $('#filtrovanie').hide(300);
+      $('.menu').css('top',80);
+		$('.menu').css('height',392);	
+		$('#spodok').show(300); 
 	});
 	 	  	 
     $('#button_f').click( function() {
-		$('#filtrovanie').show();
-		$('.menu').css('top',175);
-		$('.menu').css('height',294);
+		$('#filtrovanie').show(300);
+		$('.menu').css('top',167);
+		$('#spodok').hide(300);
+		//$('.menu').css('height',294);
 	});
 	
 
    
 	
-	$(function()
+	/*$(function()
 		{
 			$('.menu').scrollbar();
-		});
+		});*/
 		
 	
 		

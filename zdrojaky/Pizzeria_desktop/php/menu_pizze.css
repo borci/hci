@@ -161,6 +161,9 @@
     -webkit-border-top-right-radius: 10px;
     -moz-border-radius-bottomright: 10px;
     -webkit-border-bottom-right-radius: 10px;
+    
+     scrollbar-base-color: #369;
+     scrollbar-arrow-color: blue;
 }
 
 .menu li {
@@ -247,7 +250,7 @@
     height: 40px;
     cursor: pointer;
     
-     font-size: 17px;
+    font-size: 17px;
     -moz-border-radius-topright: 0px;
     -webkit-border-top-right-radius: 0px;
     -moz-border-radius-bottomright: 45px;

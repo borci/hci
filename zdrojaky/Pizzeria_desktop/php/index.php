@@ -34,6 +34,11 @@
         <script type="text/javascript" src="menu_pizze.js"></script>
         <script type="text/javascript" src="dialogy.js"></script>
 
+
+			<style>
+
+</style>
+
     </head>
     <body>
         <div class="body_div">
