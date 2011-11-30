@@ -13,12 +13,8 @@
         <link rel="stylesheet" href="dialogy.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/jquery-ui-1.8.16.custom.css" type="text/css" />
         <link rel="stylesheet" href="css/scrollbar.css" type="text/css" />
-       
-       
-        
 
-        
-        <!--     <script type="text/javascript" src="js/jquery-1.6.3.js"></script>       tu bude zoznam pizz-->
+ <!--     <script type="text/javascript" src="js/jquery-1.6.3.js"></script>       tu bude zoznam pizz-->
         <script type="text/javascript" src="js/jquery-1.6.3.js"></script> 
         <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.js"></script>
         <script type="text/javascript" src="js/jquery.kinetic.js"></script>
@@ -27,8 +23,6 @@
         <script src="js/scrollbar.js" type="text/javascript"></script>
         <script src="js/slimScroll.js" type="text/javascript"></script>
         <script src="js/jquery.scrollbar.js" type="text/javascript"></script>
-        
-        
 
         <script type="text/javascript" src="skript.js"></script>
         <script type="text/javascript" src="adresa.js"></script>
@@ -36,16 +30,15 @@
         <script type="text/javascript" src="menu_pizze.js"></script>
         <script type="text/javascript" src="dialogy.js"></script>
 
+        <style>
 
-			<style>
-
-</style>
+        </style>
 
     </head>
     <body>
         <div class="body_div">
             <div class="main_hlavicka"></div>
-            
+
             <!--            tu bude zoznam pizz-->
             <?php
             include 'menu-pizze.html';
