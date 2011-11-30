@@ -7,7 +7,7 @@ a.trigger{
     /*    tymto parametrom sa da jednoducho nastavit sirka oboch triggerov*/
     width: 220px;
     /*    height: 40px;*/
-    top: 60px;
+    top: 80px;
 
     color:#fff;
     padding: 8px 0px 8px 0px;
@@ -56,7 +56,7 @@ a.kosik_full.right_trigger {
 
 .panel {
     position: absolute;
-    top: 100px;
+    top: 120px;
 /*    background: #000000;*/
     background: #4b4d49;
     border:1px solid #111111;
