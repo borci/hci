@@ -5,7 +5,8 @@
     left: 0;
     clear: left;
     width: 200px;
-    color: #cccccc;
+/*    color: #cccccc;*/
+    color: white;
     padding-top: 20px;
 }
 
@@ -96,4 +97,5 @@
 .adresa_hint {
     font-style: italic;
     padding-top: 5px;
+    padding-bottom: 5px;
 }
