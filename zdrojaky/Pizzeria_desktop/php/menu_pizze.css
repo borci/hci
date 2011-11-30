@@ -4,7 +4,7 @@
 
 #div_menu {
 	width: 555px;
-   height: 392px;
+   height: 388px;
 	position: absolute;
 	top: 100px;
    left: 250px;
@@ -144,7 +144,7 @@
 
 .menu {
     width: 549px;
-    height: 392px;
+    height: 390px;
     position: absolute;
     top: 0px;
     left: 1px;
@@ -247,6 +247,10 @@
     bottom: 5px;
     color: black;
     background-color: #FFC10A;
+    background-image: url("images/kosik_pridat20.png");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    padding-left:25px;
     border: 0px;
     font: bold;
     width: 100px;
@@ -271,6 +275,10 @@
     top: 5px;
     color: black;
     background-color: #FFC10A;
+    background-image: url("images/kosik_pridat20.png");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    padding-left:25px;
     border: 0px;
     font: bold;
     width: 100px;
