@@ -1,6 +1,6 @@
 /************** filtre ****************/
 #filtrovanie {
-    width: 530px;
+    width: 520px;
     height: 160px;
     position: absolute;
     background-color: white;
@@ -105,11 +105,11 @@
 
 .filter p {
     line-height: 20px; 
-    font-size: 14px;
+    font-size: 13px;
     padding: 0px;
     margin: 0px;
     margin-top: 3px;
-    margin-left: 40px;
+    margin-left: 10px;
     color: green;
     font-weight: bold;
 }
@@ -150,7 +150,7 @@
 #button_f {
     position: absolute;
     left: 285px;
-    top: 70px;
+    top: 83px;
     color: black;
     background-color: #FFFFEA;
     background-image: url("images/lupa20.png");

@@ -22,14 +22,14 @@ function init_menu_pizze() {
 		 
 	$('.ukonci_filtrovanie').click (function() {
        $('#filtrovanie').hide(300);
-      $('#div_menu').css('top',100);
+      $('#div_menu').css('top',110);
 		$('#div_menu').css('height',392);	
 		$('#spodok').show(300); 
 	});
 	 	  	 
     $('#button_f').click( function() {
 		$('#filtrovanie').show(300);
-		$('#div_menu').css('top',187);
+		$('#div_menu').css('top',180);
 		$('#spodok').hide(300);
 		$('#div_menu').css('height',294);
 	});
@@ -40,7 +40,7 @@ function init_menu_pizze() {
     $('.menu').slimScroll({
          height: '390px',
 			size: '15px',
-			top: '100px',
+			top: '110px',
 			position: 'right',
 			color: '#ffffff',
 			alwaysVisible: false,

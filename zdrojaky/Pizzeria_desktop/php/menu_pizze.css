@@ -6,7 +6,7 @@
 	width: 555px;
    height: 388px;
 	position: absolute;
-	top: 100px;
+	top: 110px;
    left: 250px;
 }
 #prazdny {
@@ -250,14 +250,14 @@
     background-image: url("images/kosik_pridat20.png");
     background-repeat: no-repeat;
     background-position: 5% center;
-    padding-left:25px;
+    padding-left:23px;
     border: 0px;
     font: bold;
     width: 100px;
     height: 30px;
     cursor: pointer;
     
-    font-size: 14px;
+    font-size: 13px;
     -moz-border-radius-topright: 0px;
     -webkit-border-top-right-radius: 0px;
     -moz-border-radius-bottomright: 45px;
@@ -278,12 +278,12 @@
     background-image: url("images/kosik_pridat20.png");
     background-repeat: no-repeat;
     background-position: 5% center;
-    padding-left:25px;
+    padding-left:23px;
     border: 0px;
     font: bold;
     width: 100px;
     height: 30px;
-    font-size: 14px;
+    font-size: 13px;
     cursor: pointer;
 
     -moz-border-radius-topright: 45px;
@@ -422,7 +422,7 @@
 	background-color: #FFFFEA;
 	position: absolute;
 	bottom: 0px;
-	left: 220px;
+	left: 210px;
 	display: block;
 	z-index: 111;
 	border: 2px;
