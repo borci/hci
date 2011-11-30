@@ -137,6 +137,8 @@
     height: 15px;
     float: left;
     cursor: pointer;
+    
+
 }
 
 .filter li label {
@@ -157,7 +159,7 @@
     color: black;
     background-color: white;
     border: 1px;
-    width: 150px;
+    width: 70px;
     height: 25px;
     border: 1px;
     border-style: solid;
@@ -176,13 +178,13 @@
 }
 #nic {
 	position: absolute;
-	top:40px;
+	top:30px;
 	left:5px;
 }
 
 #nic_label {
 	position: absolute;
-	top:40px;
+	top:30px;
 	left: 30px;
 }
 #maso {
@@ -190,7 +192,7 @@
 	background-color: white;
 	width: 165px;
 	height: 100px;
-	top: 60px;
+	top: 50px;
 }
 #syry {
 	position: absolute;

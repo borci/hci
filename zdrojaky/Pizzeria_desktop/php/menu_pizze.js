@@ -38,14 +38,13 @@ function init_menu_pizze() {
 
 	$(function(){
     $('.menu').slimScroll({
-         
-			height: '392px',
-			size: '10px',
+         height: '392px',
+			size: '15px',
 			top: '100px',
 			position: 'right',
-			color: '#ffcc00',
-			alwaysVisible: true,
-			distance: '0px',
+			color: '#ffffff',
+			alwaysVisible: false,
+			distance: '10px',
 			start: 'top'
 		});
 });
