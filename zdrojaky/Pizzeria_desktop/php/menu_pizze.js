@@ -31,6 +31,11 @@ function init_menu_pizze() {
 		$('.menu').css('top',175);
 		$('.menu').css('height',294);
 	});
+	
+	$(function()
+{
+	$('.menu').scrollbar();
+});
    
 	filtrovanie();
     // **************************************************************************

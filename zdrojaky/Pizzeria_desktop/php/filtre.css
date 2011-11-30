@@ -1,11 +1,11 @@
 /************** filtre ****************/
 #filtrovanie {
-    width: 500px;
+    width: 530px;
     height: 160px;
     position: absolute;
     background-color: #D7ECE8;
     top: 0px;
-    left: 270px;
+    left: 255px;
     font-size: 15px; 
     z-index:110;
     border: 2px;
@@ -31,10 +31,10 @@
     top: 0px;
     color: black;
     background-color: #D7ECE8;
-    border: 0px;
-    border-bottom: 1px;
-    width: 165px;
-    height: 35px;
+    border: 1px;
+    
+    width: 145px;
+    height: 30px;
     
     border-style: solid;
     z-index: 112;
@@ -196,27 +196,37 @@
 	width: 165px;
 	height: 100px;
 	top: 5px;
-	left: 170px;
+	left: 140px;
 	z-index: 112;
 }
 
 #zelenina {
 	position: absolute;
 	background-color: #D7ECE8;
-	width: 150px;
+	width: 130px;
 	height: 100px;
 	top: 5px;
-	left: 340px;
+	left: 270px;
+	z-index: 112;
+}
+
+#zelenina2 {
+	position: absolute;
+	background-color: #D7ECE8;
+	width: 150px;
+	height: 100px;
+	top: 28px;
+	left: 400px;
 	z-index: 112;
 }
 
 #ine {
 	position: absolute;
 	background-color: #D7ECE8;
-	width: 165px;
+	width: 130px;
 	height: 40px;
-	top: 110px;
-	left: 170px;
+	top: 100px;
+	left: 140px;
 	z-index: 112;
 }
 /************** filtre ****************/

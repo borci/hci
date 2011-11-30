@@ -32,7 +32,7 @@
 }
 
 .pridavanie {
-   width: 214px;
+   width: 254px;
     height: 360px;
     position: absolute;
     background-color: #D7ECE8;
@@ -256,6 +256,7 @@
     font: bold;
     width: 100px;
     height: 40px;
+    cursor: pointer;
     
      font-size: 17px;
     -moz-border-radius-topright: 0px;
@@ -280,6 +281,7 @@
     width: 100px;
     height: 40px;
     font-size: 17px;
+    cursor: pointer;
 
     -moz-border-radius-topright: 45px;
     -webkit-border-top-right-radius: 45px;
@@ -352,7 +354,7 @@
     color: black;
     background-color: #D7ECE8;
     border: 1px;
-    width: 218px;
+    width: 252px;
     height: 35px;
     border: 1px;
     border-style: solid;
@@ -379,11 +381,11 @@
 }
 
 #pridavanie_div {
-    width: 220px;
-    height: 400px;
+    width: 254px;
+    height: 424px;
     position: absolute;
     background-color: #D7ECE8;
-    top: 0px;
+    top: 60px;
     right: 0px;
     font-size: 15px; 
     z-index:112;
@@ -393,15 +395,10 @@
 
     -moz-user-select: none;
 
-    -moz-border-radius-topright: 10px;
-    -webkit-border-top-right-radius: 10px;
-    -moz-border-radius-bottomright: 10px;
-    -webkit-border-bottom-right-radius: 10px;
-
-    -moz-border-radius-topleft: 10px;
-    -webkit-border-top-left-radius: 10px;
-    -moz-border-radius-bottomleft: 10px;
-    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
 }
 
 #spodok {
@@ -414,6 +411,7 @@
 	display: block;
 	z-index: 111;
 	border: 2px;
+	border-bottom: 0px;
 	border-style: solid;
 	
 	-moz-border-radius-topleft: 50px;

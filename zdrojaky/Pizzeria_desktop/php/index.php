@@ -12,11 +12,18 @@
         <link rel="stylesheet" href="kosik.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="dialogy.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/jquery-ui-1.8.16.custom.css" type="text/css" />
+        <link rel="stylesheet" href="css/scrollbar.css" type="text/css" />
+        
 
-        <script type="text/javascript" src="js/jquery-1.6.3.js"></script>
+        
+        <!--     <script type="text/javascript" src="js/jquery-1.6.3.js"></script>       tu bude zoznam pizz-->
+        <script type="text/javascript" src="js/jquery-1.6.3.js"></script> 
         <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.js"></script>
         <script type="text/javascript" src="js/jquery.kinetic.js"></script>
         <script type="text/javascript" src="js/transify.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.scroll.js"></script>
+        
 
         <script type="text/javascript" src="skript.js"></script>
         <script type="text/javascript" src="adresa.js"></script>
