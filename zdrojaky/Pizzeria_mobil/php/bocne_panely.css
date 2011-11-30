@@ -37,7 +37,8 @@ a.trigger:hover{
     position: absolute;
     top: 0px;
     display: none;
-    background: #000000;
+/*    background: #000000;*/
+    background: #4b4d49;
     border:0px solid #111111;
     filter: alpha(opacity=85);
     /*    opacity: .85;*/

@@ -7,49 +7,6 @@ function init_kosik() { // funckia zavolana z $('document').ready
     });
 
     
-    //    $('#infolist h3 .kosik_delitem').click(function(){ // TODO: delete this function
-    //        var nadpis = $(this).parent();
-    //        var obsah = $(nadpis).next();
-    //        $(obsah).fadeOut("medium", function(){
-    //            $(obsah).remove();
-    //        });
-    //        $(nadpis).fadeOut("medium", function(){
-    //            $(nadpis).remove();
-    //            update_platit_spolu();
-    //        });
-    //        
-    //        return false;
-    //    });
-
-    //    $('#infolist h3 .kosik_plus').click(function(){ // TODO: delete this function
-    //        var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
-    //        var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
-    //        suma /= pocet;        
-    //        pocet = Number(pocet) + 1;        
-    //        suma *= pocet;        
-    //        $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
-    //        $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
-    //        update_platit_spolu();
-    //        return false;
-    //    });
-    //
-    //    $('#infolist h3 .kosik_minus').click(function(){ // TODO: delete this function
-    //        var pocet = $(this).parent().children(".kosik_item_header").children(".kosik_pocet").html();
-    //        var suma = $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text();
-    //        suma /= pocet;
-    //        pocet = Number(pocet) - 1;
-    //        if (pocet < 1)
-    //            return false;
-    //        suma *= pocet;
-    //        $(this).parent().children(".kosik_item_header").children(".kosik_pocet").text(pocet);
-    //        $(this).parent().children(".kosik_item_header").children(".kosik_pizza_cena").children(".suma").text(suma);
-    //        update_platit_spolu();        
-    //        return false;
-    //    });
-    //    
-    //    $('.kosik_add_suroviny').click(on_clicked_pridat_suroviny); // TODO: delete this function
-    
-    
     $('.kosik_button_objednat').click(function() {
         on_kosik_objednaj();
     });
@@ -232,18 +189,18 @@ function on_kosik_objednaj() {
     var adresa = $("#adresa_adresa").attr('value');
     
     if (meno.length < 1) {
-        global_message_error("Uvedte prosím Vaše meno", 'normal');
+        global_message_error("Uveďte prosím Vaše meno", 'normal');
         return;
     }
     if (kontakt.length < 1) {
-        global_message_error("Uvedte prosím Vaše telefónne číslo", 'normal');
+        global_message_error("Uveďte prosím Vaše telefónne číslo", 'normal');
         return;
     }
     if (!check_kontakt()) {
         return;
     }
     if (adresa.length < 1) {
-        global_message_error("Uvedte prosím Vašu adresu doručenia", 'normal');
+        global_message_error("Uveďte prosím Vašu adresu doručenia", 'normal');
         return;
     }
     

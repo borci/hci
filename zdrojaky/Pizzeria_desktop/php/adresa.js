@@ -36,7 +36,7 @@ function onLoginResponse(response_text) // callback volany ajaxom pri prijati od
         if (g_just_registered) {
             g_just_registered = false;
         } else {
-            global_message_info('Prihlásenie úspešné', 'short');
+            global_message_info('Prihlásenie úspešné', 'normal');
         }
 
         $('#adresa_meno').attr("value", response["meno"]);

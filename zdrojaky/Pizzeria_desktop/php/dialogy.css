@@ -23,6 +23,8 @@
     background-repeat: no-repeat;
     background-position: 5% center;
     padding: 40px 30px 40px 90px;
+    font-size: 18px;
+    border: 5px solid black;
 }
 
 #global_message_info {
@@ -31,12 +33,14 @@
     left: 380px;
     z-index: 500;
     display: none;
-     -moz-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
     background-color: green;
     background-image: url(images/info64.png);
     background-repeat: no-repeat;
     background-position: 5% center;
     padding: 40px 30px 40px 90px;
+    font-size: 18px;
+    border: 5px solid black;
 }
 
 #global_sipka_hore {
