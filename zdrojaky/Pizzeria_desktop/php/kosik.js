@@ -202,7 +202,7 @@ function on_kosik_objednaj() {
         return;
     }
     
-    global_message_info('Objednávka odoslaná', 'normal');
+    global_message_info('Objednávka odoslaná', 'long');
     setTimeout(function() {
         $(".right_trigger").click();
     }, 500);

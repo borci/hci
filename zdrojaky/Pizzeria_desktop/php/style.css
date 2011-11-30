@@ -33,5 +33,16 @@ a:focus {
     float: right;
     padding: 30px 15px;
     font-style: italic;
+    font-size: 15px;
     color: seashell;
+}
+
+.main_hlavicka .main_left_info {
+    float: left;
+    background-image: url(images/kuchar80.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 40px;
+    width: 80px;
+    height: 80px;    
 }
