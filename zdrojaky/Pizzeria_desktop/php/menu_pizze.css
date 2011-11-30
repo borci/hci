@@ -425,11 +425,11 @@
 
 #kontakt {
 	width: 200px;
-	height: 45px;
+	height: 40px;
 	background-color: white;
 	position: absolute;
 	left: 45px;
-	top: 20px;
+	bottom: 0px;
 	
 }
 
@@ -439,8 +439,9 @@
 	position: absolute;
 	bottom: 42px;
 	left: 10px;
+	color: green;
 	margin: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 2px;
 }
 
 #kontakt h5 {
@@ -448,18 +449,18 @@
 	font-size: 12px;
 	font-weight: normal;
 	position: relative;
-	top: 2px;
+	top: 5px;
 	left: 10px;
 	margin: 0px;
 }
 
 #dovoz {
 	width: 200px;
-	height: 45px;
+	height: 40px;
 	background-color: white;
 	position: absolute;
 	left: 370px;
-	top: 20px;
+	bottom: 0px;
 }
 
 
@@ -469,8 +470,9 @@
 	position: absolute;
 	bottom: 42px;
 	left: 10px;
+	color: green;
 	margin: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 2px;
 }
 
 #dovoz h5 {

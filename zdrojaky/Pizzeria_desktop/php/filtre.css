@@ -11,6 +11,8 @@
     border: 2px;
     border-style: solid;
     overflow: hidden;
+    padding:0px;
+    margin: 0px;
 
     -moz-user-select: none;
 
@@ -193,19 +195,20 @@
 #syry {
 	position: absolute;
 	background-color: white;
-	width: 165px;
-	height: 100px;
-	top: 5px;
+	width: 125px;
+	height: 155px;
+	top: 0px;
 	left: 140px;
 	z-index: 112;
+
 }
 
 #zelenina {
 	position: absolute;
 	background-color: white;
-	width: 130px;
-	height: 100px;
-	top: 5px;
+	width: 120px;
+	height: 155px;
+	top: 4px;
 	left: 270px;
 	z-index: 112;
 }
@@ -214,21 +217,13 @@
 	position: absolute;
 	background-color: white;
 	width: 150px;
-	height: 100px;
-	top: 28px;
-	left: 400px;
+	height: 155px;
+	top: 0px;
+	left: 395px;
 	z-index: 112;
+
 }
 
-#ine {
-	position: absolute;
-	background-color: white;
-	width: 130px;
-	height: 40px;
-	top: 100px;
-	left: 140px;
-	z-index: 112;
-}
 /************** filtre ****************/
 
 
