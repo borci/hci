@@ -14,7 +14,7 @@
 #global_message_error {
     position: absolute;
     top: 200px;
-    left: 380px;
+    left: 360px;
     z-index: 500;
     display: none;
     -moz-border-radius: 20px 20px 20px 20px;
@@ -30,7 +30,7 @@
 #global_message_info {
     position: absolute;
     top: 200px;
-    left: 380px;
+    left: 360px;
     z-index: 500;
     display: none;
     -moz-border-radius: 20px 20px 20px 20px;
