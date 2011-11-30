@@ -22,8 +22,9 @@ a:focus {
     position: absolute;
     background-image: url(images/logo237.png);
     background-repeat: no-repeat;
-    background-position: top center;
-    margin: 5px;
-    width: 1100px;
-    height: 70px;
+    background-position: center;
+    background-color: gray;
+/*    margin: 5px;*/
+    width: 1080px;
+    height: 80px;
 }
