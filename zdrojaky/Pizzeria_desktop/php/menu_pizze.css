@@ -176,7 +176,7 @@
 .menu li {
     width:520px;
     height: 95px;
-    background-color: white;
+    background-color: #FFFFEA;
     position: relative;
     top: 0px;
     left: 0px;
@@ -202,7 +202,8 @@
 .menu li h3 {
     top: 0px;
     padding: 0px;
-    margin: auto;
+    margin: 0px;
+    margin-bottom: 10px;
     padding-bottom: 0px;
     border: 0px;
     font-family: 'Palatino Linotype';
@@ -250,7 +251,7 @@
     right: 5px;
     bottom: 5px;
     color: black;
-    background-color: #A7FF7F;
+    background-color: #FFC10A;
     border: 0px;
     font: bold;
     width: 100px;
@@ -274,7 +275,7 @@
     right: 5px;
     top: 5px;
     color: black;
-    background-color: #49BC22;
+    background-color: #FFC10A;
     border: 0px;
     font: bold;
     width: 100px;
@@ -415,7 +416,7 @@
 #spodok {
 	width: 620px;
 	height: 65px;
-	background-color: white;
+	background-color: #FFFFEA;
 	position: absolute;
 	bottom: 0px;
 	left: 220px;
