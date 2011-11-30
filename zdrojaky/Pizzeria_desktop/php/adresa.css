@@ -6,7 +6,7 @@
     clear: left;
     width: 200px;
     color: #cccccc;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .form_element {
@@ -16,11 +16,12 @@
 }
 
 .form_subblock {
-/*    margin-top: 10px;*/
+    /*    margin-top: 10px;*/
+    margin-top: -10px;
     margin-bottom: 10px;
 }
 .form_subblock.kontaktne_udaje {
-/*    margin-top: 60px;*/
+    /*    margin-top: 60px;*/
 }
 .form_subblock.prihlasovacie_udaje {
     margin-bottom: 30px;
@@ -83,5 +84,16 @@
 }
 
 .prihlaseny_hlavicka_login {
-
+    font-size: 14px;
+}
+.adresa_prihlaseny_pata {
+    padding-top: 10px;
+}
+.prihlasenie_hint {
+    font-style: italic;
+    padding-bottom: 5px;
+}
+.adresa_hint {
+    font-style: italic;
+    padding-top: 5px;
 }

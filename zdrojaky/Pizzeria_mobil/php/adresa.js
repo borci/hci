@@ -21,6 +21,7 @@ function check_kontakt() { // zkontroluje, ci kontakt (telefon) obsahuje cislo (
     return true;
 }
 
+var g_just_registered = false; // sluzi na poznacenie si, ze user bol prave registrovany (a tym padom aj automaticky lognuty) a nema mu byt zobrazena hlaska Successful login
 function onLoginResponse(response_text) // callback volany ajaxom pri prijati odpovedi (na poziadavku prihlasenia) zo serveru
 {
     var response = new Array();
@@ -32,7 +33,11 @@ function onLoginResponse(response_text) // callback volany ajaxom pri prijati od
     //    alert('status == ' + response['status'])
     
     if (response["status"] == 'OK') { // login OK
-        //        global_message_info('Prihlásenie úspešné', 'short');
+        if (g_just_registered) {
+            g_just_registered = false;
+        } else {
+            global_message_info('Prihlásenie úspešné', 'short');
+        }
 
         $('#adresa_meno').attr("value", response["meno"]);
         $('#adresa_kontakt').attr("value", response["kontakt"]);
@@ -67,6 +72,7 @@ function onRegisterResponse(response_text)
     
     if (response["status"] == 'OK') { // registration OK
         global_message_info('Registrácia dokončená', 'normal');
+        g_just_registered = true;
         loginUser(); // zaroven pouzivatela prihlasit
     } else if (response['status'] == 'Error') { // Registration failed, server hlasi chybu
         //        alert(response['message']);  
@@ -146,12 +152,14 @@ function saveUserContact() {
     var login = $("#adresa_login").attr('value');
     var password = $("#adresa_password").attr('value');
     
-    var meno = $("#adresa_meno").attr('value'); // TODO
+    var meno = $("#adresa_meno").attr('value');
     var kontakt = $("#adresa_kontakt").attr('value');
     var adresa = $("#adresa_adresa").attr('value');
     
-    xmlhttp.open("GET","login.php?target=update&login=" + login + "&password=" + password + "&meno=" + meno + "&kontakt=" + kontakt + "&adresa=" + adresa, true);
-    xmlhttp.send();
+    if (check_kontakt()) {
+        xmlhttp.open("GET","login.php?target=update&login=" + login + "&password=" + password + "&meno=" + meno + "&kontakt=" + kontakt + "&adresa=" + adresa, true);
+        xmlhttp.send();
+    }
 }
 
 function logoutUser()
