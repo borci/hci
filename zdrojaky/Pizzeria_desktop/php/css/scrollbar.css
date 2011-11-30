@@ -1,164 +1,37 @@
-/* ---------- basic theme: these are the most necessary styles --------------------------------- */
-
-.scrollbar-pane {
-    margin-right: 20px;
+.scrollable-area {
+	overflow: hidden;
+	position: absolute;
+	top:100px;
+	right:300px;
+	width: 270px;
+	height: 300px;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #999999;
 }
-
-.scrollbar-handle-container {
-    background: #EEE;
-    width: 20px;
+.scrollable-area .scrollable-body {
+	overflow: hidden;
+	height: 100%;
 }
-
-.menu .scrollbar-handle {
-    width: 20px;
-    background: grey;
+.scrollable-area .scroll-bar {
+	width: 10px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #F0F0F0;
+	display: none;
+	z-index: 3;
 }
-
-.scrollbar-handle:hover {
-    background: #666;
+.scrollable-area .scroll-bar .scroll-handle {
+	background: #999999;
+	width: 10px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
+.scrollable-default-theme {
 
-.scrollbar-handle.move {
-    background: #111;
-}
-
-.scrollbar-handle-up {
-    width: 20px;
-    height: 20px;
-    background: #DDD;   
-}
-
-.scrollbar-handle-up:hover {
-    background: #666;
-}
-
-.scrollbar-handle-down {
-    width: 20px;
-    height: 20px;
-    background: #DDD;
-}
-
-.scrollbar-handle-down:hover {
-    background: #666;
-}
-
-
-
-/* ---------- simple theme --------------------------------------------------------------------- */
-
-.simple .scrollbar-pane {
-    margin-right: 16px;
-}
-
-.simple .scrollbar-handle-container {
-    background: #EEE;
-    width: 15px;
-}
-
-.simple .scrollbar-handle-container.hover,
-.simple .scrollbar-handle-container.move {
-    background: #E6E6E6;
-}
-
-.simple .scrollbar-handle,
-.simple .scrollbar-handle-up,
-.simple .scrollbar-handle-down {
-background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAHCAYAAACcLcTKAAAAMklEQVR42mP4TwRgIBJQwwyGQWkZrR0+GDxPUO9gC2Gi3UNpqFArpIdFUh3UGZqY0gwAQe422HjkstgAAAAASUVORK5CYII=);
-background-repeat: no-repeat;
-}
-
-
-/* handle */
-.simple .scrollbar-handle {
-    width: 13px;
-    border: 1px solid #CCC;
-background-color: #CCC;
-background-position: -16px 50%;
-}
-
-.simple .scrollbar-handle:hover {
-    border: 1px solid #666;
-}
-
-.simple .scrollbar-handle.move {
-    border: 1px solid #666;
-    background-color: #999;
-}
-
-
-/* arrow up */
-.simple .scrollbar-handle-up {
-    width: 13px;
-    height: 13px;
-    border: 1px solid #CCC;
-    background-color: #CCC;
-background-position: -34px 2px;
-margin-bottom: 1px;
-}
-
-.simple .scrollbar-handle-up.hover,
-.simple .scrollbar-handle-up:hover {
-    border: 1px solid #666;
-}
-
-.simple .scrollbar-handle-up.move {
-    background-color: #999;
-}
-
-
-/* arrow down */
-.simple .scrollbar-handle-down {
-    width: 13px;
-    height: 13px;
-    border: 1px solid #CCC;
-    background-color: #CCC;
-	 background-position: 2px 4px;
-	 margin-top: 1px;
-}
-
-.simple .scrollbar-handle-down.hover,
-.simple .scrollbar-handle-down:hover {
-    border: 1px solid #666;
-}
-
-.simple .scrollbar-handle-down.move {
-    background-color: #999;
-}
-
-
-
-/* ---------- fff theme ----------------------------------------------------------------- */
-
-
-.pridavanie .scrollbar-pane {
-    margin-right: 12px;
-}
-
-.pridavanie .scrollbar-handle-container {
-    background: #EEE;
-    width: 12px;
-}
-
-.pridavanie .scrollbar-handle {
-    width: 12px;
-	 background-color: grey;
-	 z-index: 200;
-}
-
-.pridavanie .scrollbar-handle:hover {
-    background-color: #999;
-}
-
-.pridavanie .scrollbar-handle.move {
-    background-color: #666;
-}
-
-.pridavanie .scrollbar-handle-up {
-    width: 12px;
-    height: 18px;
-}
-
-.pridavanie .scrollbar-handle-down {
-    width: 12px;
-    height: 18px;
 }

@@ -2,6 +2,13 @@
 /*******************ponuka pizz********************/
 /**************************************************/
 
+#div_menu {
+	width: 555px;
+   height: 392px;
+	position: absolute;
+	top: 80px;
+   left: 250px;
+}
 #prazdny {
 	width: 220px;
 	height: 350px;
@@ -144,8 +151,8 @@
     width: 549px;
     height: 392px;
     position: absolute;
-    top: 80px;
-    left: 250px;
+    top: 0px;
+    left: 1px;
     overflow:  auto;
     list-style: none;
     margin: 0px;
@@ -163,7 +170,7 @@
     -webkit-border-bottom-right-radius: 10px;
     
      scrollbar-base-color: #369;
-     scrollbar-arrow-color: blue;
+     scrollbar-arrow-color: blue
 }
 
 .menu li {
@@ -487,3 +494,5 @@
 	left: 10px;
 	margin: 0px;
 }
+
+
