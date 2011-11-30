@@ -32,8 +32,8 @@
     left: 0px;
     top: 0px;
     color: black;
-    background-color: white;
-    border: 1px;
+    background-color: #FFC10A;
+    border: 0px;
     
     width: 145px;
     height: 30px;
@@ -43,10 +43,6 @@
     
     -moz-border-radius-bottomright: 10px;
     -webkit-border-bottom-right-radius: 10px;
-
-
-    -moz-border-radius-bottomleft: 10px;
-    -webkit-border-bottom-left-radius: 10px;
 
 }
 
@@ -79,16 +75,15 @@
 }
 
 .filter {
-    width: 500px;
+    width: 480px;
     height: 360px;
     position: absolute;
-    background-color: white;
+    background-color: #FFFFEA;
     top: 0px;
     left: 4px;
     font-size: 15px; 
     z-index:111;
     border: 0px;
-    overflow: auto;
     padding: 0px;
     margin: 0px;
     list-style-type: none;
@@ -154,10 +149,10 @@
 }
 #button_f {
     position: absolute;
-    left: 275px;
-    top: 50px;
+    left: 285px;
+    top: 70px;
     color: black;
-    background-color: white;
+    background-color: #FFFFEA;
     border: 1px;
     width: 70px;
     height: 25px;
@@ -189,14 +184,14 @@
 }
 #maso {
 	position: absolute;
-	background-color: white;
+	background-color: #FFFFEA;
 	width: 165px;
 	height: 100px;
 	top: 50px;
 }
 #syry {
 	position: absolute;
-	background-color: white;
+	background-color: #FFFFEA;
 	width: 125px;
 	height: 155px;
 	top: 0px;
@@ -207,7 +202,7 @@
 
 #zelenina {
 	position: absolute;
-	background-color: white;
+	background-color: #FFFFEA;
 	width: 120px;
 	height: 155px;
 	top: 4px;
@@ -217,7 +212,7 @@
 
 #zelenina2 {
 	position: absolute;
-	background-color: white;
+	background-color: #FFFFEA;
 	width: 150px;
 	height: 155px;
 	top: 0px;

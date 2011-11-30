@@ -22,14 +22,14 @@ function init_menu_pizze() {
 		 
 	$('.ukonci_filtrovanie').click (function() {
        $('#filtrovanie').hide(300);
-      $('#div_menu').css('top',80);
+      $('#div_menu').css('top',100);
 		$('#div_menu').css('height',392);	
 		$('#spodok').show(300); 
 	});
 	 	  	 
     $('#button_f').click( function() {
 		$('#filtrovanie').show(300);
-		$('#div_menu').css('top',167);
+		$('#div_menu').css('top',187);
 		$('#spodok').hide(300);
 		$('#div_menu').css('height',294);
 	});

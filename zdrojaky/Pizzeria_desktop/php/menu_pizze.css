@@ -6,7 +6,7 @@
 	width: 555px;
    height: 392px;
 	position: absolute;
-	top: 80px;
+	top: 100px;
    left: 250px;
 }
 #prazdny {
@@ -42,7 +42,7 @@
    width: 254px;
     height: 360px;
     position: absolute;
-    background-color: white;
+    background-color: #FFFFEA;
     top: 50px;
     left: 4px;
     font-size: 15px; 
@@ -127,10 +127,6 @@
     cursor: pointer;
 }
 
-
-
-
-
 .ukonci_informacie {
 	
 	background-image: url(images/panel_close20.png);
@@ -139,7 +135,6 @@
    right: 0;
    top: 5px;
    z-index: 100;
-   
    width: 35px;
    height: 35px;
    display: block;
@@ -175,7 +170,7 @@
 
 .menu li {
     width:520px;
-    height: 95px;
+    height: 75px;
     background-color: #FFFFEA;
     position: relative;
     top: 0px;
@@ -229,8 +224,8 @@
     position: absolute;
     top: 2px;
     left: 4px;
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     background: none;
     padding: 0px;
     margin: 0px;
@@ -255,10 +250,10 @@
     border: 0px;
     font: bold;
     width: 100px;
-    height: 40px;
+    height: 30px;
     cursor: pointer;
     
-    font-size: 17px;
+    font-size: 14px;
     -moz-border-radius-topright: 0px;
     -webkit-border-top-right-radius: 0px;
     -moz-border-radius-bottomright: 45px;
@@ -279,8 +274,8 @@
     border: 0px;
     font: bold;
     width: 100px;
-    height: 40px;
-    font-size: 17px;
+    height: 30px;
+    font-size: 14px;
     cursor: pointer;
 
     -moz-border-radius-topright: 45px;
@@ -352,10 +347,10 @@
     left: 0px;
     top: 0px;
     color: black;
-    background-color: #white;
+    background-color: #FFFFEA;
     border: 1px;
     width: 252px;
-    height: 42px;
+    height: 47px;
     border: 1px;
     border-style: solid;
     z-index: 112;  
@@ -371,7 +366,7 @@
 
 #pridavanie_titulka p {
 	line-height: 20px;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: bold;
 	margin: 0px;
 	margin-top: 5px;
@@ -381,8 +376,8 @@
 }
 
 #pridavanie_titulka h5 {
-	line-height: 12px;
-	font-size: 10px;
+	line-height: 14px;
+	font-size: 12px;
 	font-weight: normal;
 	margin: 0px;
 	margin-top: 0px;
@@ -396,8 +391,8 @@
     width: 254px;
     height: 424px;
     position: absolute;
-    background-color: white;
-    top: 60px;
+    background-color: #FFFFEA;
+    top: 80px;
     right: 0px;
     font-size: 15px; 
     z-index:112;
@@ -437,7 +432,7 @@
 #kontakt {
 	width: 200px;
 	height: 40px;
-	background-color: white;
+	background-color: #FFFFEA;
 	position: absolute;
 	left: 45px;
 	bottom: 0px;
@@ -468,7 +463,7 @@
 #dovoz {
 	width: 200px;
 	height: 40px;
-	background-color: white;
+	background-color: #FFFFEA;
 	position: absolute;
 	left: 370px;
 	bottom: 0px;
