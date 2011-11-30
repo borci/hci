@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="dialogy.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/jquery-ui-1.8.16.custom.css" type="text/css" />
         <link rel="stylesheet" href="css/scrollbar.css" type="text/css" />
-        <link rel="stylesheet" href="css/lionbars.css" type="text/css" />
+       
        
         
 
@@ -24,8 +24,10 @@
         <script type="text/javascript" src="js/jquery.kinetic.js"></script>
         <script type="text/javascript" src="js/transify.js"></script>
         <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-        <script type="text/javascript" src="js/jquery.scroll.js"></script>
-        <script type="text/javascript" src="js/jQuery.lionbars.0.2.1.min.js"></script>
+        <script src="js/scrollbar.js" type="text/javascript"></script>
+        <script src="js/slimScroll.js" type="text/javascript"></script>
+        <script src="js/jquery.scrollbar.js" type="text/javascript"></script>
+        
         
 
         <script type="text/javascript" src="skript.js"></script>
