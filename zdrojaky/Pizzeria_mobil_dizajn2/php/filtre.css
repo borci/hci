@@ -77,11 +77,12 @@
 #button_f {
     position: absolute;
     left: 87px;
-    top: 16px;
+    top: 5px;
     color: black;
-    background-color: white;
+    background-color: #FFF47F;
     border: 1px;
     width: 45px;
+    height: 30px;
     border: 1px;
     border-style: solid;
     cursor: pointer;

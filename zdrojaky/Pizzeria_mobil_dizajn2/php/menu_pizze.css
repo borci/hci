@@ -93,26 +93,27 @@
 
 #informacie {
     position: absolute;
-    left: 90px;
+    left: 85px;
     bottom: 0px;
     color: black;
     background-image: url('images/info.png');
-    background-color: grey;
+    background-color: #FFF47F;
     background-repeat: no-repeat;
+    background-position: 5px 2px;
     border: 1px;
-    width: 40px;
+    width: 50px;
     height: 40px;
     border: 0px;
     border-style: solid;
     cursor: pointer;
     
-    background-size: 100% 100%;
-    -moz-border-radius-topright: 30px;
-    -webkit-border-top-right-radius: 30px;
+    background-size: 80% 96%;
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
 
 
-    -moz-border-radius-topleft: 30px;
-    -webkit-border-top-left-radius: 30px;
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
 
 }
 
@@ -302,7 +303,7 @@
 
 .menu {
     width: 216px;
-    height: 252px;
+    height: 250px;
     padding: 0px;
     margin: 0px;
     position: absolute;
@@ -329,7 +330,7 @@
 .menu li {
     width:211px;
     height: 81px;
-    background-color: #D7ECE8;
+    background-color: #FFF47F;
     position: relative;
     top: 0px;
     left: 1px;
@@ -358,12 +359,13 @@
     top: 0px;
     left: 25px;
     padding: 0px;
-    margin: 0px;
+    margin: auto;
+    
     padding-bottom: 2px;
     border: 0px;
     font-family: 'Palatino Linotype';
     font-size: 14px;
-    color: green;
+    color: #543F1C;
 }
 
 .menu li h5 {
@@ -380,7 +382,7 @@
 }
 
 .menu li p {
-    color:black;
+    color:#935D00;
     position: absolute;
     top: 17px;
     left: 5px;
@@ -399,16 +401,17 @@
     position: absolute;
     right: 5px;
     bottom: 5px;
-    color: black;
+    color: #935D00;
     
     text-align: right;
+    
    
     background-image: url('images/pizza4.png');
-    background-color: #D7ECE8;
+    background-color: #FFF47F;
     background-repeat: no-repeat;
     background-size: 57% 130%;
     background-position: 0px -5px;
-    border: 1px;
+    border: 0px;
     border-style: solid;
     font: bold;
   
@@ -431,17 +434,17 @@
     position: absolute;
     left: 10px;
     bottom: 5px;
-    color: black;
+    color: #935D00;
     
     text-align: right;
    
     background-image: url('images/pizza4.png');
-    background-color: #D7ECE8;
+    background-color: #FFF47F;
     background-repeat: no-repeat;
-    background-size: 50% 85%;
-    background-position: 0px 3px;
+    background-size: 50% 95%;
+    background-position: 0px 0px;
     
-    border: 1px;
+    border: 0px;
     border-style: solid;
     font: bold;
     
