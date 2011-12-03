@@ -37,7 +37,8 @@ a.trigger:hover{
     position: absolute;
     top: 0px;
     display: none;
-    background: #000000;
+/*    background: #000000;*/
+    background: #4b4d49;
     border:0px solid #111111;
     filter: alpha(opacity=85);
     /*    opacity: .85;*/
@@ -81,7 +82,7 @@ a.left_trigger{
     left: 0;
     float: left;
     padding: 5px 30px 5px 5px;
-    background:#333333 url(images/adresa20.png) no-repeat;    
+    background:#333333 url(images/home20.png) no-repeat;    
     background-position: 85% 55%;    
     -moz-border-radius-topright: 20px;
     -moz-border-radius-bottomright: 20px;
