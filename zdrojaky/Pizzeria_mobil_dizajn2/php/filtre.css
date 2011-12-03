@@ -6,10 +6,11 @@
     position: absolute;
     background-color: #D7ECE8;
     top: 50px;
-    left: 4px;
+    left: 3px;
     font-size: 15px; 
     z-index:112;
-    border: 0px;
+    border: 1px;
+    border-style: solid;
     overflow: hidden;
     padding: 0px;
     margin: 0px;

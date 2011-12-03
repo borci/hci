@@ -20,7 +20,7 @@
 
 <div class="pizze_menu"> 
 	<button id="button_f"> filtruj </button>
-	<button id="informacie"> Informácie o pizzérií </button>
+	<button id="informacie"></button>
 	<div id="filtrovanie_titulka">
 		<span class="ukonci_filtrovanie"></span>
 		 <center><p>Filtrovanie</p></center> 
@@ -31,15 +31,17 @@
 		 <h5></h5> </div>
 	<div id="informacie_titulka">
 		<span class="ukonci_informacie"></span>
-		 <center><p>O nás</p></center> 
+		 <p>O nás</p>
 		 </div>	 
 
 	   	<ul class="menu">
 				    <li class="Paradajkový základ,mozzarella,šunka,kukurica">
-                    <center><h3 class="meno_pizze"> California </h3></center>
+				    <div id="euro1"></div>	
+				    <div id="euro2"></div>	
+                    <h3 class="meno_pizze"> California </h3>
                     <p class="tags">Paradajkový základ, mozzarella, šunka, kukurica</p>
-                    <button class="Pridat" TITLE="Pridat do kosika velku pizzu" value="California veľká @ 4.5"> 450g 4,5€ </button>
-                    <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu" value="California malá @ 4.5"> 380g 4,2€ </button>
+                    <button class="Pridat" TITLE="Pridat do kosika velku pizzu" value="California veľká @ 4.5"> 4,5 €</button>
+                    <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu" value="California malá @ 4.5"> 4,2 €</button>
                 </li>
 				   <li class="Paradajkový základ,mozzarella,šampiňóny">
                     <center><h3 class="meno_pizze">  Funghi </h3></center>
@@ -183,13 +185,7 @@
                     <button class="Pridat" TITLE="Pridat do kosika velku pizzu" value="Vegetariánska veľká @ 4.5"> 450g 4,5€ </button>
                     <button class="Pridat_m" TITLE="Pridat do kosika malu pizzu" value="Vegetariánska malá @ 4.5"> 380g 4,2€ </button>
                 </li>
-                
-                
-               
-               
-              
-               
-      </ul>
+       </ul>
 
 <ul class="filter">
 			<li><input type="checkbox" value="filterAll" id="nic" /><label for="nic">nefiltruj</label></li>
@@ -204,7 +200,7 @@
 			<li><input type="checkbox" value="mozzarella" id="f_mozzarella" /><label for="f_mozzarella">mozzarella</label></li>
 			<li><input type="checkbox" value="niva" id="f_niva" /><label for="f_niva">niva</label></li>
 			<li><input type="checkbox" value="parmezán" id="f_parmezan" /><label for="f_parmezan">parmezán</label></li>
-			<p> Zelenina </p>
+			<p> Ovocie/Zelenina </p>
 			<li><input type="checkbox" value="ananás" id="f_ananas" /><label for="f_ananas">ananás</label></li>
 			<li><input type="checkbox" value="cesnak" id="f_cesnak" /><label for="f_cesnak">cesnak</label></li>
 			<li><input type="checkbox" value="cibuľa" id="f_cibula" /><label for="f_cibula">cibuľa</label></li>
@@ -235,7 +231,7 @@
 			<li><input type="checkbox" value="mozzarella@0.3" id="mozzarela" /><label for="mozzarela">mozzarella 0.3 €</label></li>
 			<li><input type="checkbox" value="niva@0.4" id="niva" /><label for="niva">niva 0.4 €</label></li>
 			<li><input type="checkbox" value="parmezán@0.4" id="parmezan" /><label for="parmezan">parmezán 0.4 €</label></li>
-			<p> Zelenina </p>
+			<p> Ovocie/Zelenina </p>
 			<li><input type="checkbox" value="ananás@0.6" id="ananas" /><label for="ananas">ananás 0.6 €</label></li>
 			<li><input type="checkbox" value="cesnak@0.3" id="cesnak" /><label for="cesnak">cesnak 0.3 €</label></li>
 			<li><input type="checkbox" value="cibuľa@0.3" id="cibula" /><label for="cibula">cibuľa 0.3 €</label></li>
