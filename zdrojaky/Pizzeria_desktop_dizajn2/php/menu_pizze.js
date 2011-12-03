@@ -21,30 +21,34 @@ function init_menu_pizze() {
 	});
 		 
 	$('.ukonci_filtrovanie').click (function() {
-       $('#filtrovanie').hide();
-       $('.menu').css('top',80);
-		$('.menu').css('height',392);	 
+       $('#filtrovanie').hide(300);
+      $('#div_menu').css('top',110);
+		$('#div_menu').css('height',392);	
+		$('#spodok').show(300); 
 	});
 	 	  	 
     $('#button_f').click( function() {
-		$('#filtrovanie').show();
-		$('.menu').css('top',175);
-		$('.menu').css('height',294);
+		$('#filtrovanie').show(300);
+		$('#div_menu').css('top',180);
+		$('#spodok').hide(300);
+		$('#div_menu').css('height',294);
 	});
-	
-
-   
-	
-	$(function()
-		{
-			$('.menu').scrollbar();
-		});
-		
-	
 		
 	$('.right_panel').css('overflow','auto');
-	
-	
+
+	$(function(){
+    $('.menu').slimScroll({
+         height: '390px',
+			size: '15px',
+			top: '110px',
+			position: 'right',
+			color: '#ffffff',
+			alwaysVisible: false,
+			distance: '10px',
+			start: 'top'
+		});
+});
+
 
 	filtrovanie();
     // **************************************************************************

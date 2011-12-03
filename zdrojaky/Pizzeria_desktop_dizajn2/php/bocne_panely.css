@@ -7,7 +7,7 @@ a.trigger{
     /*    tymto parametrom sa da jednoducho nastavit sirka oboch triggerov*/
     width: 220px;
     /*    height: 40px;*/
-    top: 60px;
+    top: 80px;
 
     color:#fff;
     padding: 8px 0px 8px 0px;
@@ -27,27 +27,27 @@ a.trigger{
 a.left_trigger{
     left: 0;
     float: left;
-/*    padding: 5px 30px 5px 5px;*/
-    background:#333333 url(images/adresa20.png) no-repeat;    
+    /*    padding: 5px 30px 5px 5px;*/
+    background:#444444 url(images/home32.png) no-repeat;    
     background-position: 85% 55%;    
     -moz-border-radius-topright: 20px;
-/*    -moz-border-radius-bottomright: 20px;*/
+    /*    -moz-border-radius-bottomright: 20px;*/
 }
 
 a.right_trigger {
     width: 255px;
     right: 0;
     float: right;
-/*    padding: 5px 5px 5px 30px;*/
-    background:#333333 url(images/kosik20.png) no-repeat;
+    /*    padding: 5px 5px 5px 30px;*/
+    background:#444444 url(images/kosik32.png) no-repeat;
     background-position: 15% 55%;
 
     -moz-border-radius-topleft: 20px;
-/*    -moz-border-radius-bottomleft: 20px;*/
+    /*    -moz-border-radius-bottomleft: 20px;*/
 }
 
 a.kosik_full.right_trigger {
-    background-image: url(images/kosik_plny20.png);    
+    background-image: url(images/kosik_plny32.png);    
 }
 
 /* **************************************************************** */
@@ -56,8 +56,10 @@ a.kosik_full.right_trigger {
 
 .panel {
     position: absolute;
-    top: 100px;
-    background: #000000;
+    top: 120px;
+    /*    background: #000000;*/
+    /*    background: #4b4d49;*/
+    background: #6c8356;
     border:1px solid #111111;
     filter: alpha(opacity=85);
     /*    opacity: .85;*/
@@ -87,7 +89,7 @@ a.kosik_full.right_trigger {
     height: 380px;
     /*    height: auto;*/
     left: 0;    
-/*    -moz-border-radius-topright: 20px;*/
+    /*    -moz-border-radius-topright: 20px;*/
     -moz-border-radius-bottomright: 20px;
 }
 
@@ -100,7 +102,7 @@ a.kosik_full.right_trigger {
     /*    height: auto;*/
     height: 380px;
     right: 0;
-/*    -moz-border-radius-topleft: 20px;*/
+    /*    -moz-border-radius-topleft: 20px;*/
     -moz-border-radius-bottomleft: 20px;
     overflow: hidden;
 }

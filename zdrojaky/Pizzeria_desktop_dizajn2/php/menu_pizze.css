@@ -2,6 +2,13 @@
 /*******************ponuka pizz********************/
 /**************************************************/
 
+#div_menu {
+	width: 555px;
+   height: 388px;
+	position: absolute;
+	top: 110px;
+   left: 250px;
+}
 #prazdny {
 	width: 220px;
 	height: 350px;
@@ -35,7 +42,7 @@
    width: 254px;
     height: 360px;
     position: absolute;
-    background-color: white;
+    background-color: #FFFFEA;
     top: 50px;
     left: 4px;
     font-size: 15px; 
@@ -120,10 +127,6 @@
     cursor: pointer;
 }
 
-
-
-
-
 .ukonci_informacie {
 	
 	background-image: url(images/panel_close20.png);
@@ -132,7 +135,6 @@
    right: 0;
    top: 5px;
    z-index: 100;
-   
    width: 35px;
    height: 35px;
    display: block;
@@ -142,10 +144,10 @@
 
 .menu {
     width: 549px;
-    height: 392px;
+    height: 390px;
     position: absolute;
-    top: 80px;
-    left: 250px;
+    top: 0px;
+    left: 1px;
     overflow:  auto;
     list-style: none;
     margin: 0px;
@@ -161,12 +163,15 @@
     -webkit-border-top-right-radius: 10px;
     -moz-border-radius-bottomright: 10px;
     -webkit-border-bottom-right-radius: 10px;
+    
+     scrollbar-base-color: #369;
+     scrollbar-arrow-color: blue
 }
 
 .menu li {
     width:520px;
-    height: 95px;
-    background-color: white;
+    height: 75px;
+    background-color: #FFFFEA;
     position: relative;
     top: 0px;
     left: 0px;
@@ -192,8 +197,9 @@
 .menu li h3 {
     top: 0px;
     padding: 0px;
-    margin: auto;
-    padding-bottom: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     border: 0px;
     font-family: 'Palatino Linotype';
     font-size: 16px;
@@ -204,7 +210,7 @@
 .menu li p {
     color:black;
     position: absolute;
-    top: 20px;
+    top: 24px;
     left: 5px;
     padding: 0px;
     margin: 0px;
@@ -218,8 +224,8 @@
     position: absolute;
     top: 2px;
     left: 4px;
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     background: none;
     padding: 0px;
     margin: 0px;
@@ -240,14 +246,18 @@
     right: 5px;
     bottom: 5px;
     color: black;
-    background-color: #A7FF7F;
+    background-color: #FFC10A;
+    background-image: url("images/kosik_pridat20.png");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    padding-left:23px;
     border: 0px;
     font: bold;
     width: 100px;
-    height: 40px;
+    height: 30px;
     cursor: pointer;
     
-     font-size: 17px;
+    font-size: 13px;
     -moz-border-radius-topright: 0px;
     -webkit-border-top-right-radius: 0px;
     -moz-border-radius-bottomright: 45px;
@@ -264,12 +274,16 @@
     right: 5px;
     top: 5px;
     color: black;
-    background-color: #49BC22;
+    background-color: #FFC10A;
+    background-image: url("images/kosik_pridat20.png");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    padding-left:23px;
     border: 0px;
     font: bold;
     width: 100px;
-    height: 40px;
-    font-size: 17px;
+    height: 30px;
+    font-size: 13px;
     cursor: pointer;
 
     -moz-border-radius-topright: 45px;
@@ -341,10 +355,10 @@
     left: 0px;
     top: 0px;
     color: black;
-    background-color: #white;
+    background-color: #FFFFEA;
     border: 1px;
     width: 252px;
-    height: 42px;
+    height: 47px;
     border: 1px;
     border-style: solid;
     z-index: 112;  
@@ -360,7 +374,7 @@
 
 #pridavanie_titulka p {
 	line-height: 20px;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: bold;
 	margin: 0px;
 	margin-top: 5px;
@@ -370,8 +384,8 @@
 }
 
 #pridavanie_titulka h5 {
-	line-height: 12px;
-	font-size: 10px;
+	line-height: 14px;
+	font-size: 12px;
 	font-weight: normal;
 	margin: 0px;
 	margin-top: 0px;
@@ -385,8 +399,8 @@
     width: 254px;
     height: 424px;
     position: absolute;
-    background-color: white;
-    top: 60px;
+    background-color: #FFFFEA;
+    top: 80px;
     right: 0px;
     font-size: 15px; 
     z-index:112;
@@ -405,10 +419,10 @@
 #spodok {
 	width: 620px;
 	height: 65px;
-	background-color: white;
+	background-color: #FFFFEA;
 	position: absolute;
 	bottom: 0px;
-	left: 220px;
+	left: 210px;
 	display: block;
 	z-index: 111;
 	border: 2px;
@@ -425,11 +439,11 @@
 
 #kontakt {
 	width: 200px;
-	height: 45px;
-	background-color: white;
+	height: 40px;
+	background-color: #FFFFEA;
 	position: absolute;
 	left: 45px;
-	top: 20px;
+	bottom: 0px;
 	
 }
 
@@ -439,8 +453,9 @@
 	position: absolute;
 	bottom: 42px;
 	left: 10px;
+	color: green;
 	margin: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 2px;
 }
 
 #kontakt h5 {
@@ -448,18 +463,18 @@
 	font-size: 12px;
 	font-weight: normal;
 	position: relative;
-	top: 2px;
+	top: 5px;
 	left: 10px;
 	margin: 0px;
 }
 
 #dovoz {
 	width: 200px;
-	height: 45px;
-	background-color: white;
+	height: 40px;
+	background-color: #FFFFEA;
 	position: absolute;
 	left: 370px;
-	top: 20px;
+	bottom: 0px;
 }
 
 
@@ -469,8 +484,9 @@
 	position: absolute;
 	bottom: 42px;
 	left: 10px;
+	color: green;
 	margin: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 2px;
 }
 
 #dovoz h5 {
@@ -482,3 +498,5 @@
 	left: 10px;
 	margin: 0px;
 }
+
+
