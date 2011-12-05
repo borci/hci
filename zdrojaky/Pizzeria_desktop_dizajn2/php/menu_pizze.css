@@ -12,7 +12,7 @@
 #prazdny {
 	width: 220px;
 	height: 350px;
-	background-color: grey;
+	background-color:  #D7ECE8;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -355,7 +355,7 @@
     left: 0px;
     top: 0px;
     color: black;
-    background-color: #FFFFEA;
+    background-color: black;
     border: 1px;
     width: 252px;
     height: 47px;

@@ -4,7 +4,7 @@
 #uvodna_stranka {
 	width: 220px;
 	height: 350px;
-	background-color: #D7ECE8;
+	background-color: #FFF47F;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -13,27 +13,27 @@
 }
 
 #uvodna_stranka h3{
-	color: green;
+	color: #543F1C;
 	margin: 0px;
 	font-size: 16px;
 	margin-bottom: 90px;
 }
 
 #uvodna_stranka h4{
-	color: green;
+	color: #543F1C;
 	margin: 0px;
 	font-size: 22px;
 }
 
 #uvodna_stranka h5{
-	color: green;
+	color: #543F1C;
 	margin: 0px;
 	font-size: 12px;
 	font-weight: normal;
 }
 
 #uvodna_stranka p {
-	color: green;
+	color: #543F1C;
 	margin: 0px;
 	margin-top: 40px;
 	font-size: 12px;
@@ -59,11 +59,14 @@
 	bottom: 10px;
 	left: 10px;
 	z-index: 301;
-	font-size: 16px;
+	font-size: 18px;
+	font-weight: bold;
 	border: 0px;
-	color: white;
-	background-color: green;
+	color: #543F1C;
+	background-color: #FFB200;
 	cursor: pointer;
+	border: 2px;
+	border-style: solid;
 	
 	-moz-user-select: none;
 
@@ -83,7 +86,7 @@
 #prazdny {
 	width: 220px;
 	height: 350px;
-	background-color: grey;
+	background-color: #FFB200;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -121,9 +124,9 @@
     width: 212px;
     height: 288px;
     position: absolute;
-    background-color: #D7ECE8;
+    background-color: #FFF47F;
     top: 50px;
-    left: 4px;
+    left: 2px;
     font-size: 15px; 
     z-index:2;
     border: 0px;
@@ -131,6 +134,9 @@
     padding: 0px;
     margin: 0px;
     list-style-type: none;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
 
     -moz-user-select: none;
 
@@ -212,11 +218,10 @@
     left: 0px;
     top: 0px;
     color: black;
-    background-color: #D7ECE8;
-    border: 1px;
-    width: 218px;
+    background-color: #FFF47F;
+    width: 217px;
     height: 35px;
-    border: 1px;
+    border: 2px;
     border-style: solid;
     z-index: 112;  
     
@@ -257,11 +262,10 @@
     left: 0px;
     top: 0px;
     color: black;
-    background-color: #D7ECE8;
-    border: 1px;
-    width: 218px;
+    background-color: #FFF47F;
+    width: 217px;
     height: 35px;
-    border: 1px;
+    border: 2px;
     border-style: solid;
     z-index: 112;  
     
@@ -467,12 +471,19 @@
     width: 212px;
     height: 288px;
     position: absolute;
-    background-color: #D7ECE8;
+    background-image: url('images/kuchar80.png');
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: 55% 80%; 
+    background-color: #FFF47F;
+    
     top: 50px;
-    left: 4px;
+    left: 2px;
     font-size: 15px; 
     z-index:112;
-    border: 0px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
     overflow: hidden;
 
     -moz-user-select: none;
