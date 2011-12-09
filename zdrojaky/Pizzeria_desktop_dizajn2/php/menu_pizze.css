@@ -171,7 +171,7 @@
 .menu li {
     width:520px;
     height: 75px;
-    background-color: #FFFFEA;
+    background-color: #FFF47F;
     position: relative;
     top: 0px;
     left: 0px;
@@ -243,16 +243,22 @@
 
 .Pridat {
     position: absolute;
-    right: 5px;
+    right: 7px;
     bottom: 5px;
     color: black;
-    background-color: #FFC10A;
-    background-image: url("images/kosik_pridat20.png");
+    
+    text-align:  right;
+    
+  background-image: url('images/pizza4.png');
+    background-color: #FFF47F;
     background-repeat: no-repeat;
-    background-position: 5% center;
-    padding-left:23px;
+    background-size: 62% 105%;
+    background-position: 0px -5px;
     border: 0px;
+    border-style: solid;
     font: bold;
+    
+    
     width: 100px;
     height: 30px;
     cursor: pointer;
@@ -271,13 +277,18 @@
 
 .Pridat_m {
     position: absolute;
-    right: 5px;
+    right: 7px;
     top: 5px;
     color: black;
-    background-color: #FFC10A;
-    background-image: url("images/kosik_pridat20.png");
+    
+    text-align: right;
+   
+    background-image: url('images/pizza4.png');
+    background-color: #FFF47F;
     background-repeat: no-repeat;
-    background-position: 5% center;
+    background-size: 50% 85%;
+    background-position: 5px 3px;
+    
     padding-left:23px;
     border: 0px;
     font: bold;

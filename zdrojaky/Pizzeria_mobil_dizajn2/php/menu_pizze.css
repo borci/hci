@@ -471,6 +471,8 @@
     width: 212px;
     height: 288px;
     position: absolute;
+    
+    
     background-image: url('images/kuchar80.png');
     background-repeat: no-repeat;
     background-size: 100px 100px;
