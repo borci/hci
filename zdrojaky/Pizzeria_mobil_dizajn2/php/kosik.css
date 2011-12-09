@@ -21,19 +21,21 @@ img {padding-right: 20px; float:left}*/
     /*    todo*/
     width:220px;
     -moz-user-select: none;
+    
 }
 
 #infolist ul{
     padding: 0;
     margin: 0;
     list-style-type: none;
+    
 }
 
 #infolist ul li{
     padding: 0;
     margin: 0;
     list-style-type: none;
-}
+    }
 
 p.kosik_nadpis {
     color:#cccccc;
@@ -70,16 +72,20 @@ p.kosik_nadpis {
 
 #infolist h3 .kosik_item_header .suma {
     color: brown;
+  
 }
 #infolist h3 .kosik_item_header .euro_sign {
     color: brown;
+   
 }
 #infolist h3 .kosik_item_header .kosik_pocet {
 /*    color: brown;*/
+
 }
 
 #infolist h3 .kosik_item_header .jednotkova_cena {
     display: none;
+
 }
 
 #infolist h3 .kosik_delitem {
@@ -88,6 +94,7 @@ p.kosik_nadpis {
     top: 3px;
     z-index: 100;
     background: url(images/kosik_delete24.png) center center no-repeat;
+
     width: 24px;
     height: 24px;
     display: block;
@@ -100,6 +107,7 @@ p.kosik_nadpis {
     background-image: url(images/kosik_plus20.png);
     background-repeat: no-repeat;
     background-position: center center;
+
     width: 20px;
     height: 20px;
     display: block;
@@ -111,6 +119,7 @@ p.kosik_nadpis {
     z-index: 100;
     background-image: url(images/kosik_minus20.png);
     background-repeat: no-repeat;
+
     width: 20px;
     height: 20px;
     display: block;   
@@ -121,6 +130,7 @@ p.kosik_nadpis {
     /*position: relative;*/
     right: 15px;
     z-index: 100;
+
     /*    float: right;*/
 
     /*    display: block;*/
@@ -129,12 +139,14 @@ p.kosik_nadpis {
 #infolist.ui-accordion .ui-accordion-header .ui-icon {
     /*    umiestnenie rozklikavacieho trojuholnika*/
     left: -5px;
+   
 }
 
 #infolist.ui-accordion .ui-accordion-content {
     /*    element vo vnutri harmonikovej polozky*/
     padding: 5px;
     padding-left: 20px;
+
 }
 
 #infolist .kosik_add_suroviny {
@@ -212,6 +224,7 @@ p.kosik_nadpis {
     /*    margin-top: 2px;*/
     padding: 3px 8px;
     cursor: pointer;
+    background-color: #FFF47F;
 }
 
 #kosik_prazdny {

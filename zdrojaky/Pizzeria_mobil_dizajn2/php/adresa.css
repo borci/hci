@@ -7,6 +7,7 @@
     width: 200px;
 /*    color: #cccccc;*/
     color: white;
+    color: #543F1C;
     padding-top: 30px;
 }
 
@@ -24,7 +25,9 @@
 .login_form label {
     padding-top: 5px;
     padding-bottom: 0px;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15px;
     -moz-user-select: none;
 }
 .login_form input {
@@ -40,7 +43,7 @@
 }
 
 .form_button {
-    margin-bottom: 15px;    
+    margin-bottom: 13px;    
 }
 
 /************* Hlavicka Prihlaseny ******/

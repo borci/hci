@@ -152,8 +152,8 @@
 	position: relative;
 	left: 20px;
 	
-	width: 80px;
-	height: 70px;
+	width: 60px;
+	height: 53px;
 	background-image: url(images/maso.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -170,6 +170,19 @@
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-color: #FFF47F;
+}
+
+.ciara {
+	position: relative;
+	width: 210px;
+	height: 0px;
+	border: 1px;
+	border-color: black;
+	border-style: solid;
+	display: block;
+	
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
 /************** filtre ****************/
 /*************ku pridavaniu************/
