@@ -171,7 +171,7 @@
 .menu li {
     width:520px;
     height: 75px;
-    background-color: #FFF47F;
+    background-color:  #FFFFCC;
     position: relative;
     top: 0px;
     left: 0px;
@@ -250,7 +250,7 @@
     text-align:  right;
     
   background-image: url('images/pizza4.png');
-    background-color: #FFF47F;
+    background-color:  #FFFFCC;
     background-repeat: no-repeat;
     background-size: 62% 105%;
     background-position: 0px -5px;
@@ -284,7 +284,7 @@
     text-align: right;
    
     background-image: url('images/pizza4.png');
-    background-color: #FFF47F;
+    background-color:  #FFFFCC;
     background-repeat: no-repeat;
     background-size: 50% 85%;
     background-position: 5px 3px;
@@ -314,7 +314,7 @@
     width: 212px;
     height: 288px;
     position: absolute;
-    background-color: #D7ECE8;
+    background-color: #FFF47F;
     top: 50px;
     left: 4px;
     font-size: 15px; 
@@ -430,7 +430,7 @@
 #spodok {
 	width: 620px;
 	height: 65px;
-	background-color: #FFFFEA;
+	background-color: #FFB200;
 	position: absolute;
 	bottom: 0px;
 	left: 210px;
@@ -451,7 +451,7 @@
 #kontakt {
 	width: 200px;
 	height: 40px;
-	background-color: #FFFFEA;
+	background-color: #FFB200;
 	position: absolute;
 	left: 45px;
 	bottom: 0px;
@@ -464,7 +464,7 @@
 	position: absolute;
 	bottom: 42px;
 	left: 10px;
-	color: green;
+	color: white;
 	margin: 0px;
 	margin-bottom: 2px;
 }
@@ -482,7 +482,7 @@
 #dovoz {
 	width: 200px;
 	height: 40px;
-	background-color: #FFFFEA;
+	background-color: #FFB200;
 	position: absolute;
 	left: 370px;
 	bottom: 0px;
@@ -495,7 +495,7 @@
 	position: absolute;
 	bottom: 42px;
 	left: 10px;
-	color: green;
+	color: white;
 	margin: 0px;
 	margin-bottom: 2px;
 }

@@ -8,6 +8,10 @@
 /*    color: #cccccc;*/
     color: white;
     color: #543F1C;
+    background-image: url('images/user.png');
+    background-repeat: no-repeat;
+    background-position: 70% 0%;
+    background-size: 55px 55px;
     padding-top: 30px;
 }
 
@@ -25,7 +29,7 @@
 .login_form label {
     padding-top: 5px;
     padding-bottom: 0px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     line-height: 15px;
     -moz-user-select: none;
@@ -36,10 +40,12 @@
     -moz-border-radius: 10px;
     border: 1px solid gray;
     padding: 3px 8px;
+    background-color: white;
 }
 .login_form input[type=submit] {
     width: 90px;
     cursor: pointer;
+    background-color: white;
 }
 
 .form_button {

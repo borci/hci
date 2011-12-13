@@ -9,10 +9,12 @@ body {
     position: relative;
     width: 1080px;
     height: 580px;
-    background-color: gray;
+    /*background-color: #FFB200;*/
+    /*background-color: #FF6600;*/
+    background-color: white;
     border: 0px solid green;
     margin: 0 auto;
-    background-image: url(images/background.jpg);
+   /* background-image: url(images/background.jpg);*/
 }
 a:focus {
     outline: none;
@@ -23,7 +25,7 @@ a:focus {
     background-image: url(images/logo237.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: gray;
+    background-color: #FFB200;
 /*    margin: 5px;*/
     width: 1080px;
     height: 80px;

@@ -286,7 +286,7 @@
 	margin-top: 5px;
 	margin-left: 80px;
 	padding: 0px;
-	color: green;
+	color: #543F1C;
 }
 
 .ukonci_informacie {
@@ -504,7 +504,7 @@
 
 #info h3 {
 	line-height: 20px;
-	color: green;
+	color: #543F1C;
 	margin-top: 0px;
 	margin-bottom: 20px;
 }
@@ -512,7 +512,7 @@
 #info h4 {
 	line-height: 20px;
 	font-size: 12px;
-	color: green;
+	color: #543F1C;
 	margin-top: 0px;
 	margin-bottom: 2px;
 }
@@ -521,7 +521,7 @@
 	line-height: 15px;
 	font-size: 12px;
 	font-weight: normal;
-	color: black;
+	color: #543F1C;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
