@@ -37,8 +37,8 @@
     font-size: 14px;
     padding: 0px;
     margin: 0px;
-    margin-top: 3px;
-    margin-left: 40px;
+    margin-top: 10px;
+   /* margin-left: 40px;*/
     color: green;
     font-weight: bold;
 }
@@ -150,25 +150,52 @@
 
 .maso {
 	position: relative;
-	left: 20px;
-	
-	width: 60px;
-	height: 53px;
+	left: 10px;
+	width: 190px;
+	height: 40px;
 	background-image: url(images/maso.png);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 35% 200%;
+	background-position: 75% 40%;
 	background-color: #FFF47F;
+	text-align: left;
+	
 }
 
 #syr {
 	position: relative;
-	left: 20px;
-	
-	width: 80px;
-	height: 50px;
-	background-image: url(images/cheese2.png);
+	left: 10px;
+	width: 190px;
+	height: 45px;
+	margin-bottom: 0px;
+	background-image: url(images/Cheese.png);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-position: 75% 0%;
+	background-size: 35% 120%;
+	background-color: #FFF47F;
+}
+
+.ZAO {
+	position: relative;
+	left: 10px;
+	width: 190px;
+	height: 60px;
+	background-image: url(images/ZAO.png);
+	background-repeat: no-repeat;
+	background-size: 35% 100%;
+	background-position: 80% 0%;
+	background-color: #FFF47F;
+}
+
+.hrib {
+	position: relative;
+	left: 10px;
+	width: 190px;
+	height: 60px;
+	background-image: url(images/mushroom.png);
+	background-repeat: no-repeat;
+	background-size: 35% 100%;
+	background-position: 80% 0%;
 	background-color: #FFF47F;
 }
 
