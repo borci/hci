@@ -3,7 +3,7 @@
     width: 520px;
     height: 160px;
     position: absolute;
-    background-color: white;
+    background-color:  #FFFFCC;
     top: 0px;
     left: 255px;
     font-size: 15px; 
@@ -78,7 +78,7 @@
     width: 480px;
     height: 360px;
     position: absolute;
-    background-color: #FFFFEA;
+    background-color:  #FFFFCC;
     top: 0px;
     left: 4px;
     font-size: 15px; 
@@ -188,14 +188,14 @@
 }
 #maso {
 	position: absolute;
-	background-color: #FFFFEA;
+	background-color:  #FFFFCC;
 	width: 165px;
 	height: 100px;
 	top: 50px;
 }
 #syry {
 	position: absolute;
-	background-color: #FFFFEA;
+	background-color:  #FFFFCC;
 	width: 125px;
 	height: 155px;
 	top: 0px;
@@ -206,7 +206,7 @@
 
 #zelenina {
 	position: absolute;
-	background-color: #FFFFEA;
+	background-color:  #FFFFCC;
 	width: 120px;
 	height: 155px;
 	top: 4px;
@@ -216,7 +216,7 @@
 
 #zelenina2 {
 	position: absolute;
-	background-color: #FFFFEA;
+	background-color:  #FFFFCC;
 	width: 150px;
 	height: 155px;
 	top: 0px;

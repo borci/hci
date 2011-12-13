@@ -4,10 +4,10 @@
 
 #div_menu {
 	width: 555px;
-   height: 388px;
+    height: 388px;
 	position: absolute;
 	top: 110px;
-   left: 250px;
+    left: 250px;
 }
 #prazdny {
 	width: 220px;
@@ -20,23 +20,7 @@
 	z-index: 111;
 }
 
-#informacie {
-    position: absolute;
-    left: 30px;
-    top: 331px;
-    color: black;
-    background-color: white;
-    border: 1px;
-    width: 160px;
-    border: 1px;
-    border-style: solid;
-    cursor: pointer;
-    -moz-border-radius-topright: 10px;
-    -webkit-border-top-right-radius: 10px;
-    -moz-border-radius-topleft: 10px;
-    -webkit-border-top-left-radius: 10px;
 
-}
 
 .pridavanie {
    width: 254px;
@@ -338,7 +322,7 @@
 
 #info h3 {
 	line-height: 20px;
-	color: green;
+	color: #543F1C;
 	margin-top: 0px;
 	margin-bottom: 5px;
 }
@@ -346,7 +330,7 @@
 #info h4 {
 	line-height: 20px;
 	font-size: 12px;
-	color: green;
+	color: #543F1C;
 	margin-top: 0px;
 	margin-bottom: 2px;
 }
@@ -355,7 +339,7 @@
 	line-height: 15px;
 	font-size: 12px;
 	font-weight: normal;
-	color: black;
+	color: #543F1C;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }

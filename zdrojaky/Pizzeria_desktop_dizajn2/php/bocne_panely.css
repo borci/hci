@@ -9,7 +9,8 @@ a.trigger{
     /*    height: 40px;*/
     top: 80px;
 
-    color:#fff;
+    /*color:#fff;*/
+    color: #543F1C;
     padding: 8px 0px 8px 0px;
     border:1px solid #444444;
     display: block;
@@ -27,8 +28,9 @@ a.trigger{
 a.left_trigger{
     left: 0;
     float: left;
+   
     /*    padding: 5px 30px 5px 5px;*/
-    background:#444444 url(images/home32.png) no-repeat;    
+    background:#FFFFCC url(images/home32.png) no-repeat;    
     background-position: 85% 55%;    
     -moz-border-radius-topright: 20px;
     /*    -moz-border-radius-bottomright: 20px;*/
@@ -39,7 +41,7 @@ a.right_trigger {
     right: 0;
     float: right;
     /*    padding: 5px 5px 5px 30px;*/
-    background:#444444 url(images/kosik32.png) no-repeat;
+    background:#FFFFCC url(images/kosik32.png) no-repeat;
     background-position: 15% 55%;
 
     -moz-border-radius-topleft: 20px;
@@ -59,7 +61,8 @@ a.kosik_full.right_trigger {
     top: 120px;
     /*    background: #000000;*/
     /*    background: #4b4d49;*/
-    background: #6c8356;
+    /*background: #6c8356;*/
+    background-color: #543C1C;
     border:1px solid #111111;
     filter: alpha(opacity=85);
     /*    opacity: .85;*/
@@ -72,6 +75,7 @@ a.kosik_full.right_trigger {
     margin: 0 0 15px 0;
     padding: 0;
     color: #cccccc;
+   
 }
 .panel a, .panel a:visited{
     margin: 0;

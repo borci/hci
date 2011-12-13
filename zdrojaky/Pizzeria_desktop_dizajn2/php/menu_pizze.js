@@ -38,7 +38,7 @@ function init_menu_pizze() {
 
 	$(function(){
     $('.menu').slimScroll({
-         height: '390px',
+			height: '386px',
 			size: '15px',
 			top: '110px',
 			position: 'right',
