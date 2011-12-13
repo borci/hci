@@ -1,11 +1,11 @@
 /************** filtre ****************/
 #filtrovanie {
-    width: 520px;
-    height: 160px;
+    width: 560px;
+    height: 170px;
     position: absolute;
     background-color:  #FFFFCC;
     top: 0px;
-    left: 255px;
+    left: 235px;
     font-size: 15px; 
     z-index:110;
     border: 2px;
@@ -189,42 +189,72 @@
 #maso {
 	position: absolute;
 	background-color:  #FFFFCC;
-	width: 165px;
-	height: 100px;
+	background-image: url(images/maso.png);
+	background-size: 40% 60%;
+	background-position: 95% -25%;
+	background-repeat: no-repeat;
+	width: 135px;
+	height: 118px;
 	top: 50px;
+}
+
+#sm {
+	margin-bottom: 10px;
 }
 #syry {
 	position: absolute;
 	background-color:  #FFFFCC;
-	width: 125px;
-	height: 155px;
+	background-image: url(images/Cheese.png);
+	background-size: 45% 30%;
+	background-position: 85% 0%;
+	background-repeat: no-repeat;
+	width: 135px;
+	height: 168px;
 	top: 0px;
 	left: 140px;
 	z-index: 112;
 
 }
 
+#st {
+	margin-bottom: 17px;
+
+}
+
 #zelenina {
 	position: absolute;
 	background-color:  #FFFFCC;
-	width: 120px;
-	height: 155px;
-	top: 4px;
-	left: 270px;
+	background-image: url(images/ZAO.png);
+	background-size: 45% 30%;
+	background-position: 100% 0%;
+	background-repeat: no-repeat;
+	width: 140px;
+	height: 166px;
+	top: 0px;
+	left: 277px;
 	z-index: 112;
+	padding-top: 20px;
 }
 
 #zelenina2 {
 	position: absolute;
 	background-color:  #FFFFCC;
-	width: 150px;
-	height: 155px;
+	background-image: url(images/mushroom.png);
+	background-size: 45% 30%;
+	background-position: 75% 0%;
+	background-repeat: no-repeat;
+	width: 130px;
+	height: 168px;
 	top: 0px;
-	left: 395px;
+	left: 420px;
 	z-index: 112;
 
 }
 
+#sz {
+	margin-bottom: 20px;
+
+}
 /************** filtre ****************/
 
 

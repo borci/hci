@@ -170,12 +170,12 @@
 }
 
 .pridavanie p {
-    line-height: 20px; 
+   line-height: 20px; 
     font-size: 14px;
     padding: 0px;
     margin: 0px;
-    margin-top: 3px;
-    margin-left: 40px;
+    margin-top: 10px;
+   /* margin-left: 40px;*/
     color: green;
     font-weight: bold;
 }
@@ -307,7 +307,7 @@
 
 .menu {
     width: 216px;
-    height: 250px;
+    height: 249px;
     padding: 0px;
     margin: 0px;
     position: absolute;
@@ -333,7 +333,7 @@
 
 .menu li {
     width:211px;
-    height: 81px;
+    height: 80px;
     background-color: #FFF47F;
     position: relative;
     top: 0px;
