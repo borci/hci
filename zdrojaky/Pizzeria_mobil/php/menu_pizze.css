@@ -94,20 +94,22 @@
 #informacie {
     position: absolute;
     left: 30px;
-    top: 329px;
+    bottom: 0px;
     color: black;
-    background-color: white;
+    background-color: #D7ECE8;
     border: 1px;
     width: 160px;
+    height: 25px;
     border: 1px;
+    border-bottom: 0px;
     border-style: solid;
     cursor: pointer;
-    -moz-border-radius-topright: 10px;
-    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
 
 
-    -moz-border-radius-topleft: 10px;
-    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
 
 }
 
@@ -440,10 +442,10 @@
     position: absolute;
     background-color: #D7ECE8;
     top: 50px;
-    left: 4px;
+    left: 3px;
     font-size: 15px; 
     z-index:112;
-    border: 0px;
+    border: black 1px solid ;
     overflow: hidden;
 
     -moz-user-select: none;

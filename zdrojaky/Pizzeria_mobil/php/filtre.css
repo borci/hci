@@ -75,14 +75,15 @@
 
 #button_f {
     position: absolute;
-    left: 87px;
-    top: 16px;
+    left: 85px;
+    top: 20px;
     color: black;
-    background-color: white;
+    background-color: #D7ECE8;
     border: 1px;
-    width: 45px;
+    width: 50px;
     border: 1px;
     border-style: solid;
+    text-align: center;
     cursor: pointer;
     
     -moz-border-radius-topright: 10px;

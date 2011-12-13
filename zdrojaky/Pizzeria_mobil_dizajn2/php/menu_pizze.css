@@ -476,7 +476,7 @@
     background-image: url('images/kuchar80.png');
     background-repeat: no-repeat;
     background-size: 100px 100px;
-    background-position: 55% 80%; 
+    background-position: 55% 100%; 
     background-color: #FFF47F;
     
     top: 50px;
@@ -506,7 +506,7 @@
 	line-height: 20px;
 	color: #543F1C;
 	margin-top: 0px;
-	margin-bottom: 20px;
+	margin-bottom: 7px;
 }
 
 #info h4 {

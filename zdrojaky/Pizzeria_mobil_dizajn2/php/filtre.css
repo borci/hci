@@ -78,14 +78,18 @@
 #button_f {
     position: absolute;
     left: 87px;
-    top: 5px;
+    top: 15px;
     color: black;
-    background-color: #FFF47F;
-    border: 1px;
-    width: 45px;
-    height: 30px;
-    border: 1px;
-    border-style: solid;
+    background-color: #FFB200;
+    background-image: url('images/zoom.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    width: 42px;
+    height: 40px;
+    border: 0px;
+    /*border: 1px;
+    border-style: solid;*/
     cursor: pointer;
     
     -moz-border-radius-topright: 10px;

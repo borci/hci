@@ -439,28 +439,29 @@
 
 #kontakt {
 	width: 200px;
-	height: 40px;
+	height: 45px;
 	background-color: #FFFFEA;
 	position: absolute;
 	left: 45px;
 	bottom: 0px;
+
 	
 }
 
-#kontakt h4 {
+#kont {
 	line-height: 16px;
 	font-size: 15px;
 	position: absolute;
-	bottom: 42px;
-	left: 10px;
+	top: 2px;
+	left: 70px;
 	color: green;
 	margin: 0px;
 	margin-bottom: 2px;
 }
 
 #kontakt h5 {
-	line-height: 14px;
-	font-size: 12px;
+	line-height: 12px;
+	font-size: 11px;
 	font-weight: normal;
 	position: relative;
 	top: 5px;
@@ -469,29 +470,30 @@
 }
 
 #dovoz {
-	width: 200px;
-	height: 40px;
+	width: 300px;
+	height: 45px;
 	background-color: #FFFFEA;
 	position: absolute;
-	left: 370px;
+	left: 285px;
 	bottom: 0px;
+
 }
 
 
-#dovoz h4 {
+#dovo {
 	line-height: 16px;
 	font-size: 15px;
 	position: absolute;
-	bottom: 42px;
-	left: 10px;
+	top: 2px;
+	left: 400px;
 	color: green;
 	margin: 0px;
 	margin-bottom: 2px;
 }
 
 #dovoz h5 {
-	line-height: 14px;
-	font-size: 12px;
+	line-height: 12px;
+	font-size: 11px;
 	font-weight: normal;
 	position: relative;
 	top: 2px;
