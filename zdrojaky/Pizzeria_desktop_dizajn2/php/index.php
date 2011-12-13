@@ -42,8 +42,8 @@
                     
                 </div>
                 <div class="main_right_info">
-                    streda, 30. november 2011<br />
-                    meniny má Ondrej
+                    streda, 14. december 2011<br />
+                    meniny má Branislava
                 </div>
             </div>
 

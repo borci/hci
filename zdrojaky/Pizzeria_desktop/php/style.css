@@ -4,6 +4,7 @@ root {
 
 body {
     background-color: #1a1a1a;
+/*    cursor: url(images/kurzor.gif);*/
 }
 .body_div {
     position: relative;

@@ -2,7 +2,13 @@
 
 a.active.trigger, a.active.trigger.right_trigger.kosik_full {
     /*    background-image: url(images/minus.png);*/
-    background-image: url(images/panel_close20.png);
+    background-image: url(images/okruhla_sipka_doprava20.png);
+    background-color: #222222;
+}
+
+a.active.trigger.left_trigger {
+    /*    background-image: url(images/minus.png);*/
+    background-image: url(images/okruhla_sipka_dolava20.png);
     background-color: #222222;
 }
 
@@ -18,7 +24,7 @@ a.trigger{
     letter-spacing:-1px;
     font-family: verdana, helvetica, arial, sans-serif;
     color:#fff;
-    font-weight: 700;
+/*    font-weight: 700;*/
     /*    background:#333333 url(images/plus.png) no-repeat;*/
     border:1px solid #444444;
     display: block;
@@ -81,7 +87,7 @@ a.trigger:hover{
 a.left_trigger{
     left: 0;
     float: left;
-    padding: 5px 30px 5px 5px;
+    padding: 5px 34px 5px 3px;
     background:#333333 url(images/home20.png) no-repeat;    
     background-position: 85% 55%;    
     -moz-border-radius-topright: 20px;
