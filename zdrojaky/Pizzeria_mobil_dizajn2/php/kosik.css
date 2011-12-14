@@ -217,6 +217,7 @@ p.kosik_nadpis {
 #kosik_sumar .kosik_button_objednat button {
     /*    position: absolute;*/
     position: relative;
+    width: 80px;
     float: right;
     right: 1px;
     top: 2px;
@@ -228,6 +229,7 @@ p.kosik_nadpis {
     font-size: 15px;
     font-weight: 600;
     background-color: white;
+   
 }
 
 #kosik_prazdny {
